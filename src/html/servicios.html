@@ -1,0 +1,48 @@
+{% set page_title = 'Servicios' %}
+{% set body_class = 'bg-dark' %}
+{% set navbar_dark = true %}
+{% set navbar_fixed = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = true %}
+{% set footer = false %}
+
+{% extends 'layouts/layout-1.html' %}
+
+
+{% block content %}
+<div class="swiper text-white swiper-fullscreen-vertical" data-swiper-slides="1" data-swiper-speed="600" data-swiper-vertical="true">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {% macro slide_project(title="", image="", link="", href="") %}
+            <div class="swiper-slide">
+                <div class="card-wrapper h-100">
+                    <a class="card card-fullscreen text-white" href="{{ href }}" data-cursor-style="cursor-circle" data-cursor-text="view">
+                        <span class="card-img">
+                            <img src="{{ image }}" alt="">
+                            <span class="background-color" style="background-color: rgba(14, 14, 14, 0.726);"></span>
+                        </span>
+                        <span class="card-img-overlay container">
+                            <h2 class="card-title h1 mb-0"><span class="card-title-decoration"></span>{{ title }}</h2>
+                            <span class="btn btn-clean">{{ link }}{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            {% endmacro %}
+            {% macro slide_project_init(name="") %}
+                {{ slide_project(slider.fullscreen_showcase[name].title, slider.fullscreen_showcase[name].image, slider.fullscreen_showcase[name].link, slider.fullscreen_showcase[name].href) }}
+            {% endmacro %}
+            {{ slide_project_init('slide_1') }}
+            {{ slide_project_init('slide_2') }}
+            {{ slide_project_init('slide_3') }}
+            {{ slide_project_init('slide_4') }}
+            {{ slide_project_init('slide_5') }}
+        </div>
+    </div>
+
+    <div class="swiper-pagination-wrapper container justify-content-end">
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+{% endblock %}

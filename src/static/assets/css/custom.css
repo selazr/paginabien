@@ -1,0 +1,30 @@
+.brand-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.brand-carousel {
+    display: flex;
+    gap: 60px;
+    animation: scrollCarousel 30s linear infinite;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.brand-carousel:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brand-slide {
+    flex: 0 0 auto;
+}

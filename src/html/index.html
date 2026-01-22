@@ -1,0 +1,140 @@
+{% set page_title = 'LINE-X Hispania' %}
+{% set navbar_fixed = true %}
+{% set navbar_dark = true %}
+{% set navbar_expand = true %}
+{% set navbar_mobile = 'style-2'%}
+{% set navbar_mobile_dark = true %}
+{% set footer = 'default' %}
+{% set footer_dark = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block head_extra %}
+    <title>LINE-X Hispania | Especialistas en tematización de espacios</title>
+    <meta name="description" content="LINE-X Hispania diseña y ejecuta proyectos temáticos personalizados para parques, hoteles, marcas y espacios comerciales. Más de 15 años de experiencia en tematización, escenografía y arquitectura decorativa.">
+    <meta property="og:title" content="LINE-X Hispania | Tematización de espacios y diseño escénico">
+    <meta property="og:description" content="Diseñamos espacios únicos para hoteles, parques temáticos y marcas. Creatividad, técnica y experiencia en cada proyecto.">
+    <meta property="og:image" content="assets/images/portfolio/katmandu.jpeg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lxh.es/">
+{% endblock %}
+
+{% block content %}
+<div class="pt-160 pb-100 position-relative">
+    <div class="background">
+        <div class="background-video bg-dark jarallax" data-jarallax-video="mp4:assets/videos/LXH.mp4"></div>
+        <div class="background-color" style="background-image: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #0e0e0e 100%);"></div>
+    </div>
+
+    <div class="container py-lg-2">
+        <div class="row gh-1 gv-2 text-white">
+            <div class="col-lg-5 me-auto show-on-scroll" data-show-duration="900">
+                <h1 class="display-2 text-white mb-0">Diseño tematico especializado</h1>
+            </div>
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg me-xl-n30 show-on-scroll" data-show-duration="900" data-show-delay="150">
+                <hr class="mt-0 border-white">
+                <p class="lead fw-normal">Con más de 15 años de experiencia, en LINE-X Hispania damos vida a proyectos de tematización y diseño escénico con rapidez, calidad y precisión técnica.</p>
+                <a href="contacto.html" class="btn btn-white btn-with-ball">Contáctanos</a>
+            </div>
+
+            <div class="d-none d-xl-block col-1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="pb-160 bg-dark">
+    <div class="container overflow-hidden">
+        <div class="row">
+            <div class="col-12 mb-100 pb-5 show-on-scroll" data-show-duration="800" data-show-delay="100">
+                {{ card_project_horizontal_global(name="funny_dog", image_size="md", classes="card-image-md card-hover-frame text-white") }}
+            </div>
+            <div class="col-12 mb-100 pb-5 show-on-scroll" data-show-duration="800" data-show-delay="100">
+                {{ card_project_horizontal_global(name="katmandu", image_size="md", swap="true", classes="card-image-md card-hover-frame text-white") }}
+            </div>
+            <div class="col-12 mb-130 show-on-scroll" data-show-duration="800" data-show-delay="100">
+                {{ card_project_horizontal_global(name="identity_design", image_size="md", classes="card-image-md card-hover-frame text-white") }}
+            </div>
+            <div class="col-12 mt-n10 text-center show-on-scroll" data-show-duration="800" data-show-delay="100">
+                <a href="proyectos.html" class="btn btn-white btn-with-ball">Nuestros proyectos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-160 shape-parent overflow-hidden">
+    <div class="shape mt-n160">
+        <svg class="mt-n160" data-rellax-speed="-1" width="518" height="641" viewBox="0 0 518 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="197.5" cy="320.5" r="320.5" fill="#F5F5F5"/>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-xl-center gh-1 gv-5 mb-n7">
+            <div class="col-12 col-lg-4 me-lg-auto me-xl-0 show-on-scroll" data-show-duration="900">
+                <div class="subtitle mt-n10">¿Quiénes somos?</div>
+                <h2 class="h3">Hemos colaborado con más de 50 marcas internacionales</h2>
+                <a href="about-us.html" class="btn btn-dark btn-with-ball mt-30">Sobre nosotros</a>
+            </div>
+
+            <div class="d-none d-xl-block col-1"></div>
+
+            <div class="col-12 col-lg-6 col-xl-5 show-on-scroll" data-show-delay="150" data-show-duration="900">
+                <p class="lead fw-normal mt-n7 mb-30">En LINE-X Hispania somos especialistas en <strong>tematización arquitectónica y diseño de espacios personalizados</strong> para marcas, parques temáticos, hoteles y entornos comerciales.</p>
+                <p>Ofrecemos soluciones decorativas únicas que combinan creatividad, funcionalidad y materiales de alta resistencia, asegurando que cada proyecto se entregue con excelencia y profesionalismo.</p>
+                <hr>
+                <div class="row gh-2 gv-2 justify-content-around justify-content-sm-center text-center text-sm-start">
+                    <div class="col-auto col-sm-4">
+                        <div class="number-box">
+                            <div class="number-box-title h2">500</div>
+                            <div class="number-box-subtitle">Proyectos</div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-sm-4">
+                        <div class="number-box">
+                            <div class="number-box-title h2">19</div>
+                            <div class="number-box-subtitle">Años</div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-sm-4">
+                        <div class="number-box">
+                            <div class="number-box-title h2">300</div>
+                            <div class="number-box-subtitle">Clientes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="gallery-item gallery-item-sm mt-160 mb-60 show-on-scroll" href="#" data-fancybox data-cursor-style="cursor-circle" data-cursor-text="play" data-show-duration="900">
+            <img src="assets/images/portfolio/tematizacion-parques-espacios-tematicos.jpeg" alt="Diseño temático del parque Katmandú realizado por LINE-X Hispania">
+            <span class="d-flex d-md-none btn btn-md btn-circle btn-white">play</span>
+        </a>
+
+        <div class="brand-carousel-wrapper mt-n10 pt-30">
+            <div class="brand-carousel">
+                {% macro brand_col(name="") %}
+                <div class="brand-slide">
+                    <a class="brand text-grey">
+                        {{ brands[name] | safe }}
+                    </a>
+                </div>
+                {% endmacro %}
+
+                {% set logos = ['adidas', 'chhc', 'buschgardens', 'enigma', 'iconic', 'katmandu'] %}
+                {% for name in logos %}
+                    {{ brand_col(name) }}
+                {% endfor %}
+
+                {# Duplicamos para crear el bucle perfecto #}
+                {% for name in logos %}
+                    {{ brand_col(name) }}
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
