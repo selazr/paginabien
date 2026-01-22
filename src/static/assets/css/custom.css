@@ -28,3 +28,7 @@
 .brand-slide {
     flex: 0 0 auto;
 }
+
+.hero-overlay{
+    background-color: rgba(0, 0, 0, 0.6); /* prueba 0.6 – 0.75 */
+}

@@ -11,18 +11,34 @@
 
 {% block content %}
 <!-- Hero Section -->
-<div class="py-160 min-vh-100 d-flex align-items-center position-relative lines-style-3">
+<div class="py-160 min-vh-100 d-flex align-items-center position-relative lines-style-3 text-white hero">
+
     <div class="line text-white"></div>
 
+    <!-- Fondo -->
     <div class="background bg-dark">
         <div class="background-video jarallax" data-jarallax data-speed="0.8">
             <video class="jarallax-img" autoplay muted loop playsinline>
-                <source src="assets/videos/LXH.mp4" type="video/mp4">
+                <source src="assets/videos/LineXHispania.mp4" type="video/mp4">
                 Tu navegador no soporta el video en HTML5.
             </video>
         </div>
-        <div class="background-color" style="background-color: #0e0e0e; opacity: .2;"></div>
+
+        <!-- Overlay oscuro como en Servicios -->
+        <div class="background-color hero-overlay"></div>
     </div>
+
+    <!-- Contenido -->
+   <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-lg-8 col-xl-7 show-on-scroll" data-show-duration="600" data-show-distance="20" data-show-origin="left">
+                <h1 class="text-white mb-2">¿Quiénes somos?</h1>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 
@@ -38,7 +54,7 @@
             <div class="col-12 col-lg-10">
                 <div class="row gh-5 gv-5">
                     <div class="col-12 col-md-10 col-lg-9">
-    <p class="subtitle mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">¿Quiénes somos?</p>
+    <p class="subtitle mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">Somos..</p>
     <h3 class="mb-n7 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
         Especialistas en tematización arquitectónica, diseño de espacios e innovación decorativa
     </h3>
@@ -61,23 +77,11 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide overflow-hidden">
                                         <div class="swiper-image" data-swiper-parallax-x="20%">
-                                            <img class="w-100" src="assets/images/about/about-us-slide-940-1000.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide overflow-hidden">
-                                        <div class="swiper-image" data-swiper-parallax-x="20%">
-                                            <img class="w-100" src="assets/images/about/about-us-slide-2-940-1000.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide overflow-hidden">
-                                        <div class="swiper-image" data-swiper-parallax-x="20%">
                                             <img class="w-100" src="assets/images/about/about-us-slide-3-940-1000.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next bg-white">{{ icon.arrow_right | safe }}</div>
-                            <div class="swiper-button-prev bg-white">{{ icon.arrow_left | safe }}</div>
                         </div>
 <p class="pt-3 mt-100 mb-0">
     Nos especializamos en la <strong>tematización integral de hoteles</strong>, creando ambientes únicos que reflejan la identidad de cada marca. Desde <strong>recepciones impactantes</strong> hasta <strong>habitaciones personalizadas y zonas comunes inmersivas</strong>, diseñamos experiencias que combinan estética, funcionalidad y durabilidad. Utilizamos materiales de alta calidad como <strong>fibra de vidrio, resinas y revestimientos técnicos</strong> para garantizar resultados espectaculares y resistentes al uso continuo.
@@ -91,7 +95,7 @@
 </div>
 
 <!-- Services Section -->
-<div class="py-160">
+<div class="">
     <div class="container">
         <div class="row gv-5 align-items-center justify-content-between">
             <div class="col-12 col-lg-6">
@@ -106,14 +110,14 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mt-160">
+        <div class="row justify-content-center">
             <div class="col-12 col-xl-10 mt-8">
                 <div class="row gh-1 gv-2 text-center text-sm-start justify-content-center justify-content-sm-between">
                     <div class="col-md col-lg-6">
                         <h2 class="display-4 mt-n30 mb-n3">Nuestro equipo</h2>
                     </div>
                     <div class="d-none d-lg-block col-auto">
-                        <hr class="mt-30 mx-2 width-70px">
+                        <hr class="mt-20 mx-2 width-70px">
                     </div>
                     <div class="col-auto">
                         <a href="contacto.html" class="btn btn-dark btn-with-ball">Trabaja con nosotros</a>
@@ -155,21 +159,15 @@
                     <div class="swiper-slide">
                         {{ card_person_global('leonel_murguia', classes='card-image-xl bg-white') }}
                     </div>
-                    <div class="swiper-slide">
-                        {{ card_person_global('geli_navarro', classes='card-image-xl bg-white') }}
-                    </div>
                      <div class="swiper-slide">
                         {{ card_person_global('jose_miguel', classes='card-image-xl bg-white') }}
-                    </div>
-                     <div class="swiper-slide">
-                        {{ card_person_global('javier_estebas', classes='card-image-xl bg-white') }}
                     </div>
                      <div class="swiper-slide">
                         {{ card_person_global('cesar_arenas', classes='card-image-xl bg-white') }}
                     </div>
                 </div>
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar mt-60"></div>
         </div>
     </div>
 </div>
