@@ -1,8 +1,9 @@
 {% set page_title = 'Tematización de parques y espacios' %}
-{% set navbar_mobile = 'style-2' %}
 {% set navbar_fixed = true %}
 {% set navbar_expand = true %}
-{% set footer = 'default-2' %}
+{% set navbar_mobile = 'style-2' %}
+{% set navbar_mobile_dark = true %}
+{% set footer = 'default' %}
 {% set footer_dark = true %}
 
 {% extends 'layouts/layout-1.html' %}
@@ -115,7 +116,7 @@ Nuestros sistemas están diseñados para soportar uso intensivo, climatología e
         <div class="page-navigation mt-160">
             <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}Anterior<span class="d-none d-sm-inline"> servicio</span></a>
             <a href="servicios.html" class="btn btn-light btn-circle btn-xl">Todos los servicios</a>
-            <a href="#" class="btn btn-clean">Siguiente<span class="d-none d-sm-inline"> servicio</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+            <a href="interpratacion_arquitectonica.html" class="btn btn-clean">Siguiente<span class="d-none d-sm-inline"> servicio</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
         </div>
     </div>
 </div>
