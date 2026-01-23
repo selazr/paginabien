@@ -93,8 +93,9 @@
             font-size: clamp(32px, 6vw, 72px);
             line-height: 1.1;
             padding-right: clamp(20px, 6vw, 100px);
-            overflow-wrap: break-word;
-            hyphens: auto;
+            overflow-wrap: normal;
+            word-break: normal;
+            hyphens: manual;
 
             @include media-breakpoint-up(md) {
                 padding-left: clamp(80px, 12vw, 200px);
