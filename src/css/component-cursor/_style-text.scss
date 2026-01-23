@@ -1,11 +1,15 @@
 .cursor-text {
-    top: 25px;
-    left: 20px;
-    padding: 9px 26px;
-    font-size: em(20px);
+    top: 18px;
+    left: 18px;
+    padding: 6px 14px;
+    font-size: em(14px);
     font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
     color: #fff;
     background-color: $dark;
+    border-radius: 2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 @include media-breakpoint-down(lg) {
@@ -19,11 +23,14 @@
             right: 0;
             bottom: 0;
             max-width: 100%;
-            padding: 9px 26px;
-            font-size: em(20px);
+            padding: 6px 14px;
+            font-size: em(14px);
             font-weight: 500;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
             color: #fff;
             background-color: $dark;
+            border-radius: 2px;
             opacity: 0;
             will-change: opacity;
             transition: opacity .2s ease-in-out;
