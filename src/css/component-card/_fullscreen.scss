@@ -85,3 +85,30 @@
         }
     }
 }
+
+.page-servicios {
+    .card-fullscreen {
+        .card-title {
+            max-width: 22ch;
+            font-size: clamp(32px, 6vw, 72px);
+            line-height: 1.1;
+            padding-right: clamp(20px, 6vw, 100px);
+            overflow-wrap: break-word;
+            hyphens: auto;
+
+            @include media-breakpoint-up(md) {
+                padding-left: clamp(80px, 12vw, 200px);
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: clamp(28px, 8vw, 48px);
+            }
+        }
+
+        .card-title-decoration {
+            @include media-breakpoint-down(sm) {
+                top: -24px;
+            }
+        }
+    }
+}
