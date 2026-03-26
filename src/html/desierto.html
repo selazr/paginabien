@@ -1,5 +1,4 @@
-
-{% set page_title = 'Capitel' %}
+{% set page_title = 'Desierto' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -18,7 +17,7 @@
 {% endmacro %}
 
 {% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
-    {{ image_portfolio(single_portfolio_images.style_5_3[name], classes=classes, gallery=gallery) }}
+    {{ image_portfolio(single_portfolio_images.style_5_13[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
 
@@ -26,13 +25,13 @@
 <div class="py-160 min-vh-100 d-flex align-items-center position-relative">
     <div class="background">
         <div class="background-image jarallax" data-jarallax data-speed="0.8">
-            <img src="{{ single_portfolio_images.style_5_3.banner }}" class="jarallax-img" alt="">
+            <img src="{{ single_portfolio_images.style_5_13.banner }}" class="jarallax-img" alt="">
         </div>
         <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Capitel Harry Potter</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Plantilla Desierto</h1>
     </div>
 </div>
 
@@ -47,19 +46,19 @@
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Hemos creado el capitel ubicado en la cima de la torre de Harry Potter, una obra que refleja nuestro perfeccionismo y atención al detalle. Esta dedicación al trabajo artesanal se replica en muchos de nuestros proyectos, destacando siempre nuestra pasión por la excelencia.</p>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Hemos creado un elemento arquitectónico inspirado en la estética del desierto, una obra que refleja nuestro perfeccionismo y atención al detalle. Sus formas, texturas y acabados evocan la esencia de paisajes áridos y construcciones erosionadas por el tiempo. Esta dedicación al trabajo artesanal se replica en muchos de nuestros proyectos, destacando siempre nuestra pasión por la excelencia.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Junio 10, 2008
+                        <span class="fw-medium me-8">Fecha:</span> Junio 20, 202X
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Categoria:</span> Parques temáticos
+                        <span class="fw-medium me-8">Categoria:</span> Arquitectura
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span>  Epic Universe
+                        <span class="fw-medium me-8">Cliente:</span> NCliente
                     </div>
                     
                 </div>
@@ -78,10 +77,18 @@
                 {{ slide_project('02') }}
                 {{ slide_project('03') }}
                 {{ slide_project('04') }}
-                {{ slide_project('05') }}
                 {{ slide_project('06') }}
                 {{ slide_project('07') }}
                 {{ slide_project('08') }}
+                {{ slide_project('09') }}
+                {{ slide_project('10') }}
+                {{ slide_project('11') }}
+                {{ slide_project('12') }}
+                {{ slide_project('13') }}
+                {{ slide_project('14') }}
+                {{ slide_project('15') }}
+                {{ slide_project('16') }}
+
             </div>
         </div>
 
@@ -91,9 +98,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="moon.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="nessie.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
+        <a href="portfolio-col-2-style-6.html" class="btn btn-light btn-circle btn-m">todos</a>
+        <a href="garzas.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}
