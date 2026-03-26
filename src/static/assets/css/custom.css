@@ -6,7 +6,7 @@
 
 .brand-carousel {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     animation: scrollCarousel 30s linear infinite;
     align-items: center;
     white-space: nowrap;
