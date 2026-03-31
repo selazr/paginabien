@@ -80,6 +80,9 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Terminos y condiciones</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" id="unsubscribeLink">Darse de baja</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -131,92 +134,203 @@
     <!-- Newsletter Modal (solo UI, no afecta al layout) -->
     <div id="newsletterModal"
         style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:9999;">
-        <div style="background:#fff;padding:40px 30px;border-radius:12px;max-width:420px;text-align:center;">
+        <div
+            style="background:#fff;padding:40px 30px;border-radius:12px;max-width:420px;width:90%;text-align:center;color:#111;">
             <h3 style="margin:0 0 12px 0;">¡Gracias por suscribirte!</h3>
             <p style="margin:0 0 18px 0;">Revisa tu correo para confirmar tu suscripción.</p>
             <button id="newsletterModalClose"
                 style="padding:10px 20px;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;">
                 Cerrar
             </button>
+            <br><br>
+            <a id="openUnsubscribeFromSuccess" href="javascript:void(0)"
+                style="font-size:12px;color:#999;text-decoration:underline;">
+                ¿Quieres darte de baja?
+            </a>
         </div>
     </div>
 
-    
+
+    <div id="unsubscribeModal"
+        style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:9999;">
+        <div style="background:#fff;padding:40px 30px;border-radius:12px;max-width:420px;text-align:center;">
+            <h3 style="margin:0 0 12px 0;">Darse de baja</h3>
+            <p style="margin:0 0 18px 0;">Introduce tu email para cancelar la suscripción.</p>
+            <input id="unsubscribeEmail" type="email" placeholder="Tu email"
+                style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:12px;font-size:14px;">
+            <div id="unsubscribeMessage" style="margin-bottom:12px;font-size:14px;"></div>
+            <button id="unsubscribeBtn"
+                style="padding:10px 20px;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;margin-right:8px;">
+                Darme de baja
+            </button>
+            <button id="unsubscribeModalClose"
+                style="padding:10px 20px;background:#ccc;color:#111;border:none;border-radius:6px;cursor:pointer;">
+                Cancelar
+            </button>
+        </div>
+    </div>
+
+
     <script>
-    (function () {
-      const form = document.getElementById("newsletterForm");
-      if (!form) return;
+        (function () {
+            const API_BASE = "http://localhost:3002";
 
-      const modal = document.getElementById("newsletterModal");
-      const closeBtn = document.getElementById("newsletterModalClose");
-      const message = document.getElementById("newsletterMessage");
+            // ── Elementos ──────────────────────────────────────────
+            const form = document.getElementById("newsletterForm");
+            const modal = document.getElementById("newsletterModal");
+            const closeBtn = document.getElementById("newsletterModalClose");
+            const message = document.getElementById("newsletterMessage");
+            const openFromSuccess = document.getElementById("openUnsubscribeFromSuccess");
 
-      // Cambia SOLO esta línea cuando pases a producción real (api.lxh.es)
-      const API_BASE = "http://localhost:3002";
+            const unsubscribeLink = document.getElementById("unsubscribeLink");
+            const unsubscribeModal = document.getElementById("unsubscribeModal");
+            const unsubscribeCloseBtn = document.getElementById("unsubscribeModalClose");
+            const unsubscribeBtn = document.getElementById("unsubscribeBtn");
+            const unsubscribeInput = document.getElementById("unsubscribeEmail");
+            const unsubscribeMessage = document.getElementById("unsubscribeMessage");
 
-      let submitting = false;
-
-      function openModal() { modal.style.display = "flex"; }
-      function closeModal() { modal.style.display = "none"; }
-
-      closeBtn.addEventListener("click", closeModal);
-      modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-        if (submitting) return;
-
-        submitting = true;
-
-        const button = form.querySelector("button[type='submit']");
-        const originalText = button.innerText;
-
-        button.disabled = true;
-        button.innerText = "Enviando...";
-
-        if (message) {
-          message.textContent = "";
-          message.style.color = "";
-        }
-
-        const email = document.getElementById("newsletterEmail").value;
-        const website = form.querySelector("input[name='website']").value;
-
-        try {
-          const response = await fetch(`${API_BASE}/api/newsletter/subscribe`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, website })
-          });
-
-          const data = await response.json().catch(() => ({}));
-
-          if (data && data.ok) {
-            form.reset();
-            openModal();
-          } else {
-            const msg = (data && data.error) ? data.error : "Error al suscribirse.";
-            if (message) {
-              message.textContent = msg;
-              message.style.color = "red";
-            } else {
-              alert(msg);
+            // ── Funciones globales (accesibles desde cualquier sitio) ──
+            function openModal() { modal.style.display = "flex"; }
+            function closeModal() { modal.style.display = "none"; }
+            function openUnsubscribeModal() { unsubscribeModal.style.display = "flex"; }
+            function closeUnsubscribeModal() {
+                unsubscribeModal.style.display = "none";
+                unsubscribeInput.value = "";
+                unsubscribeMessage.textContent = "";
+                unsubscribeMessage.style.color = "";
             }
-          }
-        } catch (err) {
-          if (message) {
-            message.textContent = "Error de conexión.";
-            message.style.color = "red";
-          } else {
-            alert("Error de conexión.");
-          }
-        } finally {
-          submitting = false;
-          button.disabled = false;
-          button.innerText = originalText;
-        }
-      });
-    })();
+
+            // ── Cerrar modales ─────────────────────────────────────
+            closeBtn.addEventListener("click", closeModal);
+            modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+
+            unsubscribeCloseBtn.addEventListener("click", closeUnsubscribeModal);
+            unsubscribeModal.addEventListener("click", (e) => { if (e.target === unsubscribeModal) closeUnsubscribeModal(); });
+
+            // ── Link "¿Quieres darte de baja?" dentro del modal de éxito ──
+            if (openFromSuccess) {
+                openFromSuccess.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    closeModal();
+                    openUnsubscribeModal();
+                });
+            }
+
+            // ── Abrir modal de baja desde el footer ───────────────
+            if (unsubscribeLink) {
+                unsubscribeLink.addEventListener("click", (e) => { e.preventDefault(); openUnsubscribeModal(); });
+            }
+
+            // ── Baja automática si hay ?token= en la URL ──────────
+            const params = new URLSearchParams(window.location.search);
+            const token = params.get('token');
+
+            if (token) {
+                openUnsubscribeModal();
+                fetch(`${API_BASE}/api/newsletter/unsubscribe?token=${token}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        document.getElementById('unsubscribeBtn').style.display = 'none';
+                        unsubscribeInput.style.display = 'none';
+                        unsubscribeMessage.textContent = data.ok
+                            ? 'Te has dado de baja correctamente.'
+                            : (data.error || 'El enlace no es válido o ya expiró.');
+                        unsubscribeMessage.style.color = data.ok ? 'green' : 'red';
+                    })
+                    .catch(() => {
+                        unsubscribeMessage.textContent = 'Error de conexión.';
+                        unsubscribeMessage.style.color = 'red';
+                    });
+            }
+
+            // ── Formulario SUSCRIPCIÓN ─────────────────────────────
+            if (form) {
+                let submitting = false;
+
+                form.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+                    if (submitting) return;
+                    submitting = true;
+
+                    const button = form.querySelector("button[type='submit']");
+                    const originalText = button.innerText;
+                    button.disabled = true;
+                    button.innerText = "Enviando...";
+
+                    if (message) { message.textContent = ""; message.style.color = ""; }
+
+                    const email = document.getElementById("newsletterEmail").value;
+                    const website = form.querySelector("input[name='website']").value;
+
+                    try {
+                        const response = await fetch(`${API_BASE}/api/newsletter/subscribe`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ email, website })
+                        });
+                        const data = await response.json().catch(() => ({}));
+
+                        if (data && data.ok) {
+                            form.reset();
+                            openModal();
+                        } else {
+                            const msg = (data && data.error) ? data.error : "Error al suscribirse.";
+                            if (message) { message.textContent = msg; message.style.color = "red"; }
+                            else alert(msg);
+                        }
+                    } catch (err) {
+                        if (message) { message.textContent = "Error de conexión."; message.style.color = "red"; }
+                        else alert("Error de conexión.");
+                    } finally {
+                        submitting = false;
+                        button.disabled = false;
+                        button.innerText = originalText;
+                    }
+                });
+            }
+
+            // ── Formulario BAJA manual ────────────────────────────
+            if (unsubscribeBtn) {
+                unsubscribeBtn.addEventListener("click", async function () {
+                    const email = unsubscribeInput.value.trim();
+
+                    if (!email) {
+                        unsubscribeMessage.textContent = "Introduce tu email.";
+                        unsubscribeMessage.style.color = "red";
+                        return;
+                    }
+
+                    unsubscribeBtn.disabled = true;
+                    unsubscribeBtn.innerText = "Procesando...";
+                    unsubscribeMessage.textContent = "";
+
+                    try {
+                        const response = await fetch(`${API_BASE}/api/newsletter/unsubscribe`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ email })
+                        });
+                        const data = await response.json().catch(() => ({}));
+
+                        if (data && data.ok) {
+                            unsubscribeMessage.textContent = "Te has dado de baja correctamente.";
+                            unsubscribeMessage.style.color = "green";
+                            unsubscribeInput.value = "";
+                        } else {
+                            unsubscribeMessage.textContent = (data && data.error) ? data.error : "Error al darse de baja.";
+                            unsubscribeMessage.style.color = "red";
+                        }
+                    } catch (err) {
+                        unsubscribeMessage.textContent = "Error de conexión.";
+                        unsubscribeMessage.style.color = "red";
+                    } finally {
+                        unsubscribeBtn.disabled = false;
+                        unsubscribeBtn.innerText = "Darme de baja";
+                    }
+                });
+            }
+
+        })();
     </script>
 
 </footer>
