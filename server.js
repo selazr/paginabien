@@ -1,113 +1,149 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const mongoose = require('mongoose');
 const crypto = require('crypto');
 require('dotenv').config();
 
 const app = express();
+const PORT = process.env.PORT || 3002;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/linex';
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log('Conectado a MongoDB'))
+// Conexion a MongoDB local
+mongoose.connect(MONGODB_URI)
+    .then(() => console.log('Conectado a MongoDB local (linex)'))
     .catch(err => console.error('Error conectando a MongoDB:', err));
 
-// ── Añadido: token y fecha ──────────────────────────────────
+// Esquema de suscriptor
 const suscriptorSchema = new mongoose.Schema({
-    email:         { type: String, required: true, unique: true },
-    token:         { type: String, required: true, unique: true },
-    subscribedAt:  { type: Date, default: Date.now }
+    email: { type: String, required: true, unique: true, trim: true, lowercase: true },
+    token: { type: String, required: true, unique: true },
+    subscribedAt: { type: Date, default: Date.now }
 });
 
 const Suscriptor = mongoose.model('Suscriptor', suscriptorSchema);
 
+// Middlewares
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: FRONTEND_URL,
     credentials: true
 }));
-app.use(bodyParser.json());
 
+app.use(express.json());
+
+// Configuracion de correo
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.hostinger.com',
+    port: 465,
+    secure: true,
     auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS
     }
 });
+// Ruta de prueba
+app.get('/', (req, res) => {
+    res.send('API newsletter funcionando');
+});
 
+// Suscripcion al newsletter
 app.post('/api/newsletter/subscribe', async (req, res) => {
     const { email, website } = req.body;
 
-    if (website) return res.json({ ok: true });
+    // Honeypot anti bots
+    if (website) {
+        return res.json({ ok: true });
+    }
 
     if (!email) {
         return res.status(400).json({ error: 'El email es obligatorio' });
     }
 
     try {
-        const existe = await Suscriptor.findOne({ email });
+        const emailLimpio = String(email).trim().toLowerCase();
+
+        const existe = await Suscriptor.findOne({ email: emailLimpio });
         if (existe) {
-            return res.status(400).json({ error: 'Este email ya está suscrito' });
+            return res.status(400).json({ error: 'Este email ya esta suscrito' });
         }
 
-        // ── Añadido: generar token único ───────────────────
         const token = crypto.randomUUID();
-        await Suscriptor.create({ email, token });
+
+        await Suscriptor.create({
+            email: emailLimpio,
+            token
+        });
 
         await transporter.sendMail({
             from: process.env.GMAIL_USER,
-            to: email,
+            to: emailLimpio,
             subject: 'Bienvenido al newsletter de Line-X',
-            // ── Añadido: link de baja en el email ─────────
             html: `
-                <p>Gracias por suscribirte. Pronto recibirás novedades.</p>
+                <p>Gracias por suscribirte. Pronto recibiras novedades.</p>
                 <hr>
                 <p style="font-size:12px;color:#999;">
                     Si deseas darte de baja,
-                    <a href="${process.env.FRONTEND_URL}/index.html?token=${token}">haz clic aquí</a>.
+                    <a href="${FRONTEND_URL}/index.html?token=${token}">haz clic aqui</a>.
                 </p>
             `
         });
 
-        res.json({ ok: true });
+        return res.json({ ok: true });
 
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Error al procesar la suscripción' });
+        console.error('Error en suscripcion:', error);
+        return res.status(500).json({ error: 'Error al procesar la suscripcion' });
     }
 });
 
-// ── Añadido: baja automática por token (desde el link del email) ──
+// Baja automatica por token
 app.get('/api/newsletter/unsubscribe', async (req, res) => {
     const { token } = req.query;
 
-    if (!token) return res.status(400).json({ error: 'Token inválido.' });
+    if (!token) {
+        return res.status(400).json({ error: 'Token invalido' });
+    }
 
     try {
         const suscriptor = await Suscriptor.findOne({ token });
-        if (!suscriptor) return res.status(404).json({ error: 'Token no encontrado.' });
+
+        if (!suscriptor) {
+            return res.status(404).json({ error: 'Token no encontrado' });
+        }
 
         const emailBaja = suscriptor.email;
+
         await Suscriptor.deleteOne({ token });
 
+        // Respondemos primero
         res.status(200).json({ ok: true });
 
-        await transporter.sendMail({
-            from: process.env.GMAIL_USER,
-            to: emailBaja,
-            subject: 'Hasta pronto - Line-X',
-            html: `
-                <p>Hemos procesado tu solicitud de baja correctamente.</p>
-                <p>Si cambias de opinión, siempre puedes volver a suscribirte en nuestra <a href="${process.env.FRONTEND_URL}">web</a>.</p>
-            `
-        });
+        // Luego intentamos enviar email de confirmacion
+        try {
+            await transporter.sendMail({
+                from: process.env.GMAIL_USER,
+                to: emailBaja,
+                subject: 'Hasta pronto - Line-X',
+                html: `
+                    <p>Hemos procesado tu solicitud de baja correctamente.</p>
+                    <p>Si cambias de opinion, siempre puedes volver a suscribirte en nuestra <a href="${FRONTEND_URL}">web</a>.</p>
+                `
+            });
+        } catch (mailError) {
+            console.error('Error enviando email de confirmacion de baja:', mailError);
+        }
 
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Error al procesar la baja' });
+        console.error('Error en baja por token:', error);
+
+        if (!res.headersSent) {
+            return res.status(500).json({ error: 'Error al procesar la baja' });
+        }
     }
 });
 
+// Baja manual por email
 app.post('/api/newsletter/unsubscribe', async (req, res) => {
     const { email } = req.body;
 
@@ -116,29 +152,34 @@ app.post('/api/newsletter/unsubscribe', async (req, res) => {
     }
 
     try {
-        const existe = await Suscriptor.findOne({ email });
+        const emailLimpio = String(email).trim().toLowerCase();
+
+        const existe = await Suscriptor.findOne({ email: emailLimpio });
+
         if (!existe) {
-            return res.status(400).json({ error: 'Este email no está suscrito' });
+            return res.status(400).json({ error: 'Este email no esta suscrito' });
         }
 
-        await Suscriptor.deleteOne({ email });
+        await Suscriptor.deleteOne({ email: emailLimpio });
 
         await transporter.sendMail({
             from: process.env.GMAIL_USER,
-            to: email,
+            to: emailLimpio,
             subject: 'Hasta pronto - Line-X',
             html: `
                 <p>Hemos procesado tu solicitud de baja correctamente.</p>
-                <p>Si cambias de opinión, siempre puedes volver a suscribirte en nuestra <a href="${process.env.FRONTEND_URL}">web</a>.</p>
+                <p>Si cambias de opinion, siempre puedes volver a suscribirte en nuestra <a href="${FRONTEND_URL}">web</a>.</p>
             `
         });
 
-        res.json({ ok: true });
+        return res.json({ ok: true });
 
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Error al procesar la baja' });
+        console.error('Error en baja manual:', error);
+        return res.status(500).json({ error: 'Error al procesar la baja' });
     }
 });
 
-app.listen(3002, () => console.log('Servidor en http://localhost:3002'));
+app.listen(PORT, () => {
+    console.log(`Servidor en http://localhost:${PORT}`);
+});

@@ -125,7 +125,7 @@
         "eurocamping": {
             "href": "eurocamping.html",
             "title": "Eurocamping",
-            "category": ["Minigolf", "#"],
+            "category": [" ", "#"],
             "logo": "",
             "image": {
                 "lg": "assets/images/portfolio/eurocamping.jpeg",
@@ -192,14 +192,14 @@
                 "md": "assets/images/portfolio/Katmandu.jpg"
             }
         },
-        "MinigolfPirata": {
-            "href": "Minigolf.html",
-            "title": "Minigolf pirata",
-            "category": ["Minigolf", "#"],
+        " Pirata": {
+            "href": " .html",
+            "title": "  pirata",
+            "category": [" ", "#"],
             "logo": "",
             "image": {
-                "lg": "assets/images/portfolio/Minigolf.jpg",
-                "md": "assets/images/portfolio/Minigolf.jpg"
+                "lg": "assets/images/portfolio/ .jpg",
+                "md": "assets/images/portfolio/ .jpg"
             }
         },
         "funny_dog": {
@@ -604,18 +604,18 @@
             "12": ["assets/images/single-portfolio/Katmandu11.jpg", "assets/images/single-portfolio/Katmandu11.jpg"]
         },
         "style_5_16": {
-            "banner": "assets/images/portfolio/Minigolf.jpg",
-            "02": ["assets/images/single-portfolio/Minigolf1.jpg", "assets/images/single-portfolio/Minigolf1.jpg"],
-            "03": ["assets/images/single-portfolio/Minigolf2.jpg", "assets/images/single-portfolio/Minigolf2.jpg"],
-            "04": ["assets/images/single-portfolio/Minigolf3.jpg", "assets/images/single-portfolio/Minigolf3.jpg"],
-            "05": ["assets/images/single-portfolio/Minigolf4.jpg", "assets/images/single-portfolio/Minigolf4.jpg"],
-            "06": ["assets/images/single-portfolio/Minigolf5.jpg", "assets/images/single-portfolio/Minigolf5.jpg"],
-            "07": ["assets/images/single-portfolio/Minigolf6.jpg", "assets/images/single-portfolio/Minigolf6.jpg"],
-            "08": ["assets/images/single-portfolio/Minigolf7.jpg", "assets/images/single-portfolio/Minigolf7.jpg"],
-            "09": ["assets/images/single-portfolio/Minigolf8.jpg", "assets/images/single-portfolio/Minigolf8.jpg"],
-            "10": ["assets/images/single-portfolio/Minigolf9.jpg", "assets/images/single-portfolio/Minigolf9.jpg"],
-            "11": ["assets/images/single-portfolio/Minigolf10.jpg", "assets/images/single-portfolio/Minigolf10.jpg"],
-            "12": ["assets/images/single-portfolio/Minigolf11.jpg", "assets/images/single-portfolio/Minigolf11.jpg"]
+            "banner": "assets/images/portfolio/ .jpg",
+            "02": ["assets/images/single-portfolio/ 1.jpg", "assets/images/single-portfolio/ 1.jpg"],
+            "03": ["assets/images/single-portfolio/ 2.jpg", "assets/images/single-portfolio/ 2.jpg"],
+            "04": ["assets/images/single-portfolio/ 3.jpg", "assets/images/single-portfolio/ 3.jpg"],
+            "05": ["assets/images/single-portfolio/ 4.jpg", "assets/images/single-portfolio/ 4.jpg"],
+            "06": ["assets/images/single-portfolio/ 5.jpg", "assets/images/single-portfolio/ 5.jpg"],
+            "07": ["assets/images/single-portfolio/ 6.jpg", "assets/images/single-portfolio/ 6.jpg"],
+            "08": ["assets/images/single-portfolio/ 7.jpg", "assets/images/single-portfolio/ 7.jpg"],
+            "09": ["assets/images/single-portfolio/ 8.jpg", "assets/images/single-portfolio/ 8.jpg"],
+            "10": ["assets/images/single-portfolio/ 9.jpg", "assets/images/single-portfolio/ 9.jpg"],
+            "11": ["assets/images/single-portfolio/ 10.jpg", "assets/images/single-portfolio/ 10.jpg"],
+            "12": ["assets/images/single-portfolio/ 11.jpg", "assets/images/single-portfolio/ 11.jpg"]
         }
         
     },
