@@ -76,7 +76,7 @@ app.post('/api/newsletter/subscribe', async (req, res) => {
         });
 
         await transporter.sendMail({
-            from: process.env.GMAIL_USER,
+            from: process.env.SMTP_USER,
             to: emailLimpio,
             subject: 'Bienvenido al newsletter de Line-X',
             html: `
@@ -122,7 +122,7 @@ app.get('/api/newsletter/unsubscribe', async (req, res) => {
         // Luego intentamos enviar email de confirmacion
         try {
             await transporter.sendMail({
-                from: process.env.GMAIL_USER,
+                from: process.env.SMTP_USER,
                 to: emailBaja,
                 subject: 'Hasta pronto - Line-X',
                 html: `
@@ -163,7 +163,7 @@ app.post('/api/newsletter/unsubscribe', async (req, res) => {
         await Suscriptor.deleteOne({ email: emailLimpio });
 
         await transporter.sendMail({
-            from: process.env.GMAIL_USER,
+            from: process.env.SMTP_USER,
             to: emailLimpio,
             subject: 'Hasta pronto - Line-X',
             html: `

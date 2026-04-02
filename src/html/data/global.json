@@ -526,13 +526,13 @@
             "08": ["assets/images/single-portfolio/ferrariland7.jpeg", "assets/images/single-portfolio/ferrariland7.jpeg"],
             "09": ["assets/images/single-portfolio/ferrariland8.jpeg", "assets/images/single-portfolio/ferrariland8.jpeg"]
         },
-         "style_5_9": {
+        "style_5_9": {
             "banner": "assets/images/portfolio/bicilab1.jpeg",
             "02": ["assets/images/single-portfolio/bicilab1.jpeg", "assets/images/single-portfolio/bicilab1.jpeg"],
             "03": ["assets/images/single-portfolio/bicilab2.jpeg", "assets/images/single-portfolio/bicilab2.jpeg"],
             "04": ["assets/images/single-portfolio/bicilab3.jpeg", "assets/images/single-portfolio/bicilab3.jpeg"],
             "05": ["assets/images/single-portfolio/bicilab4.jpeg", "assets/images/single-portfolio/bicilab4.jpeg"],
-            "06": ["assets/images/single-portfolio/bicilab5.jpeg", "assets/images/single-portfolio/ferrariland5.jpeg"]
+            "06": ["assets/images/single-portfolio/bicilab5.jpeg", "assets/images/single-portfolio/bicilab5.jpeg"]
         },
         "style_5_10": {
             "banner": "assets/images/portfolio/RoyalCaribean.jpg",
@@ -570,7 +570,6 @@
             "10": ["assets/images/single-portfolio/DES9.jpg", "assets/images/single-portfolio/DES9.jpg"],
             "11": ["assets/images/single-portfolio/DES10.jpg", "assets/images/single-portfolio/DES10.jpg"],
             "12": ["assets/images/single-portfolio/DES11.jpg", "assets/images/single-portfolio/DES11.jpg"],
-            "13": ["assets/images/single-portfolio/DES12.jpg", "assets/images/single-portfolio/DES12.jpg"],
             "14": ["assets/images/single-portfolio/DES13.jpg", "assets/images/single-portfolio/DES13.jpg"],
             "15": ["assets/images/single-portfolio/DES14.jpg", "assets/images/single-portfolio/DES14.jpg"],
             "16": ["assets/images/single-portfolio/DES15.jpg", "assets/images/single-portfolio/DES15.jpg"]
@@ -578,13 +577,8 @@
         "style_5_14": {
             "banner": "assets/images/portfolio/studiocreations.jpg",
             "02": ["assets/images/single-portfolio/SC1.jpg", "assets/images/single-portfolio/SC1.jpg"],
-            "03": ["assets/images/single-portfolio/SC2.jpg", "assets/images/single-portfolio/SC2.jpg"],
-            "04": ["assets/images/single-portfolio/SC3.jpg", "assets/images/single-portfolio/SC3.jpg"],
-            "05": ["assets/images/single-portfolio/SC4.jpg", "assets/images/single-portfolio/SC4.jpg"],
             "06": ["assets/images/single-portfolio/SC5.jpg", "assets/images/single-portfolio/SC5.jpg"],
-            "07": ["assets/images/single-portfolio/SC6.jpg", "assets/images/single-portfolio/SC6.jpg"],
             "08": ["assets/images/single-portfolio/SC7.jpg", "assets/images/single-portfolio/SC7.jpg"],
-            "09": ["assets/images/single-portfolio/SC8.jpg", "assets/images/single-portfolio/SC8.jpg"],
             "10": ["assets/images/single-portfolio/SC9.jpg", "assets/images/single-portfolio/SC9.jpg"],
             "11": ["assets/images/single-portfolio/SC10.jpg", "assets/images/single-portfolio/SC10.jpg"],
             "12": ["assets/images/single-portfolio/SC11.jpg", "assets/images/single-portfolio/SC11.jpg"]
