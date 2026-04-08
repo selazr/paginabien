@@ -70,11 +70,6 @@ app.post('/api/newsletter/subscribe', async (req, res) => {
 
         const token = crypto.randomUUID();
 
-        await Suscriptor.create({
-            email: emailLimpio,
-            token
-        });
-
         await transporter.sendMail({
             from: process.env.SMTP_USER,
             to: emailLimpio,
@@ -87,6 +82,11 @@ app.post('/api/newsletter/subscribe', async (req, res) => {
                     <a href="${FRONTEND_URL}/index.html?token=${token}">haz clic aqui</a>.
                 </p>
             `
+        });
+
+        await Suscriptor.create({
+            email: emailLimpio,
+            token
         });
 
         return res.json({ ok: true });
@@ -140,43 +140,6 @@ app.get('/api/newsletter/unsubscribe', async (req, res) => {
         if (!res.headersSent) {
             return res.status(500).json({ error: 'Error al procesar la baja' });
         }
-    }
-});
-
-// Baja manual por email
-app.post('/api/newsletter/unsubscribe', async (req, res) => {
-    const { email } = req.body;
-
-    if (!email) {
-        return res.status(400).json({ error: 'El email es obligatorio' });
-    }
-
-    try {
-        const emailLimpio = String(email).trim().toLowerCase();
-
-        const existe = await Suscriptor.findOne({ email: emailLimpio });
-
-        if (!existe) {
-            return res.status(400).json({ error: 'Este email no esta suscrito' });
-        }
-
-        await Suscriptor.deleteOne({ email: emailLimpio });
-
-        await transporter.sendMail({
-            from: process.env.SMTP_USER,
-            to: emailLimpio,
-            subject: 'Hasta pronto - Line-X',
-            html: `
-                <p>Hemos procesado tu solicitud de baja correctamente.</p>
-                <p>Si cambias de opinion, siempre puedes volver a suscribirte en nuestra <a href="${FRONTEND_URL}">web</a>.</p>
-            `
-        });
-
-        return res.json({ ok: true });
-
-    } catch (error) {
-        console.error('Error en baja manual:', error);
-        return res.status(500).json({ error: 'Error al procesar la baja' });
     }
 });
 

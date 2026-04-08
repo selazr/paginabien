@@ -31,6 +31,10 @@
         },
         "static": [
             {
+                "from": "./lang/**/*",
+                "to": "{dist}/lang"
+            },
+            {
                 "from": "{src}/static/**",
                 "to": "{dist}"
             },
@@ -92,6 +96,10 @@
             "to": "{dist}/assets/images"
         },
         "watch": [
+            {
+                "task": "static",
+                "from": "./lang/**/*"
+            },
             {
                 "task": "static",
                 "from": "{src}/static/**/*"

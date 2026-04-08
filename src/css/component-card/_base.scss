@@ -70,6 +70,12 @@
     &:focus .background-color {
         opacity: 1;
     }
+
+    &.card-no-radius {
+    .card-img {
+        border-radius: 0 !important;
+        }
+    }
 }
 
 

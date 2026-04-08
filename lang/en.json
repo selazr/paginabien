@@ -1,0 +1,333 @@
+{
+    "generales": {
+        "info": "info@lxh.es",
+        "tel": "+34 93 878 96 22",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "address_1": "Ctra. C-55. 25,",
+        "address_2": "8297 - Castellgalí (Barcelona),",
+        "aboutus": "About us",
+        "services": "Services",
+        "company": "Company",
+        "contact": "Contact",
+        "team": "Our team",
+        "projects": "Projects",
+        "privacy": "Privacy",
+        "terms_conditions": "Terms and conditions",
+        "subscribe_thanks": "Thank you for subscribing!",
+        "subscribe_confirm": "Check your email to confirm your subscription",
+        "close": "Close",
+        "unsubscribe": "Unsubscribe",
+        "unsubscribe_email": "Enter your email to cancel your subscription",
+        "cancel": "Cancel",
+        "start": "Home",
+        "project_about": "About the project",
+        "project_date": "Date",
+        "project_category": "Category",
+        "project_client": "Client",
+        "project_prev": "Previous",
+        "project_next": "Next",
+        "project_all": "All",
+        "project_label": "Project",
+        "form_email_placeholder": "Enter an e-mail *",
+        "form_submit": "send",
+        "sending": "Sending...",
+        "countdown_days": "days",
+        "brand_description": "We are specialists in architectural theming, creative design and innovation for unique and memorable spaces.",
+        "form_project_type": "Choose a project type:",
+        "form_name_placeholder": "Enter a name *",
+        "form_phone_placeholder": "Enter a phone number *",
+        "form_message_placeholder": "Message *",
+        "form_success": "Email sent successfully.",
+        "service_common_subtitle": "We turn digital models into physical pieces ready for theming, installation and real-world use.",
+        "cursor_view": "view",
+        "filter_all": "All",
+        "category_parks": "Theme parks",
+        "category_figures": "Figures",
+        "category_theming": "Theming",
+        "category_minigolf": "Minigolf",
+        "stats_projects": "Projects",
+        "stats_years": "Years",
+        "stats_clients": "Clients",
+        "stats_feedbacks": "Feedbacks",
+        "stats_partners": "Partners",
+        "view_service": "View service",
+        "view_project": "View project",
+        "play": "Play"
+    },
+    "navbar": {
+        "copyright": "© 2020 - Themebau by ."
+    },
+    "footer": {
+        "subscribe": "Subscribe to our newsletter",
+        "honeypot": "Send"
+    },
+    "newsletter": {
+        "subscribe_error": "Error while subscribing.",
+        "unsubscribe_success": "Unsubscription completed successfully.",
+        "error_generic": "Error.",
+        "open_unsubscribe": "Do you want to unsubscribe?"
+    },
+    "error404": {
+        "not_found": "Page not found",
+        "back_homepage": "We're very sorry, would you like to go back to the homepage?"
+    },
+    "home": {
+        "hero_title": "Specialised thematic design",
+        "hero_lead": "With over 15 years of experience, at LINE-X Hispania we bring theming and scenic design projects to life with speed, quality and technical precision.",
+        "contact_btn": "Contact us",
+        "projects_btn": "Our projects",
+        "about_subtitle": "Who are we?",
+        "about_title": "We have collaborated with over 50 international brands",
+        "about_lead": "At LINE-X Hispania we specialise in architectural theming and custom space design for brands, theme parks, hotels and commercial environments.",
+        "about_text": "We offer unique decorative solutions that combine creativity, functionality and high-resistance materials, ensuring every project is delivered with excellence and professionalism.",
+        "gallery_alt": "Thematic design for Katmandu Park created by LINE-X Hispania",
+        "seo_title": "LINE-X Hispania | Specialists in space theming",
+        "seo_description": "LINE-X Hispania designs and executes custom thematic projects for parks, hotels, brands and commercial spaces. Over 15 years of experience in theming, scenography and decorative architecture."
+    },
+    "sobre_nosotros": {
+        "hero_title": "Line-X Hispania.",
+        "hero_lead": "With over 20 years of experience, we have an in-depth knowledge of the industry, which allows us to carry out any type of project with excellence.",
+        "description_1": "With an innovative vision, we transform ideas into unique, high-quality projects, adapting to the specific needs of each client.",
+        "description_2": "Our experience and passion for excellence allow us to develop creative solutions in every project, from conceptualisation to final execution, guaranteeing results that exceed expectations.",
+        "brands_title": "Our projects are recognised by every brand we collaborate with",
+        "brands_text": "From an idea born on an inspiring afternoon to its materialisation after months of dedication, we are the ones who turn the project you imagine into a tangible reality that stays true to your vision.",
+        "version_extendida": {
+            "hero_subtitle": "Who are we?",
+            "intro_small": "We are..",
+            "intro_title": "Specialists in architectural theming, space design and decorative innovation",
+            "lead": "Over 15 years creating creative and technical solutions for commercial, tourism and corporate environments.",
+            "text_1": "Line-X Hispania is a company specialising in architectural theming, custom space design and innovative decorative finishes. We transform environments into unique settings for hotels, restaurants, theme parks, offices and commercial spaces, tailoring each project to the client's specific needs. We combine architecture, art and technology to deliver impactful and functional visual experiences.",
+            "text_2": "We specialise in the comprehensive theming of hotels, creating unique atmospheres that reflect the identity of each brand. From striking receptions to personalised rooms and immersive common areas, we design experiences that combine aesthetics, functionality and durability. We use high-quality materials such as fibreglass, resins and technical coatings to ensure spectacular results that withstand continuous use.",
+            "work_with_us": "Work with us"
+        }
+    },
+    "contacto": {
+        "tipos_proyecto": {
+            "modelado_3d": "3D Modelling",
+            "porex": "Foam figures",
+            "linex": "Line-X coating",
+            "animatronics": "Animatronics",
+            "maquetas": "Scale model design",
+            "otros": "Other"
+        },
+        "sedes": {
+            "espana": {
+                "title": "Spain, Barcelona",
+                "address": "Ctra. C-55 km. 25, 08297 - Castellgalí",
+                "email": "info@lxh.es",
+                "phone": "+34 93 878 96 22 / 609 02 63 65"
+            },
+            "usa": {
+                "title": "United States, Florida",
+                "address": "2250 Lucien way suite 305, 32751 - Maitland",
+                "email": "info@lxhrockwork.com",
+                "phone": "+34 93 878 96 22 / 609 02 63 65"
+            }
+        },
+        "success_message": "Email sent successfully."
+    },
+    "servicios": {
+        "slider": {
+            "cursor": "Click",
+            "slides": [
+                {
+                    "title": "Park Theming",
+                    "link": "View service"
+                },
+                {
+                    "title": "Architectural Interpretation",
+                    "link": "View service"
+                },
+                {
+                    "title": "3D Printing",
+                    "link": "View service"
+                },
+                {
+                    "title": "Large Format Figures",
+                    "link": "View service"
+                },
+                {
+                    "title": "Special Projects",
+                    "link": "View service"
+                }
+            ]
+        },
+        "tematizacion_parques": {
+            "hero_h1": "Theming of parks and spaces",
+            "hero_p": "At LXH we transform spaces into experiences. We apply high-resistance technical coatings that allow the creation of themed environments that are safe, durable and visually striking, even in the most demanding conditions.\n\nOur systems are designed to withstand intensive use, extreme weather, humidity, impacts and vandalism, maintaining their finish and colour for years. Because fantasy is great — but if it starts peeling after a month… it stops being magic.",
+            "cursor_text": "Katmandu 2018",
+            "sub_h2": "We create and theme spaces built to last...",
+            "secciones": {
+                "infantil": {
+                    "title": "Children's parks and play areas",
+                    "desc": "Manufacturing of play elements and themed structures, along with continuous anti-slip and shock-absorbing flooring. We create organic shapes such as rocks, logs and decorative figures, with finishes in bright, customisable colours that are resistant to wear and UV radiation."
+                },
+                "tematicos": {
+                    "title": "Theme parks and amusement parks",
+                    "desc": "Manufacturing and coating of scenography, sets and themed structures. Comprehensive protection of surfaces exposed to impacts, water and friction using waterproof, low-maintenance systems designed for intensive use."
+                },
+                "ocio": {
+                    "title": "Leisure and entertainment spaces",
+                    "desc": "Development of custom elements for shopping centres, recreational areas and family zones. Specific solutions for water parks, splash zones, interactive museums, escape rooms and immersive experiences, combining aesthetics, safety and durability."
+                },
+                "urbanos": {
+                    "title": "Themed urban environments",
+                    "desc": "Manufacturing and finishing of urban furniture, decorative elements and recreational areas in squares and public spaces. Aesthetic integration with the surroundings through decorative and anti-vandal solutions that prioritise durability."
+                }
+            },
+            "final": {
+                "subtitle": "How do we work?",
+                "h3": "From idea to reality, always with excellence."
+            }
+        },
+        "gran_formato": {
+            "title": "Large format figures",
+            "hero_h1": "Creation of large-format thematic pieces",
+            "hero_p": "We develop and manufacture large-format thematic pieces for leisure, hospitality and experiential space projects. We create singular elements that become visual landmarks within the space, combining volume, narrative and durability for environments with intensive use, both indoors and outdoors.",
+            "cursor_gallery": "Crab Mallorca 2019"
+        },
+        "impresion_3d": {
+            "title": "3D Printing",
+            "hero_h1": "Custom 3D printing for sculpture and theming",
+            "hero_p": "At LINE-X Hispania we develop large-scale 3D printing solutions aimed at creating sculptures, decorative elements and custom themed pieces. We transform creative concepts into precise physical pieces, optimised for subsequent finishing, reinforcement and protection, ensuring durability and technical viability."
+        },
+        "interpretacion_arquitectonica": {
+            "title": "Architectural interpretation",
+            "hero_h1": "Thematic and conceptual architectural interpretation",
+            "hero_p": "We analyse the architectural and narrative concept of each project to transform it into coherent, functional and manufacturable themed elements. We translate ideas, references and designs into real-world solutions, preserving the visual identity of the space and adapting it to technical, regulatory and intensive-use requirements."
+        }
+    },
+    "proyectos": {
+        "ballena": {
+            "title": "Iberostar Whale",
+            "description": "An impressive design project carried out by LINE-X Hispania, completed in June 2020. The centrepiece of the reception is a majestic whale figure positioned above the main staircase, creating a unique visual impact. Equipped with an internal lighting system, the whale provides an enveloping and sophisticated atmosphere, combining art and functionality to offer visitors a memorable visual experience.",
+            "date": "June, 2020",
+            "category": "Figures",
+            "client": "Iberostar Albufera"
+        },
+        "bicilab": {
+            "title": "BiciLab Counter",
+            "description": "In this project we developed the main counter for the BiciLab space, a sculptural piece made from high-performance fibreglass. This material was selected for its great resistance, formal versatility and durability in high-use environments. The organic, fluid design of the counter integrates harmoniously with the contemporary language of the museum, serving as a welcoming reference point for visitors. The result is a unique piece that combines aesthetics, functionality and technology applied to spatial design.",
+            "date": "June 21, 2018",
+            "category": "Architecture and design",
+            "client": "BiciLab"
+        },
+        "capitel": {
+            "title": "Harry Potter Capital",
+            "description": "We created the capital located at the top of the Harry Potter tower, a work that reflects our perfectionism and attention to detail. This dedication to craftsmanship is replicated across many of our projects, always highlighting our passion for excellence.",
+            "date": "June 10, 2008",
+            "category": "Theme parks",
+            "client": "Epic Universe"
+        },
+        "desierto": {
+            "title": "Desert Template",
+            "description": "We created an architectural element inspired by desert aesthetics, a work that reflects our perfectionism and attention to detail. Its shapes, textures and finishes evoke the essence of arid landscapes and time-eroded constructions. This dedication to craftsmanship is replicated across many of our projects, always highlighting our passion for excellence.",
+            "date": "June 20, 202X",
+            "category": "Architecture",
+            "client": "NClient"
+        },
+        "enigma": {
+            "title": "Enigma Space",
+            "description": "In this project we recreated the entire theming of the Enigma restaurant using fibreglass coatings. This material was selected for its exceptional resistance and durability, ensuring the pieces withstand the test of time and constant use. We worked in collaboration with the restaurant's team to design elements that combine innovative aesthetics and functionality, creating a unique experience for diners.",
+            "date": "June 21, 2018",
+            "category": "Themed interiors",
+            "client": "Enigma"
+        },
+        "eurocamping": {
+            "title": "Eurocamping",
+            "description": "In our minigolf project at Eurocamping, we created an outdoor space designed to offer a unique and immersive experience. Each hole was carefully crafted to guarantee fun and challenge, with themed landscapes, decorative formations and an appealing design for players of all ages.",
+            "date": "October, 2023",
+            "category": "Minigolf",
+            "client": "Eurocamping"
+        },
+        "ferrariland": {
+            "title": "Ferrariland",
+            "description": "Comprehensive development of the theming for the Ferrariland commercial space, including the manufacturing of themed furniture, custom decorative elements and technical coatings. High-resistance materials and durable finishes were used to ensure a striking and functional aesthetic, faithful to Ferrari's visual identity and designed for high-traffic spaces.",
+            "date": "October, 2023",
+            "category": "Theming",
+            "client": "Ferrariland"
+        },
+        "garzas": {
+            "title": "Iberostar Herons",
+            "description": "In this project we created large-scale pieces, such as the imposing whale on the staircase and the majestic herons adorning the lobby. We also developed a detailed interior theming, capturing the unique essence of this wonderful paradise hotel. Each element was designed with precision and care, providing an impressive visual experience that complements the atmosphere of luxury and relaxation.",
+            "date": "June 10, 2008",
+            "category": "Figures",
+            "client": "Iberostar Albufera"
+        },
+        "katlantis": {
+            "title": "Katlantis",
+            "description": "Katlantis is a sculptural installation integrated into the theme park of a luxury hotel resort. This project fuses art, marine fantasy and functional architecture to create an immersive experience for hotel guests, especially designed for families. The design centres on a large central sculpture representing a sea shell inhabited by a mythological creature, from which a waterfall flows and naturally integrates into the aquatic scenography.",
+            "date": "June 21, 2018",
+            "category": "Hotel Theming",
+            "client": "Katmandu"
+        },
+        "katmandu_park": {
+            "title": "Katmandu Park",
+            "description": "In this project all the themed pieces for the 'Haunted House' at Katmandu Park were created, giving it a spooky yet fun feel for all ages.",
+            "date": "June 10, 2008",
+            "category": "Theme park",
+            "client": "Katmandu"
+        },
+        "katmandu_inverso": {
+            "title": "Inverse Katmandu",
+            "description": "We brought the Inverse Katmandu concept to life, a structure that demands a perfect balance between technical boldness and artisanal precision. This project is a clear example of our ability to handle technical complexity with rigour, always maintaining the standard of excellence we apply to each of our developments.",
+            "date": "June 10, 2008",
+            "category": "Theme parks",
+            "client": "Katmandu"
+        },
+        "minigolf_pirata": {
+            "title": "Pirate Minigolf",
+            "description": "We developed the pirate minigolf complex, a work where thematic architecture and recreational engineering merge under impeccable technical execution. This project stands out for our ability to integrate highly complex immersive environments with exceptional durability, reaffirming our commitment to quality in every construction detail.",
+            "date": "June 10, 2008",
+            "category": "Theme parks",
+            "client": "Camping Sant"
+        },
+        "moon": {
+            "title": "Lucianno's",
+            "description": "A theming project developed by LINE-X Hispania, inspired by the lunar surface to create an immersive and futuristic experience. The setting accurately reproduces the texture of the Moon, combining striking visual elements and high-quality finishes. The transformation of the space demonstrates LINE-X Hispania's commitment to innovation in theming for the entertainment and restaurant sector.",
+            "date": "December 11, 2020",
+            "category": "Theming",
+            "client": "Lucianno's"
+        },
+        "busch_gardens": {
+            "title": "Busch Gardens",
+            "description": "In this project we brought the legendary Nessie to life — the Loch Ness Monster — which you can see as you ride the thrilling attraction at Busch Gardens Williamsburg. With an impressive level of detail, every aspect of Nessie has been designed to immerse visitors in a unique and spine-chilling experience. From her imposing appearance to her surprising realism, this recreation promises to terrify and amaze all those brave enough to face the roller coaster.",
+            "date": "June 10, 2018",
+            "category": "Theme park",
+            "client": "Busch Gardens Williamsburg"
+        },
+        "elrow": {
+            "title": "Elrow 2024",
+            "description": "A theming project carried out by LINE-X Hispania for the Elrow event, held on 11 February 2024. The proposal transforms the space into a unique visual and sensory experience, with vibrant decorations, impressive structures and an enveloping atmosphere that reflects the festive and psychedelic essence characteristic of Elrow. LINE-X Hispania once again demonstrates its ability to create high-impact immersive settings in the entertainment industry.",
+            "date": "February 11, 2024",
+            "category": "Theming",
+            "client": "Elrow"
+        },
+        "royal_caribbean": {
+            "title": "Royal Caribbean x Pere Gifre",
+            "description": "In this project we developed the main counter for the BiciLab space, a sculptural piece made from high-performance fibreglass. This material was selected for its great resistance, formal versatility and durability in high-use environments. The organic, fluid design of the counter integrates harmoniously with the contemporary language of the museum, serving as a welcoming reference point for visitors.",
+            "date": "June 21, 2018",
+            "category": "Architecture and design",
+            "client": "Royal Caribbean"
+        },
+        "spa_iberostar": {
+            "title": "Iberostar SPA",
+            "description": "A comprehensive renovation project for the heated indoor pool, focused on enhancing the guest experience and bringing the space in line with the hotel's category. The concept transforms the SPA into a contemporary semi-subterranean cave, where water, earth and vegetation create an enveloping and relaxing atmosphere. A marés stone wall with a jet circuit is incorporated, along with acoustic solutions to improve sound comfort and sustainable teak wood furniture.",
+            "date": "June 21, 2018",
+            "category": "Architecture",
+            "client": "Iberostar"
+        },
+        "studio_creations": {
+            "title": "Studio & Creations Template",
+            "description": "We created a unique theming for the Studio and Creations space, a work that reflects our perfectionism and attention to detail. This environment, full of unexpected shapes, expressive volumes and elements that challenge convention, gives rise to an experience that is hard to define but impossible to ignore. This dedication to craftsmanship is replicated across many of our projects, always highlighting our passion for excellence.",
+            "date": "June 20, 202X",
+            "category": "Architecture",
+            "client": "NClient"
+        }
+    },
+    "listado_general": {
+        "cursor_view": "view"
+    }
+}

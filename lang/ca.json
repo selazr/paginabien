@@ -1,0 +1,333 @@
+{
+    "generales": {
+        "info": "info@lxh.es",
+        "tel": "+34 93 878 96 22",
+        "email": "Correu",
+        "phone": "Telèfon",
+        "address": "Adreça",
+        "address_1": "Ctra. C-55. 25,",
+        "address_2": "8297 - Castellgalí (Barcelona),",
+        "aboutus": "Sobre nosaltres",
+        "services": "Serveis",
+        "company": "Empresa",
+        "contact": "Contacte",
+        "team": "El nostre equip",
+        "projects": "Projectes",
+        "privacy": "Privacitat",
+        "terms_conditions": "Termes i condicions",
+        "subscribe_thanks": "Gràcies per subscriure't!",
+        "subscribe_confirm": "Revisa el teu correu per confirmar la teva subscripció",
+        "close": "Tancar",
+        "unsubscribe": "Donar-se de baixa",
+        "unsubscribe_email": "Introdueix el teu correu electrònic per cancel·lar la subscripció",
+        "cancel": "Cancel·lar",
+        "start": "Inici",
+        "project_about": "Sobre el projecte",
+        "project_date": "Data",
+        "project_category": "Categoria",
+        "project_client": "Client",
+        "project_prev": "Anterior",
+        "project_next": "Següent",
+        "project_all": "Tots",
+        "project_label": "Projecte",
+        "form_email_placeholder": "Introdueix un e-mail *",
+        "form_submit": "enviar",
+        "sending": "Enviant...",
+        "countdown_days": "dies",
+        "brand_description": "Especialistes en tematització arquitectònica, disseny creatiu i innovació per a espais únics i memorables.",
+        "form_project_type": "Tria un tipus de projecte:",
+        "form_name_placeholder": "Introdueix un nom *",
+        "form_phone_placeholder": "Introdueix un telèfon *",
+        "form_message_placeholder": "Missatge *",
+        "form_success": "Correu enviat correctament.",
+        "service_common_subtitle": "Convertim models digitals en peces físiques llestes per a tematització, instal·lació i ús real.",
+        "cursor_view": "veure",
+        "filter_all": "Tots",
+        "category_parks": "Parcs temàtics",
+        "category_figures": "Figures",
+        "category_theming": "Tematització",
+        "category_minigolf": "Minigolf",
+        "stats_projects": "Projectes",
+        "stats_years": "Anys",
+        "stats_clients": "Clients",
+        "stats_feedbacks": "Feedbacks",
+        "stats_partners": "Socis",
+        "view_service": "Veure servei",
+        "view_project": "Veure projecte",
+        "play": "Play"
+    },
+    "navbar": {
+        "copyright": "© 2020 - Themebau by ."
+    },
+    "footer": {
+        "subscribe": "Subscriu-te al nostre newsletter",
+        "honeypot": "Enviar"
+    },
+    "newsletter": {
+        "subscribe_error": "Error en subscriure's.",
+        "unsubscribe_success": "Baixa tramitada correctament.",
+        "error_generic": "Error.",
+        "open_unsubscribe": "Vols donar-te de baixa?"
+    },
+    "error404": {
+        "not_found": "Pàgina no trobada",
+        "back_homepage": "Ho sentim molt, vols tornar a la pàgina d'inici?"
+    },
+    "home": {
+        "hero_title": "Disseny temàtic especialitzat",
+        "hero_lead": "Amb més de 15 anys d'experiència, a LINE-X Hispania donem vida a projectes de tematització i disseny escènic amb rapidesa, qualitat i precisió tècnica.",
+        "contact_btn": "Contacta'ns",
+        "projects_btn": "Els nostres projectes",
+        "about_subtitle": "Qui som?",
+        "about_title": "Hem col·laborat amb més de 50 marques internacionals",
+        "about_lead": "A LINE-X Hispania som especialistes en tematització arquitectònica i disseny d'espais personalitzats per a marques, parcs temàtics, hotels i entorns comercials.",
+        "about_text": "Oferim solucions decoratives úniques que combinen creativitat, funcionalitat i materials d'alta resistència, assegurant que cada projecte es lliuri amb excel·lència i professionalisme.",
+        "gallery_alt": "Disseny temàtic del parc Katmandú realitzat per LINE-X Hispania",
+        "seo_title": "LINE-X Hispania | Especialistes en tematització d'espais",
+        "seo_description": "LINE-X Hispania dissenya i executa projectes temàtics personalitzats per a parcs, hotels, marques i espais comercials. Més de 15 anys d'experiència en tematització, escenografia i arquitectura decorativa."
+    },
+    "sobre_nosotros": {
+        "hero_title": "Line-X Hispania.",
+        "hero_lead": "Amb més de 20 anys d'experiència, comptem amb un profund coneixement en la indústria, la qual cosa ens permet dur a terme qualsevol tipus de projecte amb excel·lència.",
+        "description_1": "Amb una visió innovadora, transformem idees en projectes únics i d'alta qualitat, adaptant-nos a les necessitats específiques de cada client.",
+        "description_2": "La nostra experiència i passió per l'excel·lència ens permeten desenvolupar solucions creatives en cada projecte, des de la conceptualització fins a l'execució final, garantint resultats que superen les expectatives.",
+        "brands_title": "Els nostres projectes són reconeguts per cadascuna de les marques amb les quals col·laborem",
+        "brands_text": "Des d'una idea nascuda en una tarda inspiradora fins a la seva materialització després de mesos de dedicació, som els encarregats de convertir aquell projecte que imagines en una realitat tangible i fidel a la teva visió.",
+        "version_extendida": {
+            "hero_subtitle": "Qui som?",
+            "intro_small": "Som..",
+            "intro_title": "Especialistes en tematització arquitectònica, disseny d'espais i innovació decorativa",
+            "lead": "Més de 15 anys creant solucions creatives i tècniques per a entorns comercials, turístics i corporatius.",
+            "text_1": "Line-X Hispania és una empresa especialitzada en tematització arquitectònica, disseny d'espais personalitzats i acabats decoratius innovadors. Transformem ambients en escenaris únics per a hotels, restaurants, parcs temàtics, oficines i espais comercials, adaptant cada projecte a les necessitats específiques del client. Combinem arquitectura, art i tecnologia per oferir experiències visuals impactants i funcionals.",
+            "text_2": "Ens especialitzem en la tematització integral d'hotels, creant ambients únics que reflecteixen la identitat de cada marca. Des de recepcions impactants fins a habitacions personalitzades i zones comunes immersives, dissenyem experiències que combinen estètica, funcionalitat i durabilitat. Utilitzem materials d'alta qualitat com fibra de vidre, resines i revestiments tècnics per garantir resultats espectaculars i resistents a l'ús continuat.",
+            "work_with_us": "Treballa amb nosaltres"
+        }
+    },
+    "contacto": {
+        "tipos_proyecto": {
+            "modelado_3d": "Modelat 3D",
+            "porex": "Figures amb porex",
+            "linex": "Recobriment amb Line-X",
+            "animatronics": "Animatrònica",
+            "maquetas": "Disseny de maquetes",
+            "otros": "Altres"
+        },
+        "sedes": {
+            "espana": {
+                "title": "Espanya, Barcelona",
+                "address": "Ctra. C-55 km. 25, 08297 - Castellgalí",
+                "email": "info@lxh.es",
+                "phone": "+34 93 878 96 22 / 609 02 63 65"
+            },
+            "usa": {
+                "title": "Estats Units, Florida",
+                "address": "2250 Lucien way suite 305, 32751 - Maitlands",
+                "email": "info@lxhrockwork.com",
+                "phone": "+34 93 878 96 22 / 609 02 63 65"
+            }
+        },
+        "success_message": "Correu enviat correctament."
+    },
+    "servicios": {
+        "slider": {
+            "cursor": "Click",
+            "slides": [
+                {
+                    "title": "Tematització de Parcs",
+                    "link": "Veure servei"
+                },
+                {
+                    "title": "Interpretació Arquitectònica",
+                    "link": "Veure servei"
+                },
+                {
+                    "title": "Impressió 3D",
+                    "link": "Veure servei"
+                },
+                {
+                    "title": "Figures de Gran Format",
+                    "link": "Veure servei"
+                },
+                {
+                    "title": "Projectes Especials",
+                    "link": "Veure servei"
+                }
+            ]
+        },
+        "tematizacion_parques": {
+            "hero_h1": "Tematització de parcs i espais",
+            "hero_p": "A LXH transformem espais en experiències. Apliquem recobriments tècnics d'alta resistència que permeten crear entorns temàtics segurs, duradors i visualment impactants, fins i tot en les condicions més exigents.\n\nEls nostres sistemes estan dissenyats per suportar un ús intensiu, climatologia extrema, humitat, impactes i vandalisme, mantenint el seu acabat i color durant anys. Perquè la fantasia és molt bonica, però si es pela al cap d'un mes… deixa de ser màgia.",
+            "cursor_text": "Katmandu 2018",
+            "sub_h2": "Creem i tematitzem espais pensats per durar...",
+            "secciones": {
+                "infantil": {
+                    "title": "Parcs infantils i àrees de joc",
+                    "desc": "Fabricació d'elements de joc i estructures tematitzades, juntament amb terres continus antilliscants i amortidors. Creem formes orgàniques com roques, troncs o figures decoratives, amb acabats en colors vius i personalitzables, resistents al desgast i a la radiació UV."
+                },
+                "tematicos": {
+                    "title": "Parcs temàtics i d'atraccions",
+                    "desc": "Fabricació i revestiment d'escenografies, decorats i estructures tematitzades. Protecció integral de superfícies exposades a impactes, aigua i fricció mitjançant sistemes impermeables i de fàcil manteniment, preparats per a ús intensiu."
+                },
+                "ocio": {
+                    "title": "Espais d'oci i entreteniment",
+                    "desc": "Desenvolupament d'elements personalitzats per a centres comercials, zones recreatives i àrees familiars. Solucions específiques per a parcs aquàtics, zones splash, museus interactius, escape rooms i experiències immersives, combinant estètica, seguretat i resistència."
+                },
+                "urbanos": {
+                    "title": "Entorns urbans tematitzats",
+                    "desc": "Fabricació i acabat de mobiliari urbà, elements decoratius i zones recreatives en places i espais públics. Integració estètica amb l'entorn mitjançant solucions decoratives i antivandalisme que prioritzen la durabilitat."
+                }
+            },
+            "final": {
+                "subtitle": "Com treballem?",
+                "h3": "Des de la idea fins a la realitat, sempre amb excel·lència."
+            }
+        },
+        "gran_formato": {
+            "title": "Figures de gran format",
+            "hero_h1": "Creació de peces temàtiques de gran format",
+            "hero_p": "Desenvolupem i fabricem peces temàtiques de gran format per a projectes d'oci, hospitalitat i espais experiencials. Creem elements singulars que es converteixen en fites visuals de l'espai, combinant volum, narrativa i resistència per a entorns d'ús intensiu, tant en interior com en exterior.",
+            "cursor_gallery": "Cranc Mallorca 2019"
+        },
+        "impresion_3d": {
+            "title": "Impressió 3D",
+            "hero_h1": "Impressió 3D personalitzada per a escultura i tematització",
+            "hero_p": "A LINE-X Hispania desenvolupem solucions d'impressió 3D a gran escala orientades a la creació d'escultures, elements decoratius i peces tematitzades personalitzades. Transformem conceptes creatius en peces físiques precises, optimitzades per al seu posterior acabat, reforç i protecció, garantint durabilitat i viabilitat tècnica."
+        },
+        "interpretacion_arquitectonica": {
+            "title": "Interpretació arquitectònica",
+            "hero_h1": "Interpretació arquitectònica temàtica i conceptual",
+            "hero_p": "Analitzem el concepte arquitectònic i narratiu de cada projecte per transformar-lo en elements tematitzats coherents, funcionals i fabricables. Traduïm idees, referències i dissenys en solucions reals, mantenint la identitat visual de l'espai i adaptant-la a criteris tècnics, normatius i d'ús intensiu."
+        }
+    },
+    "proyectos": {
+        "ballena": {
+            "title": "Balena Iberostar",
+            "description": "Un impressionant projecte de disseny realitzat per LINE-X Hispania, finalitzat el juny de 2020. La peça central de la recepció és una majestuosa figura de balena situada sobre l'escala principal, creant un impacte visual únic. Equipada amb un sistema d'il·luminació interna, la balena aporta una atmosfera envoltant i sofisticada, combinant art i funcionalitat per oferir una experiència visual memorable als visitants.",
+            "date": "Juny, 2020",
+            "category": "Figures",
+            "client": "Iberostar Albufera"
+        },
+        "bicilab": {
+            "title": "Taulell BiciLab",
+            "description": "En aquest projecte desenvolupem el taulell principal de l'espai BiciLab, una peça escultòrica realitzada en fibra de vidre d'alt rendiment. Aquest material va ser seleccionat per la seva gran resistència, versatilitat formal i durabilitat en entorns d'ús intensiu. El disseny orgànic i fluid del taulell s'integra harmònicament amb el llenguatge contemporani del museu, servint com a punt d'acollida i referència per als visitants. El resultat és una peça única que combina estètica, funcionalitat i tecnologia aplicada al disseny espacial.",
+            "date": "Juny 21, 2018",
+            "category": "Arquitectura i disseny",
+            "client": "BiciLab"
+        },
+        "capitel": {
+            "title": "Capitel Harry Potter",
+            "description": "Hem creat el capitel situat al cim de la torre de Harry Potter, una obra que reflecteix el nostre perfeccionisme i atenció al detall. Aquesta dedicació al treball artesanal es replica en molts dels nostres projectes, destacant sempre la nostra passió per l'excel·lència.",
+            "date": "Juny 10, 2008",
+            "category": "Parcs temàtics",
+            "client": "Epic Universe"
+        },
+        "desierto": {
+            "title": "Plantilla Desert",
+            "description": "Hem creat un element arquitectònic inspirat en l'estètica del desert, una obra que reflecteix el nostre perfeccionisme i atenció al detall. Les seves formes, textures i acabats evoquen l'essència de paisatges àrids i construccions erosionades pel temps. Aquesta dedicació al treball artesanal es replica en molts dels nostres projectes, destacant sempre la nostra passió per l'excel·lència.",
+            "date": "Juny 20, 202X",
+            "category": "Arquitectura",
+            "client": "NCliente"
+        },
+        "enigma": {
+            "title": "Espai enigma",
+            "description": "En aquest projecte, hem recreat tota la tematització del restaurant Enigma, emprant recobriments en fibra de vidre. Aquest material va ser seleccionat per la seva excepcional resistència i durabilitat, assegurant que les peces suportin el pas del temps i l'ús constant. Vam treballar en col·laboració amb l'equip del restaurant per dissenyar elements que combinen una estètica innovadora i funcionalitat, creant una experiència única per als comensals.",
+            "date": "Juny 21, 2018",
+            "category": "Interiors tematitzats",
+            "client": "Enigma"
+        },
+        "eurocamping": {
+            "title": "Eurocamping",
+            "description": "En el nostre projecte de minigolf a Eurocamping, hem creat un espai a l'aire lliure dissenyat per oferir una experiència única i envoltant. Cada forat ha estat acuradament elaborat per garantir diversió i desafiament, amb paisatges temàtics, formacions decoratives i un disseny atractiu per a jugadors de totes les edats.",
+            "date": "Octubre, 2023",
+            "category": "Minigolf",
+            "client": "Eurocamping"
+        },
+        "ferrariland": {
+            "title": "Ferrariland",
+            "description": "Desenvolupament integral de la tematització de l'espai comercial de Ferrariland, incloent-hi la fabricació de mobiliari temàtic, elements decoratius personalitzats i revestiments tècnics. Es van utilitzar materials d'alta resistència i acabats duradors per garantir una estètica impactant i funcional, fidel a la identitat visual de Ferrari i pensada per a espais d'alta concurrència.",
+            "date": "Octubre, 2023",
+            "category": "Tematització",
+            "client": "Ferrariland"
+        },
+        "garzas": {
+            "title": "Agrons Iberostar",
+            "description": "En aquest projecte, hem creat peces de gran envergadura, com l'imponent balena situada a les escales i els majestuosos agrons que adornen el vestíbul. A més, vam desenvolupar una tematització detallada de l'interior, aconseguint capturar l'essència única d'aquest meravellós hotel paradisíac. Cada element ha estat dissenyat amb precisió i cura, aportant una experiència visual impressionant que complementa l'atmosfera de luxe i relaxació del lloc.",
+            "date": "Juny 10, 2008",
+            "category": "Figures",
+            "client": "Iberostar Albufera"
+        },
+        "katlantis": {
+            "title": "Katlantis",
+            "description": "Katlantis és una instal·lació escultòrica integrada en el parc temàtic d'un resort hoteler de luxe. Aquest projecte fusiona art, fantasia marina i arquitectura funcional per crear una experiència immersiva per als hostes de l'hotel, especialment pensada per al públic familiar. El disseny se centra en una gran escultura central que representa una petxina marina habitada per una criatura mitològica, de la qual emana una cascada que s'integra naturalment en l'escenografia aquàtica.",
+            "date": "Juny 21, 2018",
+            "category": "Tematització d'Hotels",
+            "client": "Katmandu"
+        },
+        "katmandu_park": {
+            "title": "Katmandú Park",
+            "description": "En aquest projecte es van realitzar totes les peces temàtiques de la 'Casa encantada' al Katmandú Park donant-li un enfocament tenebrós i divertit per a totes les edats.",
+            "date": "Juny 10, 2008",
+            "category": "Parc temàtic",
+            "client": "Katmandú"
+        },
+        "katmandu_inverso": {
+            "title": "Katmandu invers",
+            "description": "Hem materialitzat el concepte del Katmandú invers, una estructura que exigeix un equilibri perfecte entre audàcia tècnica i precisió artesanal. Aquest projecte és un clar exponent de la nostra capacitat per gestionar la complexitat tècnica amb rigor, mantenint sempre l'estàndard d'excel·lència que apliquem en cadascun dels nostres desenvolupaments.",
+            "date": "Juny 10, 2008",
+            "category": "Parcs temàtics",
+            "client": "Katmandu"
+        },
+        "minigolf_pirata": {
+            "title": "Minigolf Pirata",
+            "description": "Hem desenvolupat el complex de minigolf pirata, una obra on l'arquitectura temàtica i l'enginyeria recreativa es fusionen sota una execució tècnica impecable. Aquest projecte destaca per la nostra capacitat d'integrar entorns immersius d'alta complexitat amb una durabilitat excepcional, reafirmant el nostre compromís amb la qualitat en cada detall constructiu.",
+            "date": "Juny 10, 2008",
+            "category": "Parcs temàtics",
+            "client": "Camping sant"
+        },
+        "moon": {
+            "title": "Lucianno's",
+            "description": "Un projecte de tematització desenvolupat per LINE-X Hispania, inspirat en la superfície lunar per crear una experiència immersiva i futurista. L'ambientació reprodueix amb precisió la textura de la Lluna, combinant elements visuals impactants i acabats d'alta qualitat. La transformació de l'espai demostra el compromís de LINE-X Hispania amb la innovació en tematització per al sector de l'entreteniment i la restauració.",
+            "date": "Desembre 11, 2020",
+            "category": "Tematització",
+            "client": "Lucianno's"
+        },
+        "busch_gardens": {
+            "title": "Busch Gardens",
+            "description": "En aquest projecte, hem donat vida a la llegendària Nessie, la criatura del Llac Ness, que podràs veure en muntar a l'emocionant atracció del Busch Gardens Williamsburg. Amb un nivell de detall impressionant, cada aspecte de Nessie ha estat dissenyat per submergir els visitants en una experiència única i esgarrifosa. Des de la seva aparença imponent fins al seu realisme sorprenent, aquesta recreació promet aterrir i impactar tots els valents que s'atreveixin a enfrontar la muntanya russa.",
+            "date": "Juny 10, 2018",
+            "category": "Parc temàtic",
+            "client": "Busch Gardens Williamsburg"
+        },
+        "elrow": {
+            "title": "Elrow 2024",
+            "description": "Un projecte de tematització dut a terme per LINE-X Hispania per a l'esdeveniment Elrow, celebrat l'11 de febrer de 2024. La proposta transforma l'espai en una experiència visual i sensorial única, amb decoracions vibrants, estructures impressionants i una ambientació envoltant que reflecteix l'essència festiva i psicodèlica característica d'Elrow. LINE-X Hispania demostra un cop més la seva capacitat per crear escenaris immersius de gran impacte en la indústria de l'entreteniment.",
+            "date": "Febrer 11, 2024",
+            "category": "Tematització",
+            "client": "Elrow"
+        },
+        "royal_caribbean": {
+            "title": "Royal Caribean x Pere Gifre",
+            "description": "En aquest projecte desenvolupem el taulell principal de l'espai BiciLab, una peça escultòrica realitzada en fibra de vidre d'alt rendiment. Aquest material va ser seleccionat per la seva gran resistència, versatilitat formal i durabilitat en entorns d'ús intensiu. El disseny orgànic i fluid del taulell s'integra harmònicament amb el llenguatge contemporani del museu, servint com a punt d'acollida i referència per als visitants.",
+            "date": "Juny 21, 2018",
+            "category": "Arquitectura i disseny",
+            "client": "Royal Caribean"
+        },
+        "spa_iberostar": {
+            "title": "Iberostar SPA",
+            "description": "Projecte de renovació integral de la piscina interior climatitzada, enfocat a elevar l'experiència del client i adequar l'espai a la categoria de l'hotel. El concepte transforma el SPA en una cova contemporània semisoterrrada, on l'aigua, la terra i la vegetació creen una atmosfera envoltant i relaxant. S'incorpora una paret de marès amb circuit de dols d'aigua, solucions acústiques per millorar el confort sonor i mobiliari sostenible en fusta de teca.",
+            "date": "Juny 21, 2018",
+            "category": "Arquitectura",
+            "client": "Iberostar"
+        },
+        "studio_creations": {
+            "title": "Plantilla Studio & Creations",
+            "description": "Hem creat una tematització única per a l'espai de Studio and Creations, una obra que reflecteix el nostre perfeccionisme i atenció al detall. Aquest entorn, ple de formes inesperades, volums expressius i elements que desafien allò convencional, dona lloc a una experiència difícil de definir però impossible d'ignorar. Aquesta dedicació al treball artesanal es replica en molts dels nostres projectes, destacant sempre la nostra passió per l'excel·lència.",
+            "date": "Juny 20, 202X",
+            "category": "Arquitectura",
+            "client": "NCliente"
+        }
+    },
+    "listado_general": {
+        "cursor_view": "veure"
+    }
+}
