@@ -23,9 +23,9 @@
         "cancel": "Cancel",
         "start": "Home",
         "project_about": "About the project",
-        "project_date": "Date",
-        "project_category": "Category",
-        "project_client": "Client",
+        "project_date": "Date:",
+        "project_category": "Category:",
+        "project_client": "Client:",
         "project_prev": "Previous",
         "project_next": "Next",
         "project_all": "All",
@@ -36,11 +36,13 @@
         "countdown_days": "days",
         "brand_description": "We are specialists in architectural theming, creative design and innovation for unique and memorable spaces.",
         "form_project_type": "Choose a project type:",
+        "park_description": "Theme parks and leisure parks",
         "form_name_placeholder": "Enter a name *",
         "form_phone_placeholder": "Enter a phone number *",
         "form_message_placeholder": "Message *",
         "form_success": "Email sent successfully.",
         "service_common_subtitle": "We turn digital models into physical pieces ready for theming, installation and real-world use.",
+        "service_singular": "service",
         "cursor_view": "view",
         "filter_all": "All",
         "category_parks": "Theme parks",
@@ -54,7 +56,17 @@
         "stats_partners": "Partners",
         "view_service": "View service",
         "view_project": "View project",
-        "play": "Play"
+        "play": "Play",
+        "services_theming": "Theming of parks and spaces",
+        "services_3d": "3D Printing",
+        "services_format": "Large format figures",
+        "services_arch": "Architectural interpretation",
+        "coming_soon_title": "Coming Soon",
+        "terminos": "Terms and Conditions",
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds"
     },
     "navbar": {
         "copyright": "© 2020 - Themebau by ."
@@ -128,6 +140,9 @@
         },
         "success_message": "Email sent successfully."
     },
+    "coming_soon": {
+        "title": "We will be here soon with this section. Subscribe to receive notifications."
+    },
     "servicios": {
         "slider": {
             "cursor": "Click",
@@ -186,17 +201,72 @@
             "title": "Large format figures",
             "hero_h1": "Creation of large-format thematic pieces",
             "hero_p": "We develop and manufacture large-format thematic pieces for leisure, hospitality and experiential space projects. We create singular elements that become visual landmarks within the space, combining volume, narrative and durability for environments with intensive use, both indoors and outdoors.",
-            "cursor_gallery": "Crab Mallorca 2019"
+            "cursor_gallery": "Crab Mallorca 2019",
+            "secciones": {
+                "parques": {
+                    "desc": "Manufacture of large-scale elements such as scenography, themed structures and iconic pieces that reinforce the park's identity and the visitor experience."
+                },
+                "hospitality": {
+                    "title": "Hotels and hospitality spaces",
+                    "desc": "Creation of themed pieces for common areas, pools, children's zones and experiential spaces, providing aesthetic differentiation and coherence with the establishment's concept."
+                },
+                "minigolf": {
+                    "title": "Minigolf and playful experiences",
+                    "desc": "Development of obstacles, routes and large-format decorative elements designed to integrate into themed play experiences, resistant to impact and continuous use."
+                },
+                "temporales": {
+                    "title": "Situational and temporary projects",
+                    "desc": "Manufacture of special pieces for events, brand activations and temporary projects, adapted to the space, the concept, and installation and dismantling times."
+                }
+            }
         },
         "impresion_3d": {
             "title": "3D Printing",
             "hero_h1": "Custom 3D printing for sculpture and theming",
-            "hero_p": "At LINE-X Hispania we develop large-scale 3D printing solutions aimed at creating sculptures, decorative elements and custom themed pieces. We transform creative concepts into precise physical pieces, optimised for subsequent finishing, reinforcement and protection, ensuring durability and technical viability."
+            "hero_p": "At LINE-X Hispania we develop large-scale 3D printing solutions aimed at creating sculptures, decorative elements and custom themed pieces. We transform creative concepts into precise physical pieces, optimised for subsequent finishing, reinforcement and protection, ensuring durability and technical viability.",
+            "secciones": {
+                "esculturas": {
+                    "title": "Manufacture of sculptures and decorative elements",
+                    "desc": "Production of custom 3D pieces for theme parks, leisure spaces, urban environments and architectural projects, adapted to complex shapes and organic designs."
+                },
+                "prototipado": {
+                    "title": "Prototyping and bespoke pieces",
+                    "desc": "Design of pieces intended for reinforcement, assembly and final finishing, ensuring stability, durability and compatibility with technical coatings."
+                },
+                "optimizacion": {
+                    "title": "Structural and technical optimisation",
+                    "desc": "Design and preparation of models optimised for large-scale printing, reducing weight, improving manufacturing times and ensuring technical viability."
+                },
+                "acabados": {
+                    "title": "Integration with protection and finishing systems",
+                    "desc": "Preparation of the pieces for final theming through resistant coatings, decorative finishes and long-lasting treatments for exterior and interior use."
+                }
+            }
         },
         "interpretacion_arquitectonica": {
             "title": "Architectural interpretation",
             "hero_h1": "Thematic and conceptual architectural interpretation",
-            "hero_p": "We analyse the architectural and narrative concept of each project to transform it into coherent, functional and manufacturable themed elements. We translate ideas, references and designs into real-world solutions, preserving the visual identity of the space and adapting it to technical, regulatory and intensive-use requirements."
+            "hero_p": "We analyse the architectural and narrative concept of each project to transform it into coherent, functional and manufacturable themed elements. We translate ideas, references and designs into real-world solutions, preserving the visual identity of the space and adapting it to technical, regulatory and intensive-use requirements.",
+            "cursor_gallery": "Katmandu cave scene 2021",
+            "sub_h2": "We interpret architectural and conceptual projects for their application in high-traffic themed spaces.",
+            "secciones": {
+                "concepto": {
+                    "title": "Development of the thematic concept",
+                    "desc": "Interpretation of the architectural and creative language of the project to define forms, volumes, textures and finishes consistent with the theme and the intended experience."
+                },
+                "tecnica": {
+                    "title": "Technical and constructive adaptation",
+                    "desc": "We transform the concept into viable solutions, selecting suitable materials and systems to guarantee safety, durability and regulatory compliance."
+                },
+                "integracion": {
+                    "title": "Integration into the environment",
+                    "desc": "Design of elements that integrate naturally into the architectural and urban space, respecting the context and reinforcing the user experience."
+                },
+                "coherencia": {
+                    "title": "Aesthetic and functional coherence",
+                    "desc": "Balance between design, durability and maintenance, ensuring each element fulfils its function without losing visual impact over time."
+                }
+            }
         }
     },
     "proyectos": {
@@ -218,15 +288,15 @@
             "title": "Harry Potter Capital",
             "description": "We created the capital located at the top of the Harry Potter tower, a work that reflects our perfectionism and attention to detail. This dedication to craftsmanship is replicated across many of our projects, always highlighting our passion for excellence.",
             "date": "June 10, 2008",
-            "category": "Theme parks",
+            "category": "Theme park",
             "client": "Epic Universe"
         },
         "desierto": {
-            "title": "Desert Template",
+            "title": "Obelisk Terra Mitica",
             "description": "We created an architectural element inspired by desert aesthetics, a work that reflects our perfectionism and attention to detail. Its shapes, textures and finishes evoke the essence of arid landscapes and time-eroded constructions. This dedication to craftsmanship is replicated across many of our projects, always highlighting our passion for excellence.",
             "date": "June 20, 202X",
             "category": "Architecture",
-            "client": "NClient"
+            "client": "Terra Mitica"
         },
         "enigma": {
             "title": "Enigma Space",
@@ -271,17 +341,17 @@
             "client": "Katmandu"
         },
         "katmandu_inverso": {
-            "title": "Inverse Katmandu",
+            "title": "Reverse Katmandu house",
             "description": "We brought the Inverse Katmandu concept to life, a structure that demands a perfect balance between technical boldness and artisanal precision. This project is a clear example of our ability to handle technical complexity with rigour, always maintaining the standard of excellence we apply to each of our developments.",
             "date": "June 10, 2008",
             "category": "Theme parks",
             "client": "Katmandu"
         },
         "minigolf_pirata": {
-            "title": "Pirate Minigolf",
+            "title": "Caledonia Skull Island",
             "description": "We developed the pirate minigolf complex, a work where thematic architecture and recreational engineering merge under impeccable technical execution. This project stands out for our ability to integrate highly complex immersive environments with exceptional durability, reaffirming our commitment to quality in every construction detail.",
             "date": "June 10, 2008",
-            "category": "Theme parks",
+            "category": "Minigolf",
             "client": "Camping Sant"
         },
         "moon": {
@@ -325,9 +395,136 @@
             "date": "June 20, 202X",
             "category": "Architecture",
             "client": "NClient"
+        },
+        "piedra_equilibrio": {
+            "title": "Day One Balance Stone",
+            "description": "Development and execution of a monumental piece for the Amazon Prime series 'Day One'. The project stands out for its complex study of weight and balance, achieving a minimal point of support that challenges the viewer's visual perception. A work that combines technical precission with impeccable craftsmanship, designed to meet the standards of a high-level international production.",
+            "date": "",
+            "category": "Cinema",
+            "client": "Amazon Prime"
         }
     },
     "listado_general": {
         "cursor_view": "view"
+    },
+    "slider": {
+        "slide_1": {
+            "title": "Theming of theme parks and themed spaces",
+            "link": "Theming"
+        },
+        "slide_2": {
+            "title": "Thematic and conceptual architectural interpretation",
+            "link": "Architectural interpretation"
+        },
+        "slide_3": {
+            "title": "Custom 3D printing for sculpture and theming",
+            "link": "3D Printing"
+        },
+        "slide_4": {
+            "title": "Creation of large-format themed pieces",
+            "link": "Large format figures"
+        },
+        "slide_5": {
+            "title": "Industrial coating with Line-X",
+            "link": "Industrial coating"
+        },
+        "slide_6": {
+            "title": "Industrial Line-X coating for theming",
+            "link": "Coating pieces"
+        }
+    },
+    "terminos": {
+        "hero": {
+            "label": "Legal notice",
+            "title": "Terms and Conditions",
+            "meta": "Last updated: January 2025 · LINE-X Hispania, S.L."
+        },
+        "indice": {
+            "label": "Contents",
+            "s1": "1. Ownership",
+            "s2": "2. Purpose and scope",
+            "s3": "3. Use of the website",
+            "s4": "4. Intellectual property",
+            "s5": "5. Data protection",
+            "s6": "6. Cookie policy",
+            "s7": "7. Service contracting",
+            "s8": "8. Liability",
+            "s9": "9. Amendments",
+            "s10": "10. Applicable law"
+        },
+        "s1": {
+            "titulo": "Website ownership",
+            "p1": "This website (www.lxh.es) is owned by LINE-X Hispania, S.L., a company with registered address at Ctra. C-55 km. 25, 08297 — Castellgalí (Barcelona), registered in the Barcelona Mercantile Registry with tax identification number B-XXXXXXXX.",
+            "p2": "For any enquiry, please contact us at info@lxh.es or by phone at +34 93 878 96 22."
+        },
+        "s2": {
+            "titulo": "Purpose and scope of application",
+            "p1": "This Legal Notice governs access to and use of the LINE-X Hispania, S.L. website, including all its content, services and available information. Accessing the website implies full and unconditional acceptance of these conditions.",
+            "p2": "LINE-X Hispania reserves the right to amend these terms at any time. Changes will be published on this page with the date of update.",
+            "callout": "If you do not agree with any of these conditions, please refrain from using this website or contracting our services."
+        },
+        "s3": {
+            "titulo": "Use of the website",
+            "p1": "The user agrees to make appropriate and lawful use of the website, in accordance with applicable legislation, this Legal Notice and the principles of good faith. The following is expressly prohibited:",
+            "li1": "Reproducing, copying, distributing or publicly communicating the site's content without express authorisation from LINE-X Hispania.",
+            "li2": "Using the website for unlawful or fraudulent purposes or in ways that are harmful to the rights of third parties.",
+            "li3": "Introducing viruses, malicious code or other elements that could damage the computer systems of LINE-X Hispania or third parties.",
+            "li4": "Performing actions that overload the technical infrastructure of the site or interfere with its normal operation.",
+            "li5": "Accessing, or attempting to access, restricted areas of the site without proper authorisation.",
+            "p2": "LINE-X Hispania reserves the right to deny or withdraw access to the site without prior notice to users who breach these conditions."
+        },
+        "s4": {
+            "titulo": "Intellectual and industrial property",
+            "p1": "All website content — including texts, photographs, graphics, images, videos, logos, trademarks, trade names, designs and source code — is the property of LINE-X Hispania, S.L. or its legitimate owners, and is protected by Spanish and international intellectual and industrial property regulations.",
+            "p2": "Any reproduction, distribution, public communication or transformation of such content without prior written authorisation from LINE-X Hispania is prohibited."
+        },
+        "s5": {
+            "titulo": "Personal data protection",
+            "p1": "LINE-X Hispania processes users' personal data in accordance with the General Data Protection Regulation (GDPR) (EU) 2016/679 and Organic Law 3/2018 of 5 December on Personal Data Protection and digital rights guarantee (LOPDGDD).",
+            "p2": "Data collected through the website's forms will be processed for the following purposes:",
+            "li1": "Managing information and contact requests.",
+            "li2": "Sending commercial communications to users who have given their express consent.",
+            "li3": "Complying with applicable legal obligations.",
+            "p3": "The user may at any time exercise their rights of access, rectification, erasure, objection, portability and restriction of processing by writing to info@lxh.es. They also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).",
+            "p4": "Data will not be shared with third parties except where legally required or necessary for the provision of contracted services."
+        },
+        "s6": {
+            "titulo": "Cookie policy",
+            "p1": "This website uses its own and third-party cookies for the following purposes:",
+            "li1": "Essential cookies: necessary for the basic functioning of the site. They do not require consent.",
+            "li2": "Analytical cookies: used to measure and analyse site traffic in order to improve the user experience.",
+            "li3": "Personalisation cookies: remember user preferences.",
+            "p2": "When accessing the website, the user will be shown a cookie notice where they can accept all cookies or limit them to strictly essential ones. Consent can be revoked at any time from the browser settings.",
+            "callout": "Disabling certain cookies may affect the functionality of the website. LINE-X Hispania is not responsible for any limitations arising from such disabling."
+        },
+        "s7": {
+            "titulo": "Service contracting",
+            "p1": "The information published on this website about LINE-X Hispania's services, projects and capabilities is for informational purposes only and does not constitute a binding contractual offer.",
+            "p2": "Quotes and specific conditions for each project will be agreed individually with the client through a specific contractual document.",
+            "p3": "LINE-X Hispania reserves the right to modify its rates, service conditions or catalogue without prior notice, without affecting already formalised contracts."
+        },
+        "s8": {
+            "titulo": "Limitation of liability",
+            "p1": "LINE-X Hispania does not guarantee the continuous and uninterrupted availability of the website, and will not be liable for damages caused by interruptions, technical errors, viruses or other externally sourced elements.",
+            "p2": "It will also not be liable for damages arising from:",
+            "li1": "Incorrect use of the website by the user.",
+            "li2": "Inaccurate information provided by the user in forms.",
+            "li3": "Access to third-party websites linked from this site, whose content and policies are the sole responsibility of those third parties.",
+            "li4": "Force majeure or circumstances beyond the reasonable control of LINE-X Hispania."
+        },
+        "s9": {
+            "titulo": "Amendments to the Legal Notice",
+            "p1": "LINE-X Hispania reserves the right to modify the content of this Legal Notice at any time and without prior notice. Changes will take effect from the moment of publication on the site.",
+            "p2": "Users are advised to review this document periodically. Continued access to the website after changes are published implies acceptance of those changes."
+        },
+        "s10": {
+            "titulo": "Applicable law and jurisdiction",
+            "p1": "This Legal Notice is governed in its entirety by Spanish law. The parties submit to the Courts and Tribunals of Barcelona for the resolution of any disputes.",
+            "p2": "In the case of disputes arising from the contracting of services with consumers, the applicable consumer regulations in force in Spain and the European Union shall apply."
+        },
+        "contacto": {
+            "titulo": "Do you have a legal question?",
+            "texto": "Our team is available to answer any questions about these terms or about the privacy of your data."
+        }
     }
 }

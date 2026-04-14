@@ -1,4 +1,5 @@
 {% set page_title = 'Proyectos' %}
+{% set page_title_i18n = 'generales.projects' %}
 {% set navbar_fixed = true %}
 {% set navbar_expand = true %}
 {% set navbar_mobile = 'style-2' %}
@@ -14,25 +15,28 @@
 <div class="container isotope mt-130">
     <ul class="nav justify-content-center isotope-options mb-60 show-on-scroll" data-show-duration="500">
         <li class="nav-item active show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
-            <a href="#" data-filter="all" class="nav-link"><div class="nav-link-name">Todos</div></a>
+            <a href="#" data-filter="all" class="nav-link"><div class="nav-link-name" data-i18n="generales.project_all">Todos</div></a>
         </li>
         <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-            <a href="#" data-filter="parques" class="nav-link"><div class="nav-link-name">Parques temáticos</div></a>
+            <a href="#" data-filter="parques" class="nav-link"><div class="nav-link-name" data-i18n="generales.category_parks">Parques temáticos</div></a>
         </li>
         <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
-            <a href="#" data-filter="figuras" class="nav-link"><div class="nav-link-name">Figuras</div></a>
+            <a href="#" data-filter="figuras" class="nav-link"><div class="nav-link-name" data-i18n="generales.category_figures">Figuras</div></a>
         </li>
         <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
-            <a href="#" data-filter="temas" class="nav-link"><div class="nav-link-name">Tematización</div></a>
+            <a href="#" data-filter="temas" class="nav-link"><div class="nav-link-name" data-i18n="generales.category_theming">Tematización</div></a>
         </li>
         <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
-            <a href="#" data-filter="minigolf" class="nav-link"><div class="nav-link-name">Minigolf</div></a>
+            <a href="#" data-filter="minigolf" class="nav-link"><div class="nav-link-name" data-i18n="generales.category_minigolf">Minigolf</div></a>
+        </li>
+        <li class="nav-item show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
+            <a href="#" data-filter="cine" class="nav-link"><div class="nav-link-name" data-i18n="">Cine</div></a>
         </li>
     </ul>
 
     <div class="pt-30 show-on-scroll" data-show-duration="800">
         {% macro portfolio_grid(name="", filter="", classes="") %}
-        <div class="col-12 col-sm-6 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-circle" data-cursor-text="ver">
+        <div class="col-12 col-sm-6 isotope-item{% if class %} {{ class }}{% endif %}" data-filters="{{ filter }}" data-cursor-style="cursor-circle" data-cursor-text="ver" data-i18n-cursor="generales.cursor_view">
             {{ card_project_overlay_global(name=name, image_size='md', title_size='h3', classes='card-hover-zoom card-image-lg card-bg-show text-white' + classes, style='with-logo', bg='rgba(14, 14, 14, .2)') }}
         </div>
         {% endmacro %}
@@ -51,12 +55,10 @@
             {{ portfolio_grid('row', 'temas') }}
             {{ portfolio_grid('enigma', 'temas') }}
             {{ portfolio_grid('eurocamping', 'minigolf') }}
-            {{ portfolio_grid('desierto', 'minigolf') }}
-            {{ portfolio_grid('studiocreations', 'temas') }}
+            {{ portfolio_grid('desierto', 'temas') }}
             {{ portfolio_grid('katmanduInverso', 'parques') }}
             {{ portfolio_grid('MinigolfPirata', 'minigolf') }}
-
-
+            {{ portfolio_grid('piedraEquilibrio', 'cine') }}
 
             <!--{{ portfolio_grid('breakfast', 'parques') }}-->
         </div>

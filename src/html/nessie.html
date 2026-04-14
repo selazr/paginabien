@@ -1,4 +1,5 @@
 {% set page_title = 'Busch Gardens' %}
+{% set page_title_i18n = 'proyectos.busch_gardens.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -67,7 +68,7 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Busch Gardens</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.busch_gardens.title">Busch Gardens</h1>
     </div>
 </div>
 
@@ -81,20 +82,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">En este proyecto, hemos dado vida a la legendaria Nessie, la criatura del Lago Ness, que podrás ver al montar en la emocionante atracción del Busch Gardens Williamsburg. Con un nivel de detalle impresionante, cada aspecto de Nessie ha sido diseñado para sumergir a los visitantes en una experiencia única y estremecedora. Desde su apariencia imponente hasta su realismo sorprendente, esta recreación promete aterrorizar e impactar a todos los valientes que se atrevan a enfrentar la montaña rusa.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.busch_gardens.description">En este proyecto, hemos dado vida a la legendaria Nessie, la criatura del Lago Ness, que podrás ver al montar en la emocionante atracción del Busch Gardens Williamsburg. Con un nivel de detalle impresionante, cada aspecto de Nessie ha sido diseñado para sumergir a los visitantes en una experiencia única y estremecedora. Desde su apariencia imponente hasta su realismo sorprendente, esta recreación promete aterrorizar e impactar a todos los valientes que se atrevan a enfrentar la montaña rusa.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Junio 10, 2018
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.busch_gardens.date">Junio 10, 2018</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Parque temático
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.busch_gardens.category">Parque temático</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span> Busch Gardens Williamsburg
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Busch Gardens Williamsburg
                     </div>
                     
                 </div>
@@ -122,9 +123,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="BiciLabMostrador.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="ferrariland.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="BiciLabMostrador.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_labelº"> proyecto</span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
+        <a href="ferrariland.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

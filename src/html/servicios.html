@@ -1,4 +1,5 @@
 {% set page_title = 'Servicios' %}
+{% set page_title_i18n = 'generales.services' %}
 {% set body_class = 'bg-dark page-servicios' %}
 {% set navbar_dark = true %}
 {% set navbar_fixed = true %}
@@ -11,28 +12,47 @@
 
 
 {% block content %}
-<div class="swiper text-white swiper-fullscreen-vertical" data-swiper-slides="1" data-swiper-speed="600" data-swiper-vertical="true">
+<div class="swiper text-white swiper-fullscreen-vertical" data-swiper-slides="1" data-swiper-speed="600"
+    data-swiper-vertical="true">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            {% macro slide_project(title="", image="", link="", href="") %}
+            {% macro slide_project(title="", image="", link="", href="", i18n="", i18n_link="") %}
             <div class="swiper-slide">
                 <div class="card-wrapper h-100">
-                    <a class="card card-fullscreen text-white" href="{{ href }}" data-cursor-style="cursor-circle" data-cursor-text="Click">
+                    <a class="card card-fullscreen text-white" href="{{ href }}" data-cursor-style="cursor-circle"
+                        data-cursor-text="Click">
                         <span class="card-img">
                             <img src="{{ image }}" alt="">
                             <span class="background-color" style="background-color: rgba(14, 14, 14, 0.726);"></span>
                         </span>
                         <span class="card-img-overlay container">
-                            <h2 class="card-title h1 mb-0"><span class="card-title-decoration"></span>{{ title }}</h2>
-                            <span class="btn btn-clean">{{ link }}{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</span>
+                            <h2 class="card-title h1 mb-0">
+                                <span class="card-title-decoration"></span>
+                                <span{% if i18n %} data-i18n="{{ i18n }}" {% endif %}>{{ title }}
+                        </span>
+                        </h2>
+                        <span class="btn btn-clean">
+                            <span{% if i18n_link %} data-i18n="{{ i18n_link }}" {% endif %}>{{ link }}
+                        </span>
+                        {{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}
+                        </span>
                         </span>
                     </a>
                 </div>
             </div>
             {% endmacro %}
+
             {% macro slide_project_init(name="") %}
-                {{ slide_project(slider.fullscreen_showcase[name].title, slider.fullscreen_showcase[name].image, slider.fullscreen_showcase[name].link, slider.fullscreen_showcase[name].href) }}
+            {{ slide_project(
+            slider.fullscreen_showcase[name].title,
+            slider.fullscreen_showcase[name].image,
+            slider.fullscreen_showcase[name].link,
+            slider.fullscreen_showcase[name].href,
+            i18n=slider.fullscreen_showcase[name].i18n,
+            i18n_link=slider.fullscreen_showcase[name].i18n_link
+            ) }}
             {% endmacro %}
+
             {{ slide_project_init('slide_1') }}
             {{ slide_project_init('slide_2') }}
             {{ slide_project_init('slide_3') }}
@@ -45,4 +65,34 @@
         <div class="swiper-pagination"></div>
     </div>
 </div>
+
+<script>
+    function translateSlides() {
+        const t = window.__siteTranslations;
+        if (!t || !t.slider) return;
+
+        document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
+            const key = 'slide_' + (index + 1);
+            const slideData = t.slider[key];
+            if (!slideData) return;
+
+            const titleEl = slide.querySelector('.card-title span:not(.card-title-decoration)');
+            const linkEl = slide.querySelector('.btn.btn-clean span');
+
+            if (titleEl && slideData.title) titleEl.textContent = slideData.title;
+            if (linkEl && slideData.link) linkEl.textContent = slideData.link;
+        });
+    }
+
+    function waitAndTranslate() {
+        if (window.__siteTranslations) {
+            translateSlides();
+        } else {
+            setTimeout(waitAndTranslate, 50);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', waitAndTranslate);
+</script>
+
 {% endblock %}

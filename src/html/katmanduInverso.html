@@ -1,5 +1,5 @@
-
 {% set page_title = 'Katmandu Casa al reves' %}
+{% set page_title_i18n = 'proyectos.katmandu_inverso.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -32,7 +32,7 @@
     </div>
 
     <div class="container text-center"> 
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Katmandu Casa al reves</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.katmandu_inverso.title">Katmandu Casa al reves</h1>
     </div>
 </div>
 
@@ -46,20 +46,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Hemos materializado el concepto del Katmandú inverso, una estructura que exige un equilibrio perfecto entre audacia técnica y precisión artesanal. Este proyecto es un claro exponente de nuestra capacidad para gestionar la complejidad técnica con rigor, manteniendo siempre el estándar de excelencia que aplicamos en cada uno de nuestros desarrollos.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.katmandu_inverso.description">Hemos materializado el concepto del Katmandú inverso, una estructura que exige un equilibrio perfecto entre audacia técnica y precisión artesanal. Este proyecto es un claro exponente de nuestra capacidad para gestionar la complejidad técnica con rigor, manteniendo siempre el estándar de excelencia que aplicamos en cada uno de nuestros desarrollos.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Junio 10, 2008
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.katmandu_inverso.date">Junio 10, 2008</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Parques temáticos
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.katmandu_inverso.category">Parques temáticos</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span>  Katmandu
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandu
                     </div>
                     
                 </div>
@@ -94,9 +94,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="studiocreations.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="Minigolf.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="studiocreations.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
+        <a href="Minigolf.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

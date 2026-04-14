@@ -23,9 +23,9 @@
         "cancel": "Cancel·lar",
         "start": "Inici",
         "project_about": "Sobre el projecte",
-        "project_date": "Data",
-        "project_category": "Categoria",
-        "project_client": "Client",
+        "project_date": "Data:",
+        "project_category": "Categoria:",
+        "project_client": "Client:",
         "project_prev": "Anterior",
         "project_next": "Següent",
         "project_all": "Tots",
@@ -36,11 +36,13 @@
         "countdown_days": "dies",
         "brand_description": "Especialistes en tematització arquitectònica, disseny creatiu i innovació per a espais únics i memorables.",
         "form_project_type": "Tria un tipus de projecte:",
+        "park_description": "Parcs temàtics i parcs d'oci",
         "form_name_placeholder": "Introdueix un nom *",
         "form_phone_placeholder": "Introdueix un telèfon *",
         "form_message_placeholder": "Missatge *",
         "form_success": "Correu enviat correctament.",
         "service_common_subtitle": "Convertim models digitals en peces físiques llestes per a tematització, instal·lació i ús real.",
+        "service_singular": "servei",
         "cursor_view": "veure",
         "filter_all": "Tots",
         "category_parks": "Parcs temàtics",
@@ -54,7 +56,17 @@
         "stats_partners": "Socis",
         "view_service": "Veure servei",
         "view_project": "Veure projecte",
-        "play": "Play"
+        "play": "Play",
+        "services_theming": "Tematització de parcs i espais",
+        "services_3d": "Impressió 3D",
+        "services_format": "Figures de gran format",
+        "services_arch": "Interpretació arquitectònica",
+        "coming_soon_title": "Properament",
+        "terminos": "Termes i Condicions",
+        "days": "dies",
+        "hours": "hores",
+        "minutes": "minuts",
+        "seconds": "segons"
     },
     "navbar": {
         "copyright": "© 2020 - Themebau by ."
@@ -128,6 +140,9 @@
         },
         "success_message": "Correu enviat correctament."
     },
+    "coming_soon": {
+        "title": "Aviat estarem aquí amb aquest apartat. Subscriu-te per rebre notificacions."
+    },
     "servicios": {
         "slider": {
             "cursor": "Click",
@@ -186,17 +201,72 @@
             "title": "Figures de gran format",
             "hero_h1": "Creació de peces temàtiques de gran format",
             "hero_p": "Desenvolupem i fabricem peces temàtiques de gran format per a projectes d'oci, hospitalitat i espais experiencials. Creem elements singulars que es converteixen en fites visuals de l'espai, combinant volum, narrativa i resistència per a entorns d'ús intensiu, tant en interior com en exterior.",
-            "cursor_gallery": "Cranc Mallorca 2019"
+            "cursor_gallery": "Cranc Mallorca 2019",
+            "secciones": {
+                "parques": {
+                    "desc": "Fabricació d'elements de gran escala com escenografies, estructures tematitzades i peces icòniques que reforcen la identitat del parc i l'experiència del visitant."
+                },
+                "hospitality": {
+                    "title": "Hotels i espais hospitality",
+                    "desc": "Creació de peces tematitzades per a zones comunes, piscines, àrees infantils i espais experiencials, aportant diferenciació estètica i coherència amb el concepte de l'establiment."
+                },
+                "minigolf": {
+                    "title": "Minigolf i experiències lúdiques",
+                    "desc": "Desenvolupament d'obstacles, recorreguts i elements decoratius de gran format dissenyats per integrar-se en experiències de joc tematitzades, resistents a l'impacte i a l'ús continuat."
+                },
+                "temporales": {
+                    "title": "Projectes situacionals i efímers",
+                    "desc": "Fabricació de peces especials per a esdeveniments, activacions de marca i projectes temporals, adaptades a l'espai, al concepte i als temps d'instal·lació i desmuntatge."
+                }
+            }
         },
         "impresion_3d": {
             "title": "Impressió 3D",
             "hero_h1": "Impressió 3D personalitzada per a escultura i tematització",
-            "hero_p": "A LINE-X Hispania desenvolupem solucions d'impressió 3D a gran escala orientades a la creació d'escultures, elements decoratius i peces tematitzades personalitzades. Transformem conceptes creatius en peces físiques precises, optimitzades per al seu posterior acabat, reforç i protecció, garantint durabilitat i viabilitat tècnica."
+            "hero_p": "A LINE-X Hispania desenvolupem solucions d'impressió 3D a gran escala orientades a la creació d'escultures, elements decoratius i peces tematitzades personalitzades. Transformem conceptes creatius en peces físiques precises, optimitzades per al seu posterior acabat, reforç i protecció, garantint durabilitat i viabilitat tècnica.",
+            "secciones": {
+                "esculturas": {
+                    "title": "Fabricació d'escultures i elements decoratius",
+                    "desc": "Producció de peces 3D personalitzades per a parcs temàtics, espais d'oci, entorns urbans i projectes arquitectònics, adaptades a formes complexes i dissenys orgànics."
+                },
+                "prototipado": {
+                    "title": "Prototipatge i peces a mida",
+                    "desc": "Disseny de peces pensades per al seu reforç, assemblatge i acabat final, assegurant estabilitat, resistència i compatibilitat amb recobriments tècnics."
+                },
+                "optimizacion": {
+                    "title": "Optimització estructural i tècnica",
+                    "desc": "Disseny i preparació de models optimitzats per a impressió a gran escala, reduint pes, millorant els temps de fabricació i garantint viabilitat tècnica."
+                },
+                "acabados": {
+                    "title": "Integració amb sistemes de protecció i acabat",
+                    "desc": "Preparació de les peces per a la seva tematització final mitjançant recobriments resistents, acabats decoratius i tractaments de llarga durada per a exterior i interior."
+                }
+            }
         },
         "interpretacion_arquitectonica": {
             "title": "Interpretació arquitectònica",
             "hero_h1": "Interpretació arquitectònica temàtica i conceptual",
-            "hero_p": "Analitzem el concepte arquitectònic i narratiu de cada projecte per transformar-lo en elements tematitzats coherents, funcionals i fabricables. Traduïm idees, referències i dissenys en solucions reals, mantenint la identitat visual de l'espai i adaptant-la a criteris tècnics, normatius i d'ús intensiu."
+            "hero_p": "Analitzem el concepte arquitectònic i narratiu de cada projecte per transformar-lo en elements tematitzats coherents, funcionals i fabricables. Traduïm idees, referències i dissenys en solucions reals, mantenint la identitat visual de l'espai i adaptant-la a criteris tècnics, normatius i d'ús intensiu.",
+            "cursor_gallery": "Escena de cova de Katmandu 2021",
+            "sub_h2": "Interpretem projectes arquitectònics i conceptuals per a la seva aplicació en espais temàtics d'alt trànsit.",
+            "secciones": {
+                "concepto": {
+                    "title": "Desenvolupament del concepte temàtic",
+                    "desc": "Interpretació del llenguatge arquitectònic i creatiu del projecte per definir formes, volums, textures i acabats coherents amb la temàtica i l'experiència buscada."
+                },
+                "tecnica": {
+                    "title": "Adaptació tècnica i constructiva",
+                    "desc": "Transformem el concepte en solucions viables, seleccionant materials i sistemes adequats per garantir seguretat, durabilitat i compliment normatiu."
+                },
+                "integracion": {
+                    "title": "Integració en l'entorn",
+                    "desc": "Disseny d'elements que s'integren de forma natural en l'espai arquitectònic i urbà, respectant el context i reforçant l'experiència de l'usuari."
+                },
+                "coherencia": {
+                    "title": "Coherència estètica i funcional",
+                    "desc": "Equilibri entre disseny, resistència i manteniment, assegurant que cada element compleixi la seva funció sense perdre impacte visual al llarg del temps."
+                }
+            }
         }
     },
     "proyectos": {
@@ -218,15 +288,15 @@
             "title": "Capitel Harry Potter",
             "description": "Hem creat el capitel situat al cim de la torre de Harry Potter, una obra que reflecteix el nostre perfeccionisme i atenció al detall. Aquesta dedicació al treball artesanal es replica en molts dels nostres projectes, destacant sempre la nostra passió per l'excel·lència.",
             "date": "Juny 10, 2008",
-            "category": "Parcs temàtics",
+            "category": "Parc temàtic",
             "client": "Epic Universe"
         },
         "desierto": {
-            "title": "Plantilla Desert",
+            "title": "Obelisc Terra Mitica",
             "description": "Hem creat un element arquitectònic inspirat en l'estètica del desert, una obra que reflecteix el nostre perfeccionisme i atenció al detall. Les seves formes, textures i acabats evoquen l'essència de paisatges àrids i construccions erosionades pel temps. Aquesta dedicació al treball artesanal es replica en molts dels nostres projectes, destacant sempre la nostra passió per l'excel·lència.",
             "date": "Juny 20, 202X",
             "category": "Arquitectura",
-            "client": "NCliente"
+            "client": "Terra Mitica"
         },
         "enigma": {
             "title": "Espai enigma",
@@ -271,17 +341,17 @@
             "client": "Katmandú"
         },
         "katmandu_inverso": {
-            "title": "Katmandu invers",
+            "title": "Casa Katmandu a l'inrevés",
             "description": "Hem materialitzat el concepte del Katmandú invers, una estructura que exigeix un equilibri perfecte entre audàcia tècnica i precisió artesanal. Aquest projecte és un clar exponent de la nostra capacitat per gestionar la complexitat tècnica amb rigor, mantenint sempre l'estàndard d'excel·lència que apliquem en cadascun dels nostres desenvolupaments.",
             "date": "Juny 10, 2008",
-            "category": "Parcs temàtics",
+            "category": "Parc temàtic",
             "client": "Katmandu"
         },
         "minigolf_pirata": {
-            "title": "Minigolf Pirata",
+            "title": "Caledonia Illa Calavera",
             "description": "Hem desenvolupat el complex de minigolf pirata, una obra on l'arquitectura temàtica i l'enginyeria recreativa es fusionen sota una execució tècnica impecable. Aquest projecte destaca per la nostra capacitat d'integrar entorns immersius d'alta complexitat amb una durabilitat excepcional, reafirmant el nostre compromís amb la qualitat en cada detall constructiu.",
             "date": "Juny 10, 2008",
-            "category": "Parcs temàtics",
+            "category": "Minigolf",
             "client": "Camping sant"
         },
         "moon": {
@@ -325,9 +395,136 @@
             "date": "Juny 20, 202X",
             "category": "Arquitectura",
             "client": "NCliente"
+        },
+        "piedra_equilibrio": {
+            "title": "Pedra equilibri Day One",
+            "description": "Desenvolupament i execució d'una peça monumental per a la sèrie 'Day One' d'Amazon Prime. El projecte destaca per un complex estudi de pesos i equilibri, aconseguint un punt de suport mínim que desafia la percepció visual de l'espectador. Un treball que combina el rigor tècnic amb una factura artesanal impecable, dissenyat per complir els estàndards d'una producció internacional d'alt nivell.",
+            "date": "",
+            "category": "Cinema",
+            "client": "Amazon Prime"
         }
     },
     "listado_general": {
         "cursor_view": "veure"
+    },
+    "slider": {
+        "slide_1": {
+            "title": "Tematització de parcs temàtics i espais temàtics",
+            "link": "Tematització"
+        },
+        "slide_2": {
+            "title": "Interpretació arquitectònica temàtica i conceptual",
+            "link": "Interpretació arquitectònica"
+        },
+        "slide_3": {
+            "title": "Impressió 3D personalitzada per a escultura i tematització",
+            "link": "Impressió 3D"
+        },
+        "slide_4": {
+            "title": "Creació de peces temàtiques de gran format",
+            "link": "Figures de gran format"
+        },
+        "slide_5": {
+            "title": "Recobriment industrial amb Line-X",
+            "link": "Recobriment industrial"
+        },
+        "slide_6": {
+            "title": "Recobriment industrial amb Line-X per a tematització",
+            "link": "Recobriment peces"
+        }
+    },
+    "terminos": {
+        "hero": {
+            "label": "Avís legal",
+            "title": "Termes i Condicions",
+            "meta": "Darrera actualització: gener de 2025 · LINE-X Hispania, S.L."
+        },
+        "indice": {
+            "label": "Contingut",
+            "s1": "1. Titularitat",
+            "s2": "2. Objecte i àmbit",
+            "s3": "3. Ús del lloc web",
+            "s4": "4. Propietat intel·lectual",
+            "s5": "5. Protecció de dades",
+            "s6": "6. Política de cookies",
+            "s7": "7. Contractació de serveis",
+            "s8": "8. Responsabilitat",
+            "s9": "9. Modificacions",
+            "s10": "10. Llei aplicable"
+        },
+        "s1": {
+            "titulo": "Titularitat del lloc web",
+            "p1": "Aquest lloc web (www.lxh.es) és titularitat de LINE-X Hispania, S.L., empresa amb domicili social a Ctra. C-55 km. 25, 08297 — Castellgalí (Barcelona), inscrita al Registre Mercantil de Barcelona amb número d'identificació fiscal B-XXXXXXXX.",
+            "p2": "Per a qualsevol consulta podeu posar-vos en contacte amb nosaltres a través de info@lxh.es o per telèfon al número +34 93 878 96 22."
+        },
+        "s2": {
+            "titulo": "Objecte i àmbit d'aplicació",
+            "p1": "Aquest Avís Legal regula l'accés i l'ús del lloc web de LINE-X Hispania, S.L., incloent-hi tots els seus continguts, serveis i informació disponibles. L'accés al lloc web implica l'acceptació plena i sense reserves de les presents condicions.",
+            "p2": "LINE-X Hispania es reserva el dret a modificar en qualsevol moment aquests termes. Els canvis seran publicats en aquesta mateixa pàgina amb indicació de la data d'actualització.",
+            "callout": "Si no esteu d'acord amb alguna d'aquestes condicions, us preguem que us abstingueu d'utilitzar aquest lloc web o de contractar els nostres serveis."
+        },
+        "s3": {
+            "titulo": "Ús del lloc web",
+            "p1": "L'usuari es compromet a fer un ús adequat i lícit del lloc web, de conformitat amb la legislació aplicable, aquest Avís Legal i els principis de bona fe. Queda expressament prohibit:",
+            "li1": "Reproduir, copiar, distribuir o comunicar públicament els continguts del lloc sense autorització expressa de LINE-X Hispania.",
+            "li2": "Utilitzar el lloc web amb fins il·lícits, fraudulents o que resultin lesius per als drets de tercers.",
+            "li3": "Introduir virus, codi maliciós o altres elements que puguin danyar els sistemes informàtics de LINE-X Hispania o de tercers.",
+            "li4": "Realitzar actes que sobrecarreguin la infraestructura tècnica del lloc o interfereixin en el seu funcionament normal.",
+            "li5": "Accedir, o intentar accedir, a àrees restringides del lloc sense l'autorització deguda.",
+            "p2": "LINE-X Hispania es reserva el dret de denegar o retirar l'accés al lloc sense previ avís als usuaris que incompleixin les presents condicions."
+        },
+        "s4": {
+            "titulo": "Propietat intel·lectual i industrial",
+            "p1": "Tots els continguts del lloc web —incloent-hi textos, fotografies, gràfics, imatges, vídeos, logotips, marques, noms comercials, dissenys i codi font— són propietat de LINE-X Hispania, S.L. o dels seus legítims titulars, i estan protegits per la normativa espanyola i internacional sobre propietat intel·lectual i industrial.",
+            "p2": "Queda prohibida qualsevol reproducció, distribució, comunicació pública o transformació d'aquests continguts sense comptar amb l'autorització prèvia i per escrit de LINE-X Hispania."
+        },
+        "s5": {
+            "titulo": "Protecció de dades personals",
+            "p1": "LINE-X Hispania tracta les dades personals dels usuaris de conformitat amb el Reglament General de Protecció de Dades (RGPD) (UE) 2016/679 i la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals (LOPDGDD).",
+            "p2": "Les dades recollides a través dels formularis del lloc web seran tractades amb les finalitats següents:",
+            "li1": "Gestionar les sol·licituds d'informació i contacte.",
+            "li2": "Enviar comunicacions comercials als usuaris que hagin donat el seu consentiment exprés.",
+            "li3": "Complir amb les obligacions legals aplicables.",
+            "p3": "L'usuari podrà exercir en qualsevol moment els seus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació del tractament adreçant-se per escrit a info@lxh.es. Així mateix, té dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es).",
+            "p4": "Les dades no seran cedides a tercers excepte per obligació legal o quan sigui necessari per a la prestació dels serveis contractats."
+        },
+        "s6": {
+            "titulo": "Política de cookies",
+            "p1": "Aquest lloc web utilitza cookies pròpies i de tercers amb les finalitats següents:",
+            "li1": "Cookies essencials: necessàries per al funcionament bàsic del lloc. No requereixen consentiment.",
+            "li2": "Cookies analítiques: permeten mesurar i analitzar el trànsit del lloc amb la finalitat de millorar l'experiència d'usuari.",
+            "li3": "Cookies de personalització: recorden les preferències de l'usuari.",
+            "p2": "En accedir al lloc web, l'usuari podrà acceptar totes les cookies o limitar-les a les estrictament essencials. El consentiment es pot revocar en qualsevol moment des de la configuració del navegador.",
+            "callout": "La desactivació de determinades cookies pot afectar la funcionalitat del lloc web. LINE-X Hispania no es fa responsable de les possibles limitacions derivades d'aquesta desactivació."
+        },
+        "s7": {
+            "titulo": "Contractació de serveis",
+            "p1": "La informació publicada en aquest lloc web sobre serveis, projectes i capacitats de LINE-X Hispania té caràcter merament informatiu i no constitueix una oferta contractual vinculant.",
+            "p2": "Els pressupostos i condicions específiques de cada projecte s'acordaran individualment amb el client mitjançant document contractual específic.",
+            "p3": "LINE-X Hispania es reserva el dret a modificar les seves tarifes, condicions de prestació o catàleg de serveis sense previ avís, sense que això afecti els contractes ja formalitzats."
+        },
+        "s8": {
+            "titulo": "Limitació de responsabilitat",
+            "p1": "LINE-X Hispania no garanteix la disponibilitat contínua i ininterrompuda del lloc web, i no serà responsable dels danys causats per interrupcions, errors tècnics, virus o altres elements d'origen extern.",
+            "p2": "Tampoc serà responsable dels danys derivats de:",
+            "li1": "L'ús incorrecte del lloc web per part de l'usuari.",
+            "li2": "La inexactitud de la informació facilitada per l'usuari als formularis.",
+            "li3": "L'accés a llocs web de tercers enllaçats des d'aquest lloc, el contingut i les polítiques dels quals són responsabilitat exclusiva d'aquests tercers.",
+            "li4": "Causes de força major o circumstàncies alienes al control raonable de LINE-X Hispania."
+        },
+        "s9": {
+            "titulo": "Modificacions de l'Avís Legal",
+            "p1": "LINE-X Hispania es reserva el dret a modificar, en qualsevol moment i sense previ avís, el contingut d'aquest Avís Legal. Els canvis tindran efecte des del moment de la seva publicació al lloc.",
+            "p2": "Es recomana a l'usuari revisar periòdicament aquest document. L'accés continuat al lloc web després de la publicació dels canvis implicarà l'acceptació dels mateixos."
+        },
+        "s10": {
+            "titulo": "Llei aplicable i jurisdicció",
+            "p1": "Aquest Avís Legal es regeix íntegrament per la legislació espanyola. Les parts se sotmeten als Jutjats i Tribunals de Barcelona per a la resolució de qualsevol controvèrsia.",
+            "p2": "En cas de conflictes derivats de la contractació de serveis amb consumidors, s'estarà al que disposa la normativa aplicable sobre consum vigent a Espanya i a la Unió Europea."
+        },
+        "contacto": {
+            "titulo": "Tens alguna pregunta legal?",
+            "texto": "El nostre equip està disponible per resoldre qualsevol dubte sobre aquests termes o sobre la privacitat de les teves dades."
+        }
     }
 }

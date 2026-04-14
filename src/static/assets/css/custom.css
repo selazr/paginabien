@@ -20,6 +20,7 @@
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -29,6 +30,122 @@
     flex: 0 0 auto;
 }
 
-.hero-overlay{
-    background-color: rgba(0, 0, 0, 0.6); /* prueba 0.6 – 0.75 */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.language-fab {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.language-fab-menu {
+    display: none;
+    min-width: 170px;
+    padding: 0.5rem;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    backdrop-filter: blur(12px);
+}
+
+.language-fab-menu.is-open {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.language-fab-btn,
+.language-fab-option {
+    border: 0;
+    cursor: pointer;
+}
+
+.language-fab-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background: #111827;
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.28);
+    transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.language-fab-btn:hover {
+    background: #1f2937;
+    transform: translateY(-1px);
+}
+
+.language-fab-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.language-fab-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 0.85rem;
+    border-radius: 12px;
+    background: transparent;
+    color: #111827;
+    text-align: left;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.language-fab-option:hover {
+    background: rgba(17, 24, 39, 0.06);
+}
+
+.language-fab-option.active {
+    background: #111827;
+    color: #ffffff;
+}
+
+.language-fab-option-code {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    background: rgba(17, 24, 39, 0.08);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.language-fab-option.active .language-fab-option-code {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.language-fab-option-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .language-fab {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .language-fab-btn {
+        width: 52px;
+        height: 52px;
+    }
 }

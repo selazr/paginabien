@@ -1,4 +1,5 @@
 {% set page_title = 'Katmandú' %}
+{% set page_title_i18n = 'proyectos.katmandu_park.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -31,7 +32,7 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Katmandú Park</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.katmandu_park.title">Katmandú Park</h1>
     </div>
 </div>
 
@@ -45,20 +46,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">En este proyecto se realizaron todas las piezas temáticas de la "Casa embrujada" en el Katmandú Park dándole un enfoque tenebroso, y divertido para todas las edades.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.katmandu_park.description">En este proyecto se realizaron todas las piezas temáticas de la "Casa embrujada" en el Katmandú Park dándole un enfoque tenebroso, y divertido para todas las edades.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Junio 10, 2008
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.katmandu_park.date">Junio 10, 2008</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Parque temático
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.katmandu_park.category">Parque temático</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span> Katmandú
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandú
                     </div>
                     
                 </div>
@@ -86,9 +87,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="garzas.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="capitel.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="garzas.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
+        <a href="capitel.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

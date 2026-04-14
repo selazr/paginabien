@@ -65,6 +65,8 @@
         "capitel": {
             "href": "capitel.html",
             "title": "Capitel Harry Potter",
+            "i18n": "proyectos.capitel.title",
+            "i18n_category": "proyectos.capitel.category",
             "category": ["Parque temático", "#"],
             "logo": "",
             "image": {
@@ -83,6 +85,8 @@
         "nessie": {
             "href": "nessie.html",
             "title": "Busch Gardens",
+            "i18n": "proyectos.busch_gardens.title",
+            "i18n_category": "proyectos.busch_gardens.category",
             "category": ["Figuras", "#"],
             "logo": "",
             "image": {
@@ -95,6 +99,8 @@
         "moon": {
             "href": "moon.html",
             "title": "Lucianno's",
+            "i18n": "proyectos.moon.title",
+            "i18n_category": "proyectos.moon.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -105,6 +111,8 @@
         "row": {
             "href": "row.html",
             "title": "Elrow 2024",
+            "i18n": "proyectos.elrow.title",
+            "i18n_category": "proyectos.elrow.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -115,6 +123,8 @@
         "ballena": {
             "href": "ballena.html",
             "title": "Ballena Iberostar",
+            "i18n": "proyectos.ballena.title",
+            "i18n_category": "proyectos.ballena.category",
             "category": ["Figuras", "#"],
             "logo": "",
             "image": {
@@ -125,6 +135,8 @@
         "eurocamping": {
             "href": "eurocamping.html",
             "title": "Eurocamping",
+            "i18n": "proyectos.eurocamping.title",
+            "i18n_category": "proyectos.eurocamping.category",
             "category": ["Minigolf", "#"],
             "logo": "",
             "image": {
@@ -135,6 +147,8 @@
         "ferrariland": {
             "href": "ferrariland.html",
             "title": "Ferrariland",
+            "i18n": "proyectos.ferrariland.title",
+            "i18n_category": "proyectos.ferrariland.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -145,6 +159,8 @@
         "RoyalCaribean": {
             "href": "RoyalCaribean.html",
             "title": "Royal Caribean",
+            "i18n": "proyectos.royal_caribbean.title",
+            "i18n_category": "proyectos.royal_caribbean.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -155,6 +171,8 @@
         "spaiberostar": {
             "href": "SpaIberostar.html",
             "title": "IberoStar SPA",
+            "i18n": "proyectos.spa_iberostar.title",
+            "i18n_category": "proyectos.spa_iberostar.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -164,7 +182,9 @@
         },
         "desierto": {
             "href": "desierto.html",
-            "title": "Obelisco camping benidorm",
+            "title": "Obelisco Terra Mitica",
+            "i18n": "proyectos.desierto.title",
+            "i18n_category": "proyectos.desierto.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -172,19 +192,11 @@
                 "md": "assets/images/portfolio/portadadesierto.jpg"
             }
         },
-        "studiocreations": {
-            "href": "studiocreations.html",
-            "title": "Studio & Creations",
-            "category": ["Tematización", "#"],
-            "logo": "",
-            "image": {
-                "lg": "assets/images/portfolio/studiocreations.jpg",
-                "md": "assets/images/portfolio/studiocreations.jpg"
-            }
-        },
         "katmanduInverso": {
             "href": "katmanduInverso.html",
             "title": "Katmandu Inverso",
+            "i18n": "proyectos.katmandu_inverso.title",
+            "i18n_category": "proyectos.katmandu_inverso.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -192,9 +204,23 @@
                 "md": "assets/images/portfolio/Katmandu.jpg"
             }
         },
+        "piedraEquilibrio": {
+            "href": "piedraEquilibrio.html",
+            "title": "Piedra Equilibrio",
+            "i18n": "proyectos.piedra_equilibrio.title",
+            "i18n_category": "proyectos.piedra_equilibrio.category",
+            "category": ["Cine", "#"],
+            "logo": "",
+            "image": {
+                "lg": "assets/images/portfolio/piedra.jpg",
+                "md":  "assets/images/portfolio/piedra.jpg"
+            }
+        },
         "MinigolfPirata": {
             "href": "Minigolf.html",
             "title": "Minigolf pirata",
+            "i18n": "proyectos.minigolf_pirata.title",
+            "i18n_category": "proyectos.minigolf_pirata.category",
             "category": ["Minigolf", "#"],
             "logo": "",
             "image": {
@@ -221,6 +247,8 @@
         "katmandu": {
             "href": "katmandu.html",
             "title": "Katmandú park",
+            "i18n": "proyectos.katmandu_park.title",
+            "i18n_category": "proyectos.katmandu_park.category",
             "category": ["Parque temático", "#"],
             "text": "Las atracciones icónicas del parque Katmandú, tanto en sus áreas interiores como exteriores, fueron diseñadas y fabricadas por LINE-X Hispania como parte de un proyecto integral de tematización. Figuras, fachadas y escenarios fueron realizados con materiales resistentes y acabados de alto realismo, generando una experiencia inmersiva para todo tipo de público.",
             "logo": "",
@@ -370,6 +398,8 @@
         "enigma": {
             "href": "enigma.html",
             "title": "Espacio enigma",
+            "i18n": "proyectos.enigma.title",
+            "i18n_category": "proyectos.enigma.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -421,6 +451,8 @@
         "garzas": {
             "href": "garzas.html",
             "title": "Garzas Iberostar",
+            "i18n": "proyectos.garzas.title",
+            "i18n_category": "proyectos.garzas.category",
             "category": ["Figuras", "#"],
             "logo": "",
             "image": {
@@ -431,6 +463,8 @@
         "bicilab": {
             "href": "BiciLabMostrador.html",
             "title": "BiciLab Mostrador",
+            "i18n": "proyectos.bicilab.title",
+            "i18n_category": "proyectos.bicilab.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -441,6 +475,8 @@
         "katlantis": {
             "href": "Katlantis.html",
             "title": "Katlantis",
+            "i18n": "proyectos.katlantis.title",
+            "i18n_category": "proyectos.katlantis.category",
             "category": ["Parque temático", "#"],
             "logo": "",
             "image": {
@@ -574,15 +610,6 @@
             "15": ["assets/images/single-portfolio/DES14.jpg", "assets/images/single-portfolio/DES14.jpg"],
             "16": ["assets/images/single-portfolio/DES15.jpg", "assets/images/single-portfolio/DES15.jpg"]
         },
-        "style_5_14": {
-            "banner": "assets/images/portfolio/studiocreations.jpg",
-            "02": ["assets/images/single-portfolio/SC1.jpg", "assets/images/single-portfolio/SC1.jpg"],
-            "06": ["assets/images/single-portfolio/SC5.jpg", "assets/images/single-portfolio/SC5.jpg"],
-            "08": ["assets/images/single-portfolio/SC7.jpg", "assets/images/single-portfolio/SC7.jpg"],
-            "10": ["assets/images/single-portfolio/SC9.jpg", "assets/images/single-portfolio/SC9.jpg"],
-            "11": ["assets/images/single-portfolio/SC10.jpg", "assets/images/single-portfolio/SC10.jpg"],
-            "12": ["assets/images/single-portfolio/SC11.jpg", "assets/images/single-portfolio/SC11.jpg"]
-        },
         "style_5_15": {
             "banner": "assets/images/portfolio/Katmandu.jpg",
             "02": ["assets/images/single-portfolio/Katmandu1.jpg", "assets/images/single-portfolio/Katmandu1.jpg"],
@@ -610,6 +637,13 @@
             "10": ["assets/images/single-portfolio/Minigolf9.jpg", "assets/images/single-portfolio/Minigolf9.jpg"],
             "11": ["assets/images/single-portfolio/Minigolf10.jpg", "assets/images/single-portfolio/Minigolf10.jpg"],
             "12": ["assets/images/single-portfolio/Minigolf11.jpg", "assets/images/single-portfolio/Minigolf11.jpg"]
+        },
+        "style_5_17": {
+            "banner": "assets/images/portfolio/piedra.jpg",
+            "02": ["assets/images/single-portfolio/piedra1.jpg", "assets/images/single-portfolio/piedra1.jpg"],
+            "03": ["assets/images/single-portfolio/piedra2.jpg", "assets/images/single-portfolio/piedra2.jpg"],
+            "04": ["assets/images/single-portfolio/piedra3.jpg", "assets/images/single-portfolio/piedra3.jpg"],
+            "05": ["assets/images/single-portfolio/piedra4.jpg", "assets/images/single-portfolio/piedra4.jpg"]
         }
         
     },
@@ -617,39 +651,51 @@
         "fullscreen_showcase": {
     "slide_1": {
         "title": "Tematización de parques y espacios temáticos",
+        "i18n": "slider.slide_1.title",
         "href": "tematizacion_parques.html",
         "image": "assets/images/portfolio/tematizacion-parques-espacios-tematicos.jpeg",
-        "link": "Tematizacion"
+        "link": "Tematizacion",
+        "i18n_link": "slider.slide_1.link"
     },
     "slide_2": {
         "title": "Interpretacion arquitectónica temático y conceptual",
+        "i18n": "slider.slide_2.title",
         "href": "interpratacion_arquitectonica.html",
         "image": "assets/images/portfolio/interpretacion-arquitectonico-tematico-conceptual.jpeg",
-        "link": "Interpretacion arquitectónica"
+        "link": "Interpretacion arquitectónica",
+        "i18n_link": "slider.slide_2.link"
     },
     "slide_3": {
         "title": "Impresión 3D personalizada para escultura y tematización",
+        "i18n": "slider.slide_3.title",
         "href": "impresion_3d.html",
         "image": "assets/images/portfolio/impresion-3d-escultura-tematizacion.jpg",
-        "link": "Impresion 3D"
+        "link": "Impresion 3D",
+        "i18n_link": "slider.slide_3.link"
     },
     "slide_4": {
         "title": "Creación de piezas temáticas de gran formato",
+        "i18n": "slider.slide_4.title",
         "href": "gran_formato_3d.html",
         "image": "assets/images/portfolio/creacion-piezas-gran-formato-tematicas.jpg",
-        "link": "Figuras de gran formato"
+        "link": "Figuras de gran formato",
+        "i18n_link": "slider.slide_4.link"
     },
     "slide_5": {
         "title": "Recubrimiento industrial con Line-X",
+        "i18n": "slider.slide_5.title",
         "href": "coming-soon.html",
         "image": "assets/images/portfolio/recubrimiento.png",
-        "link": "Recubrimiento industrial"
+        "link": "Recubrimiento industrial",
+        "i18n_link": "slider.slide_5.link"
     },
     "slide_6": {
         "title": "Recubrimiento industrial con Line-X para tematización",
+        "i18n": "slider.slide_6.title",
         "href": "coming-soon.html",
         "image": "assets/images/portfolio/recubrimiento.png",
-        "link": "Recubrimiento piezas"
+        "link": "Recubrimiento piezas",
+        "i18n_link": "slider.slide_6.link"
     }
 }
 

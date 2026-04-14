@@ -1,5 +1,5 @@
-
 {% set page_title = 'Moon' %}
+{% set page_title_i18n = 'proyectos.moon.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -66,7 +66,7 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Lucianno's</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.moon.title">Lucianno's</h1>
     </div>
 </div>
 
@@ -80,20 +80,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">Un proyecto de tematización desarrollado por LINE-X Hispania, inspirado en la superficie lunar para crear una experiencia inmersiva y futurista. La ambientación reproduce con precisión la textura de la Luna, combinando elementos visuales impactantes y acabados de alta calidad. La transformación del espacio demuestra el compromiso de LINE-X Hispania con la innovación en tematización para el sector del entretenimiento y la restauración.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.moon.description">Un proyecto de tematización desarrollado por LINE-X Hispania, inspirado en la superficie lunar para crear una experiencia inmersiva y futurista. La ambientación reproduce con precisión la textura de la Luna, combinando elementos visuales impactantes y acabados de alta calidad. La transformación del espacio demuestra el compromiso de LINE-X Hispania con la innovación en tematización para el sector del entretenimiento y la restauración.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Diciembre 11, 2020
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.moon.date">Diciembre 11, 2020</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Tematización
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.moon.category">Tematización</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span>  Lucianno's
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Lucianno's
                     </div>
                     
                 </div>
@@ -121,9 +121,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="capitel.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="row.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="capitel.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_label">todos</a>
+        <a href="row.html" class="btn btn-clean"><span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

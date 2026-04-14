@@ -12,7 +12,9 @@
 {% macro card_project_overlay_global(name="", image_size="", title_size="", swiper_parallax="", classes="", style="", bg="") %}
     {{ card_project_overlay(
         portfolio[name].href, portfolio[name].image[image_size], portfolio[name].title, portfolio[name].category, portfolio[name].logo,
-        swiper_parallax=swiper_parallax, title_size=title_size, classes=classes, style=style, bg=bg
+        swiper_parallax=swiper_parallax, title_size=title_size, classes=classes, style=style, bg=bg,
+        i18n=portfolio[name].i18n,
+        i18n_category=portfolio[name].i18n_category
     ) }}
 {% endmacro %}
 

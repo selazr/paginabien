@@ -1,4 +1,5 @@
 {% set page_title = 'Iberostar Garzas' %}
+{% set page_title_i18n = 'proyectos.garzas.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -66,7 +67,7 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Garzas Iberostar</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.garzas.title">Garzas Iberostar</h1>
     </div>
 </div>
 
@@ -80,20 +81,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">En este proyecto, hemos creado piezas de gran envergadura, como la imponente ballena ubicada en las escaleras y las majestuosas garzas que adornan el lobby. Además, desarrollamos una tematización detallada del interior, logrando capturar la esencia única de este maravilloso hotel paradisíaco. Cada elemento ha sido diseñado con precisión y cuidado, aportando una experiencia visual impresionante que complementa la atmósfera de lujo y relajación del lugar.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.garzas.description">En este proyecto, hemos creado piezas de gran envergadura, como la imponente ballena ubicada en las escaleras y las majestuosas garzas que adornan el lobby. Además, desarrollamos una tematización detallada del interior, logrando capturar la esencia única de este maravilloso hotel paradisíaco. Cada elemento ha sido diseñado con precisión y cuidado, aportando una experiencia visual impresionante que complementa la atmósfera de lujo y relajación del lugar.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Junio 10, 2008
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.garzas.date">Junio 10, 2008</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Figuras
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.garzas.category">Figuras</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span> Iberostar Albufera
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span><span data-i18n="proyectos.garzas.client">Iberostar Albufera</span>
                     </div>
                     
                 </div>
@@ -121,9 +122,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="ballena.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="katmandu.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="ballena.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}<span data-i18n="generales.project_prev">anterior</span><span class="d-none d-sm-inline"> <span data-i18n="generales.project_label">proyecto</span></span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
+        <a href="katmandu.html" class="btn btn-clean"><span data-i18n="generales.project_next">siguiente</span><span class="d-none d-sm-inline"> <span data-i18n="generales.project_label">proyecto</span></span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

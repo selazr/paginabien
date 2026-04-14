@@ -16,22 +16,22 @@
                     <img{% if footer_logo_width %} width="{{ footer_logo_width }}" {% endif %}
                         src="{% if footer_dark %}{{ footer_logo_white }}{% else %}{{ footer_logo }}{% endif %}" alt="">
                 </a>
-                <p class="mb-0">Especialistas en tematización arquitectónica, diseño creativo e innovación para espacios
+                <p class="mb-0" data-i18n="generales.brand_description">Especialistas en tematización arquitectónica, diseño creativo e innovación para espacios
                     únicos y memorables.</p>
             </div>
             <div class="d-none d-lg-block col-2"></div>
             <div class="col-lg-6">
-                <p class="subtitle mb-30">Suscribete a nuestro newsletter</p>
+                <p class="subtitle mb-30" data-i18n="footer.subscribe">Suscribete a nuestro newsletter</p>
                 <form id="newsletterForm">
                     <div class="form-group-overlay">
                         <input id="newsletterEmail" name="email"
                             class="form-control{{ ' form-control-white' if footer_dark }}" type="email"
-                            placeholder="E-mail *" required>
+                            placeholder="E-mail *" data-i18n-placeholder="generales.form_email_placeholder" required>
 
                         <!-- Honeypot invisible -->
                         <input type="text" name="website" style="display:none">
 
-                        <button type="submit" class="btn btn-clean btn-with-ball{{ ' text-white' if footer_dark }}">
+                        <button type="submit" class="btn btn-clean btn-with-ball{{ ' text-white' if footer_dark }}" data-i18n="footer.honeypot">
                             Enviar
                         </button>
                     </div>
@@ -59,26 +59,26 @@
                     <div class="col-12 col-lg-4">
                         <ul class="nav flex-column{{ ' text-white' if footer_dark }}">
                             <li class="nav-item">
-                                <a href="about-us.html" class="nav-link">Sobre nosotros</a>
+                                <a href="about-us.html" class="nav-link" data-i18n="generales.aboutus">Sobre nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a href="servicios.html" class="nav-link">Servicios</a>
+                                <a href="servicios.html" class="nav-link" data-i18n="generales.services">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about-us.html" class="nav-link">Nuestro equipo</a>
+                                <a href="about-us.html" class="nav-link" data-i18n="generales.team">Nuestro equipo</a>
                             </li>
                             <li class="nav-item">
-                                <a href="proyectos.html" class="nav-link">Proyectos</a>
+                                <a href="proyectos.html" class="nav-link" data-i18n="generales.projects">Proyectos</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-4">
                         <ul class="nav flex-column{{ ' text-white' if footer_dark }}">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Privacidad</a>
+                                <a href="#" class="nav-link" data-i18n="generales.privacy">Privacidad</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../terminos.html" class="nav-link">Terminos y condiciones</a>
+                                <a href="../terminos.html" class="nav-link" data-i18n="generales.terms_conditions">Terminos y condiciones</a>
                             </li>
                         </ul>
                     </div>
@@ -127,7 +127,7 @@
             <h3 style="margin:0 0 12px 0;">¡Gracias por suscribirte!</h3>
             <p style="margin:0 0 18px 0;">Revisa tu correo para confirmar tu suscripción.</p>
             <button id="newsletterModalClose"
-                style="padding:10px 20px;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;">
+                style="padding:10px 20px;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;" data-i18n="generales.close">
                 Cerrar
             </button>
             <br><br>
@@ -138,10 +138,10 @@
     <div id="unsubscribeModal"
         style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;z-index:9999;">
         <div style="background:#fff;padding:40px 30px;border-radius:12px;max-width:420px;text-align:center;">
-            <h3 style="margin:0 0 12px 0;">Darse de baja</h3>
+            <h3 style="margin:0 0 12px 0;" data-i18n="generales.unsubscribe">Darse de baja</h3>
             <div id="unsubscribeMessage" style="margin-bottom:12px;font-size:14px;"></div>
             <button id="unsubscribeModalClose"
-                style="padding:10px 20px;background:#ccc;color:#111;border:none;border-radius:6px;cursor:pointer;">
+                style="padding:10px 20px;background:#ccc;color:#111;border:none;border-radius:6px;cursor:pointer;" data-i18n="generales.cancel">
                 Cancelar
             </button>
         </div>

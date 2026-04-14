@@ -1,4 +1,5 @@
 {% set page_title = 'Eurocamping' %}
+{% set page_title_i18n = 'proyectos.eurocamping.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -32,7 +33,7 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10">Eurocamping</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.eurocamping.title">Eurocamping</h1>
     </div>
 </div>
 
@@ -46,20 +47,20 @@
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">En nuestro proyecto de minigolf en Eurocamping, hemos creado un espacio al aire libre diseñado para ofrecer una experiencia única y envolvente. Cada hoyo ha sido cuidadosamente elaborado para garantizar diversión y desafío, con paisajes temáticos, formaciones decorativas y un diseño atractivo para jugadores de todas las edades.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.eurocamping.description">En nuestro proyecto de minigolf en Eurocamping, hemos creado un espacio al aire libre diseñado para ofrecer una experiencia única y envolvente. Cada hoyo ha sido cuidadosamente elaborado para garantizar diversión y desafío, con paisajes temáticos, formaciones decorativas y un diseño atractivo para jugadores de todas las edades.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Fecha:</span> Octubre, 2023
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.eurocamping.date">Octubre, 2023</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">categoría:</span> Minigolf
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.eurocamping.category">Minigolf</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8">Cliente:</span> Eurocamping
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span><span data-i18n="proyectos.eurocamping.client">Eurocamping</span>
                     </div>
                     
                 </div>
@@ -91,9 +92,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="enigma.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}anterior<span class="d-none d-sm-inline"> proyecto</span></a>
-        <a href="proyectos.html" class="btn btn-light btn-circle btn-m">todos</a>
-        <a href="desierto.html" class="btn btn-clean">siguiente<span class="d-none d-sm-inline"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="enigma.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}<span data-i18n="generales.project_prev">anterior</span><span class="d-none d-sm-inline"> <span data-i18n="generales.project_label">proyecto</span></span></a>
+        <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
+        <a href="desierto.html" class="btn btn-clean"><span data-i18n="generales.project_next">siguiente</span><span class="d-none d-sm-inline"> <span data-i18n="generales.project_label">proyecto</span></span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

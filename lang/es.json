@@ -23,9 +23,9 @@
         "cancel": "Cancelar",
         "start": "Inicio",
         "project_about": "Sobre el proyecto",
-        "project_date": "Fecha",
-        "project_category": "Categoría",
-        "project_client": "Cliente",
+        "project_date": "Fecha:",
+        "project_category": "Categoría:",
+        "project_client": "Cliente:",
         "project_prev": "Anterior",
         "project_next": "Siguiente",
         "project_all": "Todos",
@@ -36,11 +36,13 @@
         "countdown_days": "días",
         "brand_description": "Especialistas en tematización arquitectónica, diseño creativo e innovación para espacios únicos y memorables.",
         "form_project_type": "Escoge un tipo de proyecto:",
+        "park_description": "Parques temáticos y parques de ocio",
         "form_name_placeholder": "Introduce un nombre *",
         "form_phone_placeholder": "Introduce un teléfono *",
         "form_message_placeholder": "Mensaje *",
         "form_success": "Correo enviado correctamente.",
         "service_common_subtitle": "Convertimos modelos digitales en piezas físicas listas para tematización, instalación y uso real.",
+        "service_singular": "servicio",
         "cursor_view": "ver",
         "filter_all": "Todos",
         "category_parks": "Parques temáticos",
@@ -54,7 +56,17 @@
         "stats_partners": "Socios",
         "view_service": "Ver servicio",
         "view_project": "Ver proyecto",
-        "play": "Play"
+        "play": "Iniciar",
+        "services_theming": "Tematización de parques y espacios",
+        "services_3d": "Impresión 3D",
+        "services_format": "Figuras de gran formato",
+        "services_arch": "Interpretación arquitectónica",
+        "coming_soon_title": "Muy pronto",
+        "terminos": "Terminos y Condiciones",
+        "days": "días",
+        "hours": "horas",
+        "minutes": "minutos",
+        "seconds": "segundos"
     },
     "navbar": {
         "copyright": "© 2020 - Themebau by ."
@@ -128,6 +140,9 @@
         },
         "success_message": "Correo enviado correctamente."
     },
+    "coming_soon": {
+        "title": "Pronto estaremos aquí con este apartado. Suscríbete para recibir notificaciones."
+    },
     "servicios": {
         "slider": {
             "cursor": "Click",
@@ -186,17 +201,72 @@
             "title": "Figuras de gran formato",
             "hero_h1": "Creación de piezas temáticas de gran formato",
             "hero_p": "Desarrollamos y fabricamos piezas temáticas de gran formato para proyectos de ocio, hospitality y espacios experienciales. Creamos elementos singulares que se convierten en hitos visuales del espacio, combinando volumen, narrativa y resistencia para entornos de uso intensivo, tanto en interior como en exterior.",
-            "cursor_gallery": "Cangrejo Mallorca 2019"
+            "cursor_gallery": "Cangrejo Mallorca 2019",
+            "secciones": {
+                "parques": {
+                    "desc": "Fabricación de elementos de gran escala como escenografías, estructuras tematizadas y piezas icónicas que refuerzan la identidad del parque y la experiencia del visitante."
+                },
+                "hospitality": {
+                    "title": "Hoteles y espacios hospitality",
+                    "desc": "Creación de piezas tematizadas para zonas comunes, piscinas, áreas infantiles y espacios experienciales, aportando diferenciación estética y coherencia con el concepto del establecimiento."
+                },
+                "minigolf": {
+                    "title": "Minigolf y experiencias lúdicas",
+                    "desc": "Desarrollo de obstáculos, recorridos y elementos decorativos de gran formato diseñados para integrarse en experiencias de juego tematizadas, resistentes al impacto y al uso continuado."
+                },
+                "temporales": {
+                    "title": "Proyectos situacionales y efímeros",
+                    "desc": "Fabricación de piezas especiales para eventos, activaciones de marca y proyectos temporales, adaptadas al espacio, al concepto y a los tiempos de instalación y desmontaje."
+                }
+            }
         },
         "impresion_3d": {
             "title": "Impresión 3D",
             "hero_h1": "Impresión 3D personalizada para escultura y tematización",
-            "hero_p": "En LINE-X Hispania desarrollamos soluciones de impresión 3D a gran escala orientadas a la creación de esculturas, elementos decorativos y piezas tematizadas personalizadas. Transformamos conceptos creativos en piezas físicas precisas, optimizadas para su posterior acabado, refuerzo y protección, garantizando durabilidad y viabilidad técnica."
+            "hero_p": "En LINE-X Hispania desarrollamos soluciones de impresión 3D a gran escala orientadas a la creación de esculturas, elementos decorativos y piezas tematizadas personalizadas. Transformamos conceptos creativos en piezas físicas precisas, optimizadas para su posterior acabado, refuerzo y protección, garantizando durabilidad y viabilidad técnica.",
+            "secciones": {
+                "esculturas": {
+                    "title": "Fabricación de esculturas y elementos decorativos",
+                    "desc": "Producción de piezas 3D personalizadas para parques temáticos, espacios de ocio, entornos urbanos y proyectos arquitectónicos, adaptadas a formas complejas y diseños orgánicos."
+                },
+                "prototipado": {
+                    "title": "Prototipado y piezas a medida",
+                    "desc": "Diseño de piezas pensadas para su refuerzo, ensamblaje y acabado final, asegurando estabilidad, resistencia y compatibilidad con recubrimientos técnicos."
+                },
+                "optimizacion": {
+                    "title": "Optimización estructural y técnica",
+                    "desc": "Diseño y preparación de modelos optimizados para impresión a gran escala, reduciendo peso, mejorando tiempos de fabricación y garantizando viabilidad técnica."
+                },
+                "acabados": {
+                    "title": "Integración con sistemas de protección y acabado",
+                    "desc": "Preparación de las piezas para su tematización final mediante recubrimientos resistentes, acabados decorativos y tratamientos de larga duración para exterior e interior."
+                }
+            }
         },
         "interpretacion_arquitectonica": {
             "title": "Interpretación arquitectónica",
             "hero_h1": "Interpretacion arquitectónica temático y conceptual",
-            "hero_p": "Analizamos el concepto arquitectónico y narrativo de cada proyecto para transformarlo en elementos tematizados coherentes, funcionales y fabricables. Traducimos ideas, referencias y diseños en soluciones reales, manteniendo la identidad visual del espacio y adaptándola a criterios técnicos, normativos y de uso intensivo."
+            "hero_p": "Analizamos el concepto arquitectónico y narrativo de cada proyecto para transformarlo en elementos tematizados coherentes, funcionales y fabricables. Traducimos ideas, referencias y diseños en soluciones reales, manteniendo la identidad visual del espacio y adaptándola a criterios técnicos, normativos y de uso intensivo.",
+            "cursor_gallery": "Escena de cueva de katmandu 2021",
+            "sub_h2": "Interpretamos proyectos arquitectónicos y conceptuales para su aplicación en espacios temáticos de alto tránsito.",
+            "secciones": {
+                "concepto": {
+                    "title": "Desarrollo del concepto temático",
+                    "desc": "Interpretación del lenguaje arquitectónico y creativo del proyecto para definir formas, volúmenes, texturas y acabados coherentes con la temática y la experiencia buscada."
+                },
+                "tecnica": {
+                    "title": "Adaptación técnica y constructiva",
+                    "desc": "Transformamos el concepto en soluciones viables, seleccionando materiales y sistemas adecuados para garantizar seguridad, durabilidad y cumplimiento normativo."
+                },
+                "integracion": {
+                    "title": "Integración en el entorno",
+                    "desc": "Diseño de elementos que se integran de forma natural en el espacio arquitectónico y urbano, respetando el contexto y reforzando la experiencia del usuario."
+                },
+                "coherencia": {
+                    "title": "Coherencia estética y funcional",
+                    "desc": "Equilibrio entre diseño, resistencia y mantenimiento, asegurando que cada elemento cumpla su función sin perder impacto visual a lo largo del tiempo."
+                }
+            }
         }
     },
     "proyectos": {
@@ -218,15 +288,15 @@
             "title": "Capitel Harry Potter",
             "description": "Hemos creado el capitel ubicado en la cima de la torre de Harry Potter, una obra que refleja nuestro perfeccionismo y atención al detalle. Esta dedicación al trabajo artesanal se replica en muchos de nuestros proyectos, destacando siempre nuestra pasión por la excelencia.",
             "date": "Junio 10, 2008",
-            "category": "Parques temáticos",
+            "category": "Parque temático",
             "client": "Epic Universe"
         },
         "desierto": {
-            "title": "Plantilla Desierto",
+            "title": "Obelisco Terra Mitica",
             "description": "Hemos creado un elemento arquitectónico inspirado en la estética del desierto, una obra que refleja nuestro perfeccionismo y atención al detalle. Sus formas, texturas y acabados evocan la esencia de paisajes áridos y construcciones erosionadas por el tiempo. Esta dedicación al trabajo artesanal se replica en muchos de nuestros proyectos, destacando siempre nuestra pasión por la excelencia.",
             "date": "Junio 20, 202X",
             "category": "Arquitectura",
-            "client": "NCliente"
+            "client": "Terra Mitica"
         },
         "enigma": {
             "title": "Espacio enigma",
@@ -271,17 +341,17 @@
             "client": "Katmandú"
         },
         "katmandu_inverso": {
-            "title": "Katmandu inverso",
+            "title": "Katmandu Casa al reves",
             "description": "Hemos materializado el concepto del Katmandú inverso, una estructura que exige un equilibrio perfecto entre audacia técnica y precisión artesanal. Este proyecto es un claro exponente de nuestra capacidad para gestionar la complejidad técnica con rigor, manteniendo siempre el estándar de excelencia que aplicamos en cada uno de nuestros desarrollos.",
             "date": "Junio 10, 2008",
-            "category": "Parques temáticos",
+            "category": "Parque temático",
             "client": "Katmandu"
         },
         "minigolf_pirata": {
-            "title": "Minigolf Pirata",
+            "title": "Caledonia Isla Calavera",
             "description": "Hemos desarrollado el complejo de minigolf pirata, una obra donde la arquitectura temática y la ingeniería recreativa se fusionan bajo una ejecución técnica impecable. Este proyecto destaca por nuestra capacidad de integrar entornos inmersivos de alta complejidad con una durabilidad excepcional, reafirmando nuestro compromiso con la calidad en cada detalle constructivo.",
             "date": "Junio 10, 2008",
-            "category": "Parques temáticos",
+            "category": "Minigolf",
             "client": "Camping sant"
         },
         "moon": {
@@ -325,9 +395,136 @@
             "date": "Junio 20, 202X",
             "category": "Arquitectura",
             "client": "NCliente"
+        },
+        "piedra_equilibrio": {
+            "title": "Piedra equilibrio Day One",
+            "description": "Desarrollo y ejecución de una pieza monumental para la serie 'Day One' de Amazon Prime. El proyecto destaca por un complejo estudio de pesos y equilibrio, logrando un punto de apoyo mínimo que desafía la percepción visual del espectador. Un trabajo que combina el rigor técnico con una factura artesanal impecable, diseñado para cumplir con los estándares de una producción internacional de alto nivel.",
+            "date": "",
+            "category": "Cine",
+            "client": "Amazon prime"
         }
     },
     "listado_general": {
         "cursor_view": "ver"
+    },
+    "slider": {
+        "slide_1": {
+            "title": "Tematización de parques y espacios temáticos",
+            "link": "Tematización"
+        },
+        "slide_2": {
+            "title": "Interpretación arquitectónica temática y conceptual",
+            "link": "Interpretación arquitectónica"
+        },
+        "slide_3": {
+            "title": "Impresión 3D personalizada para escultura y tematización",
+            "link": "Impresión 3D"
+        },
+        "slide_4": {
+            "title": "Creación de piezas temáticas de gran formato",
+            "link": "Figuras de gran formato"
+        },
+        "slide_5": {
+            "title": "Recubrimiento industrial con Line-X",
+            "link": "Recubrimiento industrial"
+        },
+        "slide_6": {
+            "title": "Recubrimiento industrial con Line-X para tematización",
+            "link": "Recubrimiento piezas"
+        }
+    },
+    "terminos": {
+        "hero": {
+            "label": "Aviso legal",
+            "title": "Términos y Condiciones",
+            "meta": "Última actualización: enero de 2025 · LINE-X Hispania, S.L."
+        },
+        "indice": {
+            "label": "Contenido",
+            "s1": "1. Titularidad",
+            "s2": "2. Objeto y ámbito",
+            "s3": "3. Uso del sitio web",
+            "s4": "4. Propiedad intelectual",
+            "s5": "5. Protección de datos",
+            "s6": "6. Política de cookies",
+            "s7": "7. Contratación de servicios",
+            "s8": "8. Responsabilidad",
+            "s9": "9. Modificaciones",
+            "s10": "10. Ley aplicable"
+        },
+        "s1": {
+            "titulo": "Titularidad del sitio web",
+            "p1": "El presente sitio web (www.lxh.es) es titularidad de LINE-X Hispania, S.L., empresa con domicilio social en Ctra. C-55 km. 25, 08297 — Castellgalí (Barcelona), inscrita en el Registro Mercantil de Barcelona y con número de identificación fiscal B-XXXXXXXX.",
+            "p2": "Para cualquier consulta puede ponerse en contacto con nosotros a través de info@lxh.es o por teléfono en el número +34 93 878 96 22."
+        },
+        "s2": {
+            "titulo": "Objeto y ámbito de aplicación",
+            "p1": "El presente Aviso Legal regula el acceso y el uso del sitio web de LINE-X Hispania, S.L., incluyendo todos sus contenidos, servicios e información disponibles. El acceso al sitio web implica la aceptación plena y sin reservas de las presentes condiciones.",
+            "p2": "LINE-X Hispania se reserva el derecho a modificar en cualquier momento estos términos. Los cambios serán publicados en esta misma página con indicación de la fecha de actualización.",
+            "callout": "Si no está de acuerdo con alguna de estas condiciones, le rogamos que se abstenga de utilizar este sitio web o de contratar nuestros servicios."
+        },
+        "s3": {
+            "titulo": "Uso del sitio web",
+            "p1": "El usuario se compromete a hacer un uso adecuado y lícito del sitio web, de conformidad con la legislación aplicable, el presente Aviso Legal y los principios de buena fe. Queda expresamente prohibido:",
+            "li1": "Reproducir, copiar, distribuir o comunicar públicamente los contenidos del sitio sin autorización expresa de LINE-X Hispania.",
+            "li2": "Utilizar el sitio web con fines ilícitos, fraudulentos o que resulten lesivos para los derechos de terceros.",
+            "li3": "Introducir virus, código malicioso u otros elementos que puedan dañar los sistemas informáticos de LINE-X Hispania o de terceros.",
+            "li4": "Realizar actos que sobrecarguen la infraestructura técnica del sitio o interfieran en su normal funcionamiento.",
+            "li5": "Acceder, o intentar acceder, a áreas restringidas del sitio sin la debida autorización.",
+            "p2": "LINE-X Hispania se reserva el derecho de denegar o retirar el acceso al sitio sin previo aviso a aquellos usuarios que incumplan las presentes condiciones."
+        },
+        "s4": {
+            "titulo": "Propiedad intelectual e industrial",
+            "p1": "Todos los contenidos del sitio web —incluyendo textos, fotografías, gráficos, imágenes, vídeos, logotipos, marcas, nombres comerciales, diseños y código fuente— son propiedad de LINE-X Hispania, S.L. o de sus legítimos titulares, y están protegidos por la normativa española e internacional sobre propiedad intelectual e industrial.",
+            "p2": "Queda prohibida cualquier reproducción, distribución, comunicación pública o transformación de dichos contenidos sin contar con la autorización previa y por escrito de LINE-X Hispania."
+        },
+        "s5": {
+            "titulo": "Protección de datos personales",
+            "p1": "LINE-X Hispania trata los datos personales de los usuarios de conformidad con el Reglamento General de Protección de Datos (RGPD) (UE) 2016/679 y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
+            "p2": "Los datos recabados a través de los formularios del sitio web serán tratados con las siguientes finalidades:",
+            "li1": "Gestionar las solicitudes de información y contacto.",
+            "li2": "Enviar comunicaciones comerciales a los usuarios que hayan prestado su consentimiento expreso.",
+            "li3": "Cumplir con las obligaciones legales aplicables.",
+            "p3": "El usuario podrá ejercer en cualquier momento sus derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación del tratamiento dirigiéndose por escrito a info@lxh.es. Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).",
+            "p4": "Los datos no serán cedidos a terceros salvo obligación legal o cuando sea necesario para la prestación de los servicios contratados."
+        },
+        "s6": {
+            "titulo": "Política de cookies",
+            "p1": "Este sitio web utiliza cookies propias y de terceros con las siguientes finalidades:",
+            "li1": "Cookies esenciales: necesarias para el funcionamiento básico del sitio. No requieren consentimiento.",
+            "li2": "Cookies analíticas: permiten medir y analizar el tráfico del sitio con el fin de mejorar la experiencia de usuario.",
+            "li3": "Cookies de personalización: recuerdan las preferencias del usuario.",
+            "p2": "Al acceder al sitio web, el usuario podrá aceptar todas las cookies o limitarlas a las estrictamente esenciales. El usuario puede revocar su consentimiento en cualquier momento desde la configuración de su navegador.",
+            "callout": "La desactivación de determinadas cookies puede afectar a la funcionalidad del sitio web. LINE-X Hispania no se hace responsable de las posibles limitaciones derivadas de dicha desactivación."
+        },
+        "s7": {
+            "titulo": "Contratación de servicios",
+            "p1": "La información publicada en este sitio web sobre servicios, proyectos y capacidades de LINE-X Hispania tiene carácter meramente informativo y no constituye una oferta contractual vinculante.",
+            "p2": "Los presupuestos y condiciones específicas de cada proyecto se acordarán individualmente con el cliente mediante documento contractual específico.",
+            "p3": "LINE-X Hispania se reserva el derecho a modificar sus tarifas, condiciones de prestación o catálogo de servicios sin previo aviso, sin que ello afecte a los contratos ya formalizados."
+        },
+        "s8": {
+            "titulo": "Limitación de responsabilidad",
+            "p1": "LINE-X Hispania no garantiza la disponibilidad continua e ininterrumpida del sitio web, y no será responsable de los daños causados por interrupciones, errores técnicos, virus u otros elementos de origen externo.",
+            "p2": "Tampoco será responsable de los daños derivados de:",
+            "li1": "El uso incorrecto del sitio web por parte del usuario.",
+            "li2": "La inexactitud de la información facilitada por el usuario en los formularios.",
+            "li3": "El acceso a sitios web de terceros enlazados desde este sitio, cuyo contenido y políticas son responsabilidad exclusiva de dichos terceros.",
+            "li4": "Causas de fuerza mayor o circunstancias ajenas al control razonable de LINE-X Hispania."
+        },
+        "s9": {
+            "titulo": "Modificaciones del Aviso Legal",
+            "p1": "LINE-X Hispania se reserva el derecho a modificar, en cualquier momento y sin previo aviso, el contenido de este Aviso Legal. Los cambios tendrán efecto desde el momento de su publicación en el sitio.",
+            "p2": "Se recomienda al usuario revisar periódicamente este documento. El acceso continuado al sitio web tras la publicación de los cambios implicará la aceptación de los mismos."
+        },
+        "s10": {
+            "titulo": "Ley aplicable y jurisdicción",
+            "p1": "El presente Aviso Legal se rige en su integridad por la legislación española. Las partes se someten a los Juzgados y Tribunales de Barcelona para la resolución de cualquier controversia.",
+            "p2": "En el caso de conflictos derivados de la contratación de servicios con consumidores, se estará a lo dispuesto en la normativa aplicable sobre consumo vigente en España y en la Unión Europea."
+        },
+        "contacto": {
+            "titulo": "¿Tienes alguna pregunta legal?",
+            "texto": "Nuestro equipo está disponible para resolver cualquier duda sobre estos términos o sobre la privacidad de tus datos."
+        }
     }
 }

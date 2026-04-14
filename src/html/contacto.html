@@ -1,4 +1,5 @@
 {% set page_title = 'Contacto' %}
+{% set page_title_i18n = 'generales.contact' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -13,9 +14,11 @@
 
 {% block content %}
 
-{% macro formCheckboxBtn(name="", checked="") %}
+{% macro formCheckboxBtn(name="", i18n_key="", checked="") %}
 <input class="checkbox-btn" type="checkbox" id="checkbox{{ name | title | replace(' ', '') }}"{{ ' checked' if checked }}>
-<label for="checkbox{{ name | title | replace(' ', '') }}"><span>{{ name | escape }}</span></label>
+<label for="checkbox{{ name | title | replace(' ', '') }}">
+    <span{% if i18n_key %} data-i18n="{{ i18n_key }}"{% endif %}>{{ name | escape }}</span>
+</label>
 {% endmacro %}
 <div class="pt-160 pb-100 position-relative">
     <div class="background">
@@ -38,45 +41,45 @@
             <div class="col-lg-10">
                 <form id="contact-form">
                     
-                    <p class="lead fw-medium mb-30">Escoge un tipo de proyecto:</p>
+                    <p class="lead fw-medium mb-30" data-i18n="generales.form_project_type">Escoge un tipo de proyecto:</p>
                 
                     <div class="row gh-xs gv-xs mb-n7">
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="100">
-                            {{ formCheckboxBtn('Modelado 3D') }}
+                            {{ formCheckboxBtn('Modelado 3D', 'contacto.tipos_proyecto.modelado_3d') }}
                         </div>
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">
-                            {{ formCheckboxBtn('Figuras con porex') }}
+                            {{ formCheckboxBtn('Figuras con porex', 'contacto.tipos_proyecto.porex') }}
                         </div>
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="200">
-                            {{ formCheckboxBtn('Recubrimiento con Line-X') }}
+                            {{ formCheckboxBtn('Recubrimiento con Line-X','contacto.tipos_proyecto.linex') }}
                         </div>
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="250">
-                            {{ formCheckboxBtn('Animatrónicos') }}
+                            {{ formCheckboxBtn('Animatrónicos', 'contacto.tipos_proyecto.animatronics') }}
                         </div>
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
-                            {{ formCheckboxBtn('Diseño de maquetas') }}
+                            {{ formCheckboxBtn('Diseño de maquetas', 'contacto.tipos_proyecto.maquetas') }}
                         </div>
                         <div class="col-auto show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="450">
-                            {{ formCheckboxBtn('Otros', true) }}
+                            {{ formCheckboxBtn('Otros', 'contacto.tipos_proyecto.otros', true) }}
                         </div>
                     </div>
                 
                     <div class="row gh-1 gv-3 mt-30">
                         <div class="col-12">
-                            <input class="form-control form-control-lg form-control-white" type="text" name="name" placeholder="Introduce un nombre *" required>
+                            <input class="form-control form-control-lg form-control-white" type="text" name="name" placeholder="Introduce un nombre *" data-i18n-placeholder="generales.form_name_placeholder" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="email" class="form-control form-control-lg form-control-white" name="email" placeholder="Introduce un e-mail *" required>
+                            <input type="email" class="form-control form-control-lg form-control-white" name="email" placeholder="Introduce un e-mail *" data-i18n-placeholder="generales.form_email_placeholder" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" class="form-control form-control-lg form-control-white" name="phone" placeholder="Introduce un teléfono *">
+                            <input type="text" class="form-control form-control-lg form-control-white" name="phone" placeholder="Introduce un teléfono *" data-i18n-placeholder="generales.form_phone_placeholder" required>
                         </div>
                         <div class="col-12">
-                            <textarea class="form-control form-control-lg form-control-white" name="message" rows="3" placeholder="Mensaje *" required></textarea>
+                            <textarea class="form-control form-control-lg form-control-white" name="message" rows="4" placeholder="Mensaje *" data-i18n-placeholder="generales.form_message_placeholder" required></textarea>
                         </div>
                     </div>
-                    <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 20px;">Correo enviado correctamente.</div>
-                    <button class="btn btn-white btn-with-ball mt-90" type="submit">Enviar</button>
+                    <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 20px;" data-i18n="contacto.success_message">Correo enviado correctamente.</div>
+                    <button class="btn btn-white btn-with-ball mt-90" type="submit" data-i18n="generales.form_submit">Enviar</button>
                 </form>
                 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
                 <script>
@@ -112,7 +115,7 @@
             <div class="col-lg-1 d-none d-lg-block"></div>
 
             <div class="col-lg-3 ms-lg-n30 ps-lg-0 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="50" data-show-origin="right">
-                <h4 class="mb-30">España, Barcelona</h4>
+                <h4 class="mb-30" data-i18n="contacto.sedes.espana.title">España, Barcelona</h4>
 
                 <ul class="list-group borderless pt-10">
                     <li class="list-group-item d-flex">
@@ -126,13 +129,13 @@
                         <svg class="me-15 align-self-center" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 2.5C17 1.675 16.28 1 15.4 1H2.6C1.72 1 1 1.675 1 2.5M17 2.5V11.5C17 12.325 16.28 13 15.4 13H2.6C1.72 13 1 12.325 1 11.5V2.5M17 2.5L9 7.75L1 2.5" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <a href="mailto:info@lxh.es?subject=Test%20Address%20Email">info@lxh.es</a>
+                        <a href="mailto:info@lxh.es?subject=Test%20Address%20Email" data-i18n="contacto.sedes.espana.email">info@lxh.es</a>
                     </li>
                     <li class="list-group-item d-flex mt-15">
                         <svg class="me-15 align-self-center" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.9995 12.9791V15.3877C16.0004 15.6113 15.9574 15.8327 15.8732 16.0375C15.7891 16.2424 15.6657 16.4263 15.5109 16.5775C15.3561 16.7286 15.1734 16.8437 14.9744 16.9154C14.7754 16.987 14.5646 17.0136 14.3554 16.9935C12.0346 16.725 9.80532 15.8808 7.84668 14.5286C6.02441 13.2959 4.47945 11.6512 3.3215 9.71135C2.0469 7.61679 1.25368 5.23206 1.00612 2.75036C0.987275 2.52834 1.01206 2.30457 1.0789 2.0933C1.14574 1.88203 1.25317 1.6879 1.39436 1.52325C1.53554 1.35861 1.70738 1.22706 1.89893 1.13699C2.09049 1.04691 2.29756 1.00029 2.50697 1.00008H4.76956C5.13557 0.996243 5.49041 1.13422 5.76793 1.3883C6.04546 1.64237 6.22672 1.99521 6.27795 2.38103C6.37345 3.15185 6.55055 3.9087 6.80589 4.63713C6.90736 4.9245 6.92932 5.23682 6.86917 5.53707C6.80902 5.83732 6.66927 6.11292 6.4665 6.33121L5.50867 7.35087C6.58231 9.36092 8.14568 11.0252 10.0338 12.1682L10.9917 11.1485C11.1967 10.9326 11.4556 10.7839 11.7377 10.7198C12.0197 10.6558 12.3131 10.6792 12.583 10.7872C13.2673 11.059 13.9782 11.2476 14.7023 11.3492C15.0687 11.4042 15.4033 11.6007 15.6424 11.9012C15.8816 12.2017 16.0087 12.5853 15.9995 12.9791Z" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <a href="callto:++34 93 878 96 22">+34 93 878 96 22 / 609 02 63 65</a>
+                        <a href="callto:++34 93 878 96 22" data-i18n="contacto.sedes.usa.phone">+34 93 878 96 22 / 609 02 63 65</a>
                     </li>
                 </ul>
             </div>
@@ -150,7 +153,7 @@
             <div class="col-lg-1 d-none d-lg-block"></div>
 
             <div class="col-lg-3 ms-lg-n30 ps-lg-0 show-on-scroll" data-show-duration="500" data-show-distance="20" data-show-delay="50" data-show-origin="right">
-                <h4 class="mb-30">Estados unidos, Florida</h4>
+                <h4 class="mb-30" data-i18n="contacto.sedes.usa.title">Estados unidos, Florida</h4>
 
                 <ul class="list-group borderless pt-10">
                     <li class="list-group-item d-flex">
@@ -158,19 +161,19 @@
                             <path d="M16 8.36364C16 14.0909 8.5 19 8.5 19C8.5 19 1 14.0909 1 8.36364C1 6.41068 1.79018 4.53771 3.1967 3.15676C4.60322 1.77581 6.51088 1 8.5 1C10.4891 1 12.3968 1.77581 13.8033 3.15676C15.2098 4.53771 16 6.41068 16 8.36364Z" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M8.5 10.8182C9.88071 10.8182 11 9.71924 11 8.36364C11 7.00803 9.88071 5.90909 8.5 5.90909C7.11929 5.90909 6 7.00803 6 8.36364C6 9.71924 7.11929 10.8182 8.5 10.8182Z" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        2250 Lucien way suite 305, 32751 - Maitlands 
+                        <span data-i18n="contacto.sedes.usa.address">2250 Lucien way suite 305, 32751 - Maitlands</span> 
                     </li>
                     <li class="list-group-item d-flex mt-15">
                         <svg class="me-15 align-self-center" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 2.5C17 1.675 16.28 1 15.4 1H2.6C1.72 1 1 1.675 1 2.5M17 2.5V11.5C17 12.325 16.28 13 15.4 13H2.6C1.72 13 1 12.325 1 11.5V2.5M17 2.5L9 7.75L1 2.5" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <a href="mailto:info@lxh.es?subject=Test%20Address%20Email">info@lxhrockwork.com</a>
+                        <a href="mailto:info@lxh.es?subject=Test%20Address%20Email" data-i18n="contacto.sedes.usa.email">info@lxhrockwork.com</a>
                     </li>
                     <li class="list-group-item d-flex mt-15">
                         <svg class="me-15 align-self-center" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.9995 12.9791V15.3877C16.0004 15.6113 15.9574 15.8327 15.8732 16.0375C15.7891 16.2424 15.6657 16.4263 15.5109 16.5775C15.3561 16.7286 15.1734 16.8437 14.9744 16.9154C14.7754 16.987 14.5646 17.0136 14.3554 16.9935C12.0346 16.725 9.80532 15.8808 7.84668 14.5286C6.02441 13.2959 4.47945 11.6512 3.3215 9.71135C2.0469 7.61679 1.25368 5.23206 1.00612 2.75036C0.987275 2.52834 1.01206 2.30457 1.0789 2.0933C1.14574 1.88203 1.25317 1.6879 1.39436 1.52325C1.53554 1.35861 1.70738 1.22706 1.89893 1.13699C2.09049 1.04691 2.29756 1.00029 2.50697 1.00008H4.76956C5.13557 0.996243 5.49041 1.13422 5.76793 1.3883C6.04546 1.64237 6.22672 1.99521 6.27795 2.38103C6.37345 3.15185 6.55055 3.9087 6.80589 4.63713C6.90736 4.9245 6.92932 5.23682 6.86917 5.53707C6.80902 5.83732 6.66927 6.11292 6.4665 6.33121L5.50867 7.35087C6.58231 9.36092 8.14568 11.0252 10.0338 12.1682L10.9917 11.1485C11.1967 10.9326 11.4556 10.7839 11.7377 10.7198C12.0197 10.6558 12.3131 10.6792 12.583 10.7872C13.2673 11.059 13.9782 11.2476 14.7023 11.3492C15.0687 11.4042 15.4033 11.6007 15.6424 11.9012C15.8816 12.2017 16.0087 12.5853 15.9995 12.9791Z" stroke="#0E0E0E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <a href="callto:++34 93 878 96 22">+34 93 878 96 22 / 609 02 63 65</a>
+                        <a href="callto:++34 93 878 96 22" data-i18n="contacto.sedes.espana.phone">+34 93 878 96 22 / 609 02 63 65</a>
                     </li>
                 </ul>
             </div>
