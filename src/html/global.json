@@ -172,16 +172,6 @@
                 "md": "assets/images/portfolio/portada.jpg"
             }
         },
-        "studiocreations": {
-            "href": "studiocreations.html",
-            "title": "Studio & Creations",
-            "category": ["Tematización", "#"],
-            "logo": "",
-            "image": {
-                "lg": "assets/images/portfolio/studiocreations.jpg",
-                "md": "assets/images/portfolio/studiocreations.jpg"
-            }
-        },
         "katmanduInverso": {
             "href": "katmanduInverso.html",
             "title": "Katmandu Casa al revés",
@@ -573,15 +563,6 @@
             "14": ["assets/images/single-portfolio/DES13.jpg", "assets/images/single-portfolio/DES13.jpg"],
             "15": ["assets/images/single-portfolio/DES14.jpg", "assets/images/single-portfolio/DES14.jpg"],
             "16": ["assets/images/single-portfolio/DES15.jpg", "assets/images/single-portfolio/DES15.jpg"]
-        },
-        "style_5_14": {
-            "banner": "assets/images/portfolio/studiocreations.jpg",
-            "02": ["assets/images/single-portfolio/SC1.jpg", "assets/images/single-portfolio/SC1.jpg"],
-            "06": ["assets/images/single-portfolio/SC5.jpg", "assets/images/single-portfolio/SC5.jpg"],
-            "08": ["assets/images/single-portfolio/SC7.jpg", "assets/images/single-portfolio/SC7.jpg"],
-            "10": ["assets/images/single-portfolio/SC9.jpg", "assets/images/single-portfolio/SC9.jpg"],
-            "11": ["assets/images/single-portfolio/SC10.jpg", "assets/images/single-portfolio/SC10.jpg"],
-            "12": ["assets/images/single-portfolio/SC11.jpg", "assets/images/single-portfolio/SC11.jpg"]
         },
         "style_5_15": {
             "banner": "assets/images/portfolio/Katmandu.jpg",
