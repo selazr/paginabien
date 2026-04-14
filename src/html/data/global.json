@@ -182,9 +182,13 @@
         },
         "desierto": {
             "href": "desierto.html",
+<<<<<<< HEAD
             "title": "Obelisco Terra Mitica",
             "i18n": "proyectos.desierto.title",
             "i18n_category": "proyectos.desierto.category",
+=======
+            "title": "Obelisco Terra Mítica",
+>>>>>>> 2883e5b4cf5c33107c137954fbb830a8ea1c9283
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -194,9 +198,13 @@
         },
         "katmanduInverso": {
             "href": "katmanduInverso.html",
+<<<<<<< HEAD
             "title": "Katmandu Inverso",
             "i18n": "proyectos.katmandu_inverso.title",
             "i18n_category": "proyectos.katmandu_inverso.category",
+=======
+            "title": "Katmandu casa al revés",
+>>>>>>> 2883e5b4cf5c33107c137954fbb830a8ea1c9283
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -218,9 +226,13 @@
         },
         "MinigolfPirata": {
             "href": "Minigolf.html",
+<<<<<<< HEAD
             "title": "Minigolf pirata",
             "i18n": "proyectos.minigolf_pirata.title",
             "i18n_category": "proyectos.minigolf_pirata.category",
+=======
+            "title": "Caledonia Isla calavera",
+>>>>>>> 2883e5b4cf5c33107c137954fbb830a8ea1c9283
             "category": ["Minigolf", "#"],
             "logo": "",
             "image": {
