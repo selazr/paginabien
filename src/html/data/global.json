@@ -25,7 +25,67 @@
         }
         ,
         "proyectos.html": {
-            "name": "Proyectos"
+            "name": "Proyectos",
+            "no_dropdown": true,
+            "sub": {
+                "SpaIberostar.html": {
+                    "name": "Spa Iberostar"
+                },
+                "Katlantis.html": {
+                    "name": "Katlantis"
+                },
+                "RoyalCaribean.html": {
+                    "name": "Royal Caribbean"
+                },
+                "BiciLabMostrador.html": {
+                    "name": "BiciLab"
+                },
+                "nessie.html": {
+                    "name": "Nessie"
+                },
+                "ferrariland.html": {
+                    "name": "Ferrari Land"
+                },
+                "ballena.html": {
+                    "name": "Ballena"
+                },
+                "garzas.html": {
+                    "name": "Garzas"
+                },
+                "katmandu.html": {
+                    "name": "Katmandu"
+                },
+                "capitel.html": {
+                    "name": "Capitel"
+                },
+                "moon.html": {
+                    "name": "Moon"
+                },
+                "row.html": {
+                    "name": "Row"
+                },
+                "enigma.html": {
+                    "name": "Enigma"
+                },
+                "eurocamping.html": {
+                    "name": "Eurocamping"
+                },
+                "desierto.html": {
+                    "name": "Desierto"
+                },
+                "katmanduInverso.html": {
+                    "name": "Katmandu Inverso"
+                },
+                "Minigolf.html": {
+                    "name": "Minigolf Pirata"
+                },
+                "piedraEquilibrio.html": {
+                    "name": "Piedra Equilibrio"
+                },
+                "muroCamping.html": {
+                    "name": "Camping Sant Miquel"
+                }
+            }
         },
         "about-us.html": {
             "name": "Empresa",

@@ -1,6 +1,6 @@
 {% macro submenu_dropdown(nav) -%}
     {% for file, item in nav %}
-        {%- if item.sub -%}
+        {%- if item.sub and not item.no_dropdown -%}
         <li class="nav-item navbar-dropdown{{ ' navbar-dropdown-mega' if item.mega }}{{ ' active' if isActiveMenuItem(file, item, filename) }}">
             <a href="{{ file | safe }}" class="nav-link">
                 <span class="nav-link-name"{% if nav_i18n_key(file, item.name) %} data-i18n="{{ nav_i18n_key(file, item.name) }}"{% endif %}>
@@ -35,7 +35,7 @@
 
 {% macro submenu_collapse(nav) -%}
     {% for file, item in nav %}
-        {%- if item.sub -%}
+        {%- if item.sub and not item.no_dropdown -%}
 
         {% macro data_id(id="") %}
             {{- 'navbarCollapse' + id | title | replace(' ', '') -}}
