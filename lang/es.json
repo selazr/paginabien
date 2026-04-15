@@ -115,6 +115,19 @@
             "work_with_us": "Trabaja con nosotros"
         }
     },
+    "person": {
+        "julio_macias": { "title": "Julio Macias", "subtitle": "CEO" },
+        "jordi_macias": { "title": "Jordi Macias", "subtitle": "CFO" },
+        "maria_belmonte": { "title": "Maria Belmonte", "subtitle": "Administración" },
+        "montserrat_cortina": { "title": "Montserrat Cortina", "subtitle": "Administración" },
+        "yolanda_baena": { "title": "Yolanda Baena", "subtitle": "RRHH" },
+        "laia_olmo": { "title": "Laia Olmo", "subtitle": "DiseÃ±o y Arquitectura" },
+        "mireia_nubiola": { "title": "Mireia Nubiola", "subtitle": "Diseñadora" },
+        "roybel_chechelev": { "title": "Roybel Chechelev", "subtitle": "Robótica" },
+        "leonel_murguia": { "title": "Leonel Murguia", "subtitle": "Robótica" },
+        "jose_miguel": { "title": "Jose Miguel", "subtitle": "Jefe de obra" },
+        "cesar_arenas": { "title": "Cesar Arenas", "subtitle": "Informático" }
+    },
     "contacto": {
         "tipos_proyecto": {
             "modelado_3d": "Modelado 3D",
@@ -402,6 +415,13 @@
             "date": "",
             "category": "Cine",
             "client": "Amazon prime"
+        },
+        "muro_campingSantMiquel": {
+            "title": "Muro Camping Sant Miquel",
+            "description": "Hemos creado un Acceso tematizado para el Camping Sant Miquel. Esta obra de albañilería técnica y carpintería, donde destaca el remate en arco y la textura de la piedra. Un diseño robusto y profesional pensado para dar una imagen cuidada y limpia a la entrada del recinto.",
+            "date": "",
+            "category": "Arquitectura",
+            "client": "Camping Sant Miquel"
         }
     },
     "listado_general": {

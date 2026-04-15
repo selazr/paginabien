@@ -228,6 +228,18 @@
                 "md": "assets/images/portfolio/Minigolf.jpg"
             }
         },
+        "campingSantMiquel": {
+            "href": "muroCamping.html",
+            "title": "Muro Camping Sant Miquel",
+            "i18n": "proyectos.muro_camping.title",
+            "i18n_category": "proyectos.muro_camping.category",
+            "category": ["Tematización", "#"],
+            "logo": "",
+            "image": {
+                "lg": "assets/images/portfolio/puertaCamping.jpeg",
+                "md": "assets/images/portfolio/puertaCamping.jpeg"
+            }
+        },
         "funny_dog": {
             "href": "garzas.html",
             "title": "Garzas Iberostar",
@@ -644,6 +656,12 @@
             "03": ["assets/images/single-portfolio/piedra2.jpg", "assets/images/single-portfolio/piedra2.jpg"],
             "04": ["assets/images/single-portfolio/piedra3.jpg", "assets/images/single-portfolio/piedra3.jpg"],
             "05": ["assets/images/single-portfolio/piedra4.jpg", "assets/images/single-portfolio/piedra4.jpg"]
+        },
+        "style_5_18": {
+            "banner": "assets/images/portfolio/puertaCamping.jpeg",
+            "02": ["assets/images/single-portfolio/puertaCamping1.jpeg", "assets/images/single-portfolio/puertaCamping1.jpeg"],
+            "03": ["assets/images/single-portfolio/puertaCamping2.jpeg", "assets/images/single-portfolio/puertaCamping2.jpeg"],
+            "04": ["assets/images/portfolio/puertaCamping.jpeg", "assets/images/portfolio/puertaCamping.jpeg"]
         }
         
     },

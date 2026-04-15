@@ -175,6 +175,26 @@
                 }
             }
 
+            .language-fab-btn{
+
+                transition: all 0.3s ease;
+
+            }
+
+            .language-fab-btn.light{
+
+                background: #ffffff;
+                color: #000000;
+
+            }
+
+            .language-fab-btn.dark{
+
+                background: #000000;
+                color: #ffffff;
+
+            }
+
         </style>
         
         <div id="cookie-banner" role="dialog" aria-modal="true" aria-label="Aviso de cookies">
@@ -236,6 +256,7 @@
     </script>
     <script>
         (function () {
+            const lang = document.documentElement.getAttribute("lang") || "es";
             const CONFIG = {
                 LOCATION_COOKIE: 'user_location',
                 LANG_COOKIE: 'user_lang',
@@ -394,6 +415,7 @@
                     const translations = await fetchTranslations(nextLang);
                     applyTranslations(translations);
                     updateLanguageToggle(nextLang);
+                    updateLanguageButtonTheme();
                     return nextLang;
                 } catch (error) {
                     if (nextLang !== FALLBACK_LANGUAGE) {
@@ -401,6 +423,7 @@
                     }
                     throw error;
                 }
+
             }
 
             async function initLocation() {
@@ -426,6 +449,52 @@
                     cookies.set(CONFIG.LANG_COOKIE, FALLBACK_LANGUAGE, 0.17);
                     await applyLang(FALLBACK_LANGUAGE);
                     return FALLBACK_LANGUAGE;
+                }
+            }
+
+            function updateLanguageButtonTheme(){
+
+                const button = document.getElementById('languageFabBtn');
+                if (!button) return;
+
+                const x = window.innerWidth / 2;
+                const y = window.innerHeight / 2;
+
+                let el = document.elementFromPoint(x, y);
+                if (!el) return;
+
+                let bgColor = null;
+
+                while (el && el !== document.body) {
+                    const style = window.getComputedStyle(el);
+                    const bg = style.backgroundColor;
+
+                    if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent') {
+                        bgColor = bg;
+                        break;
+                    }
+
+                    el = el.parentElement;
+                }
+
+                // fallback
+                if (!bgColor) bgColor = 'rgb(255,255,255)';
+
+                const rgb = bgColor.match(/\d+/g);
+                if (!rgb) return;
+
+                const r = parseInt(rgb[0]);
+                const g = parseInt(rgb[1]);
+                const b = parseInt(rgb[2]);
+
+                const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+                button.classList.remove('light', 'dark');
+
+                if (brightness > 128){
+                    button.classList.add('dark'); // fondo claro
+                } else {
+                    button.classList.add('light'); // fondo oscuro
                 }
             }
 
@@ -476,7 +545,44 @@
                 });
 
                 updateLanguageToggle(document.documentElement.getAttribute('lang') || FALLBACK_LANGUAGE);
+                updateLanguageButtonTheme();
+                window.addEventListener('scroll', updateLanguageButtonTheme);
+                window.addEventListener('resize', updateLanguageButtonTheme);
             }
+
+            function initThemeObserver(){
+
+            const button = document.getElementById('languageFabBtn');
+            if (!button) return;
+
+            const sections = document.querySelectorAll('[data-theme]');
+            if (!sections.length) return; // importante
+
+            const observer = new IntersectionObserver((entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        const theme = entry.target.dataset.theme;
+
+                        button.classList.remove('light', 'dark');
+
+                        if (theme === 'dark') {
+                            button.classList.add('dark');
+                        } else {
+                            button.classList.add('light');
+                        }
+                    }
+
+                });
+
+            }, {
+                threshold: 0.6
+            });
+
+            sections.forEach(section => observer.observe(section));
+        }
 
             function initNewsletter() {
                 const ui = {
@@ -519,7 +625,8 @@
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
                                 email: document.getElementById('newsletterEmail').value,
-                                website: ui.form.querySelector("input[name='website']").value
+                                website: ui.form.querySelector("input[name='website']").value,
+                                lang: document.documentElement.getAttribute('lang') || FALLBACK_LANGUAGE
                             })
                         });
                         const data = await response.json();
@@ -553,6 +660,12 @@
                                 ? translate('newsletter.unsubscribe_success', 'Baja tramitada correctamente.')
                                 : translate('newsletter.error_generic', 'Error.');
                             ui.unsubscribeMessage.style.color = data.ok ? 'green' : 'red';
+                        })
+                        .finally(() => {
+                            const url = new URL(window.location.href);
+                            url.searchParams.delete('token');
+                            const nextUrl = url.pathname + url.search + url.hash;
+                            window.history.replaceState({}, '', nextUrl);
                         });
                 }
             }
@@ -561,6 +674,7 @@
                 initLanguageToggle();
                 await initLocation();
                 initNewsletter();
+                initThemeObserver();
             }
 
             if (document.readyState === 'loading') {

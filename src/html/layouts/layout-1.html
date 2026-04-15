@@ -1,4 +1,4 @@
-{% include "layouts/_head.html" %}
+﻿{% include "layouts/_head.html" %}
 
 
 {% from 'macros/card.html' import card_project, card_project_horizontal, card_project_overlay, card_service_overlay, card_blog, card_person %}
@@ -42,7 +42,9 @@
 
 {% macro card_person_global(name="", title_size="h4", classes="") %}
     {{ card_person(
-        href=person[name].href, image=person[name].image, title=person[name].title, subtitle=person[name].subtitle, social=person[name].social, title_size=title_size, classes=classes
+        href=person[name].href, image=person[name].image, title=person[name].title, subtitle=person[name].subtitle, social=person[name].social, title_size=title_size, classes=classes,
+        i18n='person.' + name + '.title',
+        i18n_subtitle='person.' + name + '.subtitle'
     ) }}
 {% endmacro %}
 
@@ -64,7 +66,6 @@
     {% if footer == false %}{% else %}
         {% include "shared/footer.html" %}
     {% endif %}
-
     {% block after_content %}{% endblock %}
 
     {% include "layouts/_foot.html" %}

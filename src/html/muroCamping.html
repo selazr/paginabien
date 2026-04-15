@@ -1,5 +1,5 @@
-{% set page_title = 'Moon' %}
-{% set page_title_i18n = 'proyectos.moon.title' %}
+{% set page_title = 'Muro Camping Sant Miquel' %}
+{% set page_title_i18n = 'proyectos.muro_camping.title' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -10,40 +10,6 @@
 
 {% extends 'layouts/layout-1.html' %}
 
-{% block head %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "Lucianno's Moon - Proyecto de tematización lunar",
-  "image": [
-    "https://lxh.es/images/proyectos/moon-1x1.jpeg",
-    "https://lxh.es/images/proyectos/moon-4x3.jpeg",
-    "https://lxh.es/images/proyectos/moon-16x9.jpeg"
-  ],
-  "datePublished": "2020-12-11T08:00:00+01:00",
-  "dateModified": "2020-12-11T08:00:00+01:00",
-  "author": {
-    "@type": "Organization",
-    "name": "LINE-X Hispania",
-    "url": "https://lxh.es"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "LINE-X Hispania",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lxh.es/assets/images/logo.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lxh.es/moon.html"
-  }
-}
-</script>
-{% endblock %}
-
 
 {% macro image_portfolio(src="", classes="", gallery="") %}
 <a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
@@ -52,7 +18,7 @@
 {% endmacro %}
 
 {% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
-    {{ image_portfolio(single_portfolio_images.style_5_4[name], classes=classes, gallery=gallery) }}
+    {{ image_portfolio(single_portfolio_images.style_5_18[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
 
@@ -60,13 +26,13 @@
 <div class="py-160 min-vh-100 d-flex align-items-center position-relative">
     <div class="background">
         <div class="background-image jarallax" data-jarallax data-speed="0.8">
-            <img src="{{ single_portfolio_images.style_5_4.banner }}" class="jarallax-img" alt="">
+            <img src="{{ single_portfolio_images.style_5_18.banner }}" class="jarallax-img" alt="">
         </div>
         <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
     </div>
 
-    <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.moon.title">Lucianno's</h1>
+    <div class="container text-center"> 
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.muro_campingSantMiquel.title">Muro Camping Sant Miquel</h1>
     </div>
 </div>
 
@@ -81,19 +47,19 @@
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.moon.description">Un proyecto de tematización desarrollado por LINE-X Hispania, inspirado en la superficie lunar para crear una experiencia inmersiva y futurista. La ambientación reproduce con precisión la textura de la Luna, combinando elementos visuales impactantes y acabados de alta calidad. La transformación del espacio demuestra el compromiso de LINE-X Hispania con la innovación en tematización para el sector del entretenimiento y la restauración.</p>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.muro_campingSantMiquel.description">Hemos creado un Acceso tematizado para el Camping Sant Miquel. Esta obra de albañilería técnica y carpintería, donde destaca el remate en arco y la textura de la piedra. Un diseño robusto y profesional pensado para dar una imagen cuidada y limpia a la entrada del recinto.</p>
             </div>
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.moon.date">Diciembre 11, 2020</span>
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.muro_campingSantMiquel.date">Junio 10, 2008</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.moon.category">Tematización</span>
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.muro_campingSantMiquel.category">Arquitectura</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Lucianno's
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Camping Sant Miquel
                     </div>
                     
                 </div>
@@ -121,9 +87,9 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="capitel.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="desierto.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
         <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
-        <a href="row.html" class="btn btn-clean"><span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="Minigolf.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

@@ -165,14 +165,14 @@
 {% endmacro %}
  
  
-{% macro card_person(href="", image="", title="", subtitle="", social="", title_size="", classes="") %}
+{% macro card_person(href="", image="", title="", subtitle="", social="", title_size="", classes="", i18n="", i18n_subtitle="") %}
 <div class="card card-person{{ ' ' + classes if classes }}">
     <a href="{{ href }}" class="card-img">
         <img src="{{ image }}" alt="">
     </a>
     <div class="card-body">
-        <a href="{{ href }}" class="card-title {{ title_size }}">{{ title }}</a>
-        <div class="card-subtitle">{{ subtitle }}</div>
+        <a href="{{ href }}" class="card-title {{ title_size }}"{% if i18n %} data-i18n="{{ i18n }}"{% endif %}>{{ title }}</a>
+        <div class="card-subtitle"{% if i18n_subtitle %} data-i18n="{{ i18n_subtitle }}"{% endif %}>{{ subtitle }}</div>
         {% if social %}
         <div class="card-social">
             

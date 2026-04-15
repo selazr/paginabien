@@ -115,6 +115,19 @@
             "work_with_us": "Work with us"
         }
     },
+    "person": {
+        "julio_macias": { "title": "Julio Macias", "subtitle": "CEO" },
+        "jordi_macias": { "title": "Jordi Macias", "subtitle": "CFO" },
+        "maria_belmonte": { "title": "Maria Belmonte", "subtitle": "Administration" },
+        "montserrat_cortina": { "title": "Montserrat Cortina", "subtitle": "Administration" },
+        "yolanda_baena": { "title": "Yolanda Baena", "subtitle": "HR" },
+        "laia_olmo": { "title": "Laia Olmo", "subtitle": "Design and Architecture" },
+        "mireia_nubiola": { "title": "Mireia Nubiola", "subtitle": "Designer" },
+        "roybel_chechelev": { "title": "Roybel Chechelev", "subtitle": "Robotics" },
+        "leonel_murguia": { "title": "Leonel Murguia", "subtitle": "Robotics" },
+        "jose_miguel": { "title": "Jose Miguel", "subtitle": "Site Manager" },
+        "cesar_arenas": { "title": "Cesar Arenas", "subtitle": "IT" }
+    },
     "contacto": {
         "tipos_proyecto": {
             "modelado_3d": "3D Modelling",
@@ -402,6 +415,13 @@
             "date": "",
             "category": "Cinema",
             "client": "Amazon Prime"
+        },
+        "muro_campingSantMiquel": {
+            "title": "Camping Sant Miquel Entrance Wall",
+            "description": "We have created a thematized entrance for Camping Sant Miquel. A project featuring technical masonry and carpentry, highlighting the arched finish and stone texture. A robust and professional design created to provide a polished and clean image for the site's entrance.",
+            "date": "",
+            "category": "Architecture",
+            "client": "Camping Sant Miquel"
         }
     },
     "listado_general": {
