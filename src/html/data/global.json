@@ -291,8 +291,8 @@
         "campingSantMiquel": {
             "href": "muroCamping.html",
             "title": "Muro Camping Sant Miquel",
-            "i18n": "proyectos.muro_camping.title",
-            "i18n_category": "proyectos.muro_camping.category",
+            "i18n": "proyectos.muro_campingSantMiquel.title",
+            "i18n_category": "proyectos.muro_campingSantMiquel.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
@@ -712,10 +712,11 @@
         },
         "style_5_17": {
             "banner": "assets/images/portfolio/piedra.jpg",
-            "02": ["assets/images/single-portfolio/piedra1.jpg", "assets/images/single-portfolio/piedra1.jpg"],
-            "03": ["assets/images/single-portfolio/piedra2.jpg", "assets/images/single-portfolio/piedra2.jpg"],
-            "04": ["assets/images/single-portfolio/piedra3.jpg", "assets/images/single-portfolio/piedra3.jpg"],
-            "05": ["assets/images/single-portfolio/piedra4.jpg", "assets/images/single-portfolio/piedra4.jpg"]
+            "02": ["assets/images/single-portfolio/piedra.jpeg", "assets/images/single-portfolio/piedra.jpeg"],
+            "03": ["assets/images/single-portfolio/piedra1.jpg", "assets/images/single-portfolio/piedra1.jpg"],
+            "04": ["assets/images/single-portfolio/piedra2.jpg", "assets/images/single-portfolio/piedra2.jpg"],
+            "05": ["assets/images/single-portfolio/piedra3.jpeg", "assets/images/single-portfolio/piedra3.jpeg"],
+            "06": ["assets/images/single-portfolio/piedra4.jpeg", "assets/images/single-portfolio/piedra4.jpeg"]
         },
         "style_5_18": {
             "banner": "assets/images/portfolio/puertaCamping.jpeg",
