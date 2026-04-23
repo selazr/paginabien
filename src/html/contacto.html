@@ -15,7 +15,14 @@
 {% block content %}
 
 {% macro formCheckboxBtn(name="", i18n_key="", checked="") %}
-<input class="checkbox-btn" type="checkbox" id="checkbox{{ name | title | replace(' ', '') }}"{{ ' checked' if checked }}>
+<input
+    class="checkbox-btn"
+    type="checkbox"
+    name="projectTypes"
+    value="{{ name | escape }}"
+    id="checkbox{{ name | title | replace(' ', '') }}"
+    {{ ' checked' if checked }}
+>
 <label for="checkbox{{ name | title | replace(' ', '') }}">
     <span{% if i18n_key %} data-i18n="{{ i18n_key }}"{% endif %}>{{ name | escape }}</span>
 </label>
@@ -78,28 +85,77 @@
                             <textarea class="form-control form-control-lg form-control-white" name="message" rows="4" placeholder="Mensaje *" data-i18n-placeholder="generales.form_message_placeholder" required></textarea>
                         </div>
                     </div>
-                    <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 20px;" data-i18n="contacto.success_message">Correo enviado correctamente.</div>
                     <button class="btn btn-white btn-with-ball mt-90" type="submit" data-i18n="generales.form_submit">Enviar</button>
+                    <div id="contact-form-message" style="display: none; margin-top: 20px; font-size: 14px; font-weight: 600;" data-i18n="contacto.success_message">Correo enviado correctamente.</div>
                 </form>
-                <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
                 <script>
-                    emailjs.init("u_2rjdC-eTt2v4pIn"); // Reemplaza con tu User ID
-                
-                    document.getElementById('contact-form').addEventListener('submit', function(event) {
-                        event.preventDefault(); // Evita que la página se recargue
-                
+                    document.getElementById('contact-form').addEventListener('submit', async function (event) {
+                        event.preventDefault();
+
                         const form = this;
-                
-                        // Envía el formulario con EmailJS
-                        emailjs.sendForm('line-x', 'template_2kksd6z', form) // Reemplaza los IDs
-                            .then(function(response) {
-                                document.getElementById('success-message').style.display = 'block';
-                                form.reset(); // Limpia los campos del formulario
-                            }, function(error) {
-                                alert('Error al enviar el correo: ' + JSON.stringify(error));
+                        const apiBase = (window.__siteConfig && window.__siteConfig.API_BASE);
+                        const submitButton = form.querySelector("button[type='submit']");
+                        const messageElement = document.getElementById('contact-form-message');
+                        const formData = new FormData(form);
+                        const projectTypes = Array.from(
+                            form.querySelectorAll("input[name='projectTypes']:checked")
+                        ).map(input => input.value);
+
+                        const originalButtonText = submitButton ? submitButton.innerText : '';
+                        const successMessage = messageElement.textContent.trim() || 'Correo enviado correctamente.';
+                        const sendingMessage = document.documentElement.lang === 'en' ? 'Sending...' : 'Enviando...';
+                        const errorMessage = document.documentElement.lang === 'en' ? 'Error sending the message.' : 'Error al enviar.';
+
+                        if (messageElement) {
+                            messageElement.style.display = 'none';
+                            messageElement.textContent = successMessage;
+                        }
+
+                        if (submitButton) {
+                            submitButton.disabled = true;
+                            submitButton.innerText = sendingMessage;
+                        }
+
+                        try {
+                            const response = await fetch(`${apiBase}/api/contact`, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    name: formData.get('name'),
+                                    email: formData.get('email'),
+                                    phone: formData.get('phone'),
+                                    message: formData.get('message'),
+                                    projectTypes
+                                })
                             });
+
+                            const data = await response.json();
+
+                            if (data.ok) {
+                                form.reset();
+                                if (messageElement) {
+                                    messageElement.textContent = successMessage;
+                                    messageElement.style.color = 'green';
+                                    messageElement.style.display = 'block';
+                                }
+                            } else {
+                                throw new Error(data.error || errorMessage);
+                            }
+                        } catch (error) {
+                            if (messageElement) {
+                                messageElement.textContent = error.message || errorMessage;
+                                messageElement.style.color = '#ff6b6b';
+                                messageElement.style.display = 'block';
+                            }
+                        } finally {
+                            if (submitButton) {
+                                submitButton.disabled = false;
+                                submitButton.innerText = originalButtonText;
+                            }
+                        }
                     });
-                </script>                
+                </script>
+
             </div>
         </div>
     </div>
@@ -177,7 +233,6 @@
                     </li>
                 </ul>
             </div>
-            
         </div>
     </div>
 </div>

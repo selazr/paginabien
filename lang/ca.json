@@ -116,17 +116,50 @@
         }
     },
     "person": {
-        "julio_macias": { "title": "Julio Macias", "subtitle": "CEO" },
-        "jordi_macias": { "title": "Jordi Macias", "subtitle": "CFO" },
-        "maria_belmonte": { "title": "Maria Belmonte", "subtitle": "Administració" },
-        "montserrat_cortina": { "title": "Montserrat Cortina", "subtitle": "Administració" },
-        "yolanda_baena": { "title": "Yolanda Baena", "subtitle": "RRHH" },
-        "laia_olmo": { "title": "Laia Olmo", "subtitle": "Disseny i Arquitectura" },
-        "mireia_nubiola": { "title": "Mireia Nubiola", "subtitle": "Dissenyadora" },
-        "roybel_chechelev": { "title": "Roybel Chechelev", "subtitle": "Robótica" },
-        "leonel_murguia": { "title": "Leonel Murguia", "subtitle": "Robótica" },
-        "jose_miguel": { "title": "Jose Miguel", "subtitle": "Cap d'obra" },
-        "cesar_arenas": { "title": "Cesar Arenas", "subtitle": "Informátic" }
+        "julio_macias": {
+            "title": "Julio Macias",
+            "subtitle": "CEO"
+        },
+        "jordi_macias": {
+            "title": "Jordi Macias",
+            "subtitle": "CFO"
+        },
+        "maria_belmonte": {
+            "title": "Maria Belmonte",
+            "subtitle": "Administració"
+        },
+        "montserrat_cortina": {
+            "title": "Montserrat Cortina",
+            "subtitle": "Administració"
+        },
+        "yolanda_baena": {
+            "title": "Yolanda Baena",
+            "subtitle": "RRHH"
+        },
+        "laia_olmo": {
+            "title": "Laia Olmo",
+            "subtitle": "Disseny i Arquitectura"
+        },
+        "mireia_nubiola": {
+            "title": "Mireia Nubiola",
+            "subtitle": "Dissenyadora"
+        },
+        "roybel_chechelev": {
+            "title": "Roybel Chechelev",
+            "subtitle": "Robótica"
+        },
+        "leonel_murguia": {
+            "title": "Leonel Murguia",
+            "subtitle": "Robótica"
+        },
+        "jose_miguel": {
+            "title": "Jose Miguel",
+            "subtitle": "Cap d'obra"
+        },
+        "cesar_arenas": {
+            "title": "Cesar Arenas",
+            "subtitle": "Informátic"
+        }
     },
     "contacto": {
         "tipos_proyecto": {
@@ -280,7 +313,9 @@
                     "desc": "Equilibri entre disseny, resistència i manteniment, assegurant que cada element compleixi la seva funció sense perdre impacte visual al llarg del temps."
                 }
             }
-        }
+        },
+        "subtitle": "El nostre servei",
+        "intro_title": "Creem dissenys temàtics especialitzats per a qualsevol necessitat"
     },
     "proyectos": {
         "ballena": {

@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="site-api-base" content="{{ api_base | escape }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -256,13 +257,23 @@
     </script>
     <script>
         (function () {
+            const apiBaseMeta = document.querySelector('meta[name="site-api-base"]');
+            const apiBase = apiBaseMeta ? apiBaseMeta.content.replace(/\/$/, '') : '';
+
+            window.__siteConfig = Object.assign({}, window.__siteConfig, {
+                API_BASE: apiBase
+            });
+        })();
+    </script>
+    <script>
+        (function () {
             const lang = document.documentElement.getAttribute("lang") || "es";
             const CONFIG = {
                 LOCATION_COOKIE: 'user_location',
                 LANG_COOKIE: 'user_lang',
                 EXPIRES_HOURS: 3,
                 MANUAL_LANG_EXPIRES_HOURS: 24 * 30,
-                API_BASE: 'http://localhost:3002',
+                API_BASE: window.__siteConfig.API_BASE,
                 SPANISH_COUNTRIES: ['ES', 'MX', 'AR', 'CO', 'PE', 'VE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY', 'GQ', 'PR'],
                 LANGUAGES: [
                     { code: 'es', short: 'ES', label: 'Espa\u00F1ol' },

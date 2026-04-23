@@ -2,6 +2,7 @@ const format = require( 'string-template' );
 const del = require( 'del' );
 const path = require( 'path' );
 const fs = require( 'fs' );
+require( 'dotenv' ).config();
 const browserSync = require( 'browser-sync' );
 const named = require( 'vinyl-named' );
 const webpack = require( 'webpack-stream' );
@@ -65,6 +66,7 @@ gulp.task( 'html', () => {
     // get data for nunjucks templates
     function getData( file ) {
         const data = JSON.parse( fs.readFileSync( gulpConfig.html.dataFile, 'utf8' ) );
+        data.api_base = process.env.API_BASE || data.api_base;
         data.file = file;
         data.filename = path.basename( file.path );
 

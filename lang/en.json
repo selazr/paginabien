@@ -116,17 +116,50 @@
         }
     },
     "person": {
-        "julio_macias": { "title": "Julio Macias", "subtitle": "CEO" },
-        "jordi_macias": { "title": "Jordi Macias", "subtitle": "CFO" },
-        "maria_belmonte": { "title": "Maria Belmonte", "subtitle": "Administration" },
-        "montserrat_cortina": { "title": "Montserrat Cortina", "subtitle": "Administration" },
-        "yolanda_baena": { "title": "Yolanda Baena", "subtitle": "HR" },
-        "laia_olmo": { "title": "Laia Olmo", "subtitle": "Design and Architecture" },
-        "mireia_nubiola": { "title": "Mireia Nubiola", "subtitle": "Designer" },
-        "roybel_chechelev": { "title": "Roybel Chechelev", "subtitle": "Robotics" },
-        "leonel_murguia": { "title": "Leonel Murguia", "subtitle": "Robotics" },
-        "jose_miguel": { "title": "Jose Miguel", "subtitle": "Site Manager" },
-        "cesar_arenas": { "title": "Cesar Arenas", "subtitle": "IT" }
+        "julio_macias": {
+            "title": "Julio Macias",
+            "subtitle": "CEO"
+        },
+        "jordi_macias": {
+            "title": "Jordi Macias",
+            "subtitle": "CFO"
+        },
+        "maria_belmonte": {
+            "title": "Maria Belmonte",
+            "subtitle": "Administration"
+        },
+        "montserrat_cortina": {
+            "title": "Montserrat Cortina",
+            "subtitle": "Administration"
+        },
+        "yolanda_baena": {
+            "title": "Yolanda Baena",
+            "subtitle": "HR"
+        },
+        "laia_olmo": {
+            "title": "Laia Olmo",
+            "subtitle": "Design and Architecture"
+        },
+        "mireia_nubiola": {
+            "title": "Mireia Nubiola",
+            "subtitle": "Designer"
+        },
+        "roybel_chechelev": {
+            "title": "Roybel Chechelev",
+            "subtitle": "Robotics"
+        },
+        "leonel_murguia": {
+            "title": "Leonel Murguia",
+            "subtitle": "Robotics"
+        },
+        "jose_miguel": {
+            "title": "Jose Miguel",
+            "subtitle": "Site Manager"
+        },
+        "cesar_arenas": {
+            "title": "Cesar Arenas",
+            "subtitle": "IT"
+        }
     },
     "contacto": {
         "tipos_proyecto": {
@@ -280,7 +313,9 @@
                     "desc": "Balance between design, durability and maintenance, ensuring each element fulfils its function without losing visual impact over time."
                 }
             }
-        }
+        },
+        "subtitle": "Our service",
+        "intro_title": "We create specialized thematic designs for any need"
     },
     "proyectos": {
         "ballena": {
