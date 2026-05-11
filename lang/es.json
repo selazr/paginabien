@@ -382,7 +382,8 @@
             "client": "Katmandu"
         },
         "katmandu_park": {
-            "title": "Katmandú Park",
+            "title": "Katmandú Park\u2003\u2003Katmandú casa al revés",
+            "title_page": "Katmandu Park",
             "description": "En este proyecto se realizaron todas las piezas temáticas de la 'Casa embrujada' en el Katmandú Park dándole un enfoque tenebroso, y divertido para todas las edades.",
             "date": "Junio 10, 2008",
             "category": "Parque temático",
@@ -431,7 +432,9 @@
             "client": "Royal Caribean"
         },
         "spa_iberostar": {
-            "title": "Iberostar SPA",
+            "title": "Iberostar SPA\u2003\u2003\u2003Garzas Iberostar\u2003\u2003Ballena Iberostar",
+            "title_page": "Iberostar",
+            "title_spa": "Iberostar SPA",
             "description": "Proyecto de renovación integral de la piscina interior climatizada, enfocado en elevar la experiencia del cliente y adecuar el espacio a la categoría del hotel. El concepto transforma el SPA en una cueva contemporánea semienterrada, donde el agua, la tierra y la vegetación crean una atmósfera envolvente y relajante. Se incorpora una pared de marés con circuito de chorros, soluciones acústicas para mejorar el confort sonoro y mobiliario sostenible en madera de teca.",
             "date": "Junio 21, 2018",
             "category": "Arquitectura",
@@ -451,12 +454,19 @@
             "category": "Cine",
             "client": "Amazon prime"
         },
-        "muro_campingSantMiquel": {
-            "title": "Muro Camping Sant Miquel",
-            "description": "Hemos creado un Acceso tematizado para el Camping Sant Miquel. Esta obra de albañilería técnica y carpintería, donde destaca el remate en arco y la textura de la piedra. Un diseño robusto y profesional pensado para dar una imagen cuidada y limpia a la entrada del recinto.",
+        "muro_camping": {
+            "title": "Muro Camping",
+            "description": "Hemos creado un Acceso tematizado para el Camping. Esta obra de albañilería técnica y carpintería, donde destaca el remate en arco y la textura de la piedra. Un diseño robusto y profesional pensado para dar una imagen cuidada y limpia a la entrada del recinto.",
             "date": "",
             "category": "Arquitectura",
-            "client": "Camping Sant Miquel"
+            "client": "Camping"
+        },
+        "pairiDaiza": {
+            "title": "Pairi Daiza",
+            "description": "Ejecución de diversos proyectos de tematización integral para el zoo Pairi Daiza en Bélgica. La intervención ha abarcado desde la creación de hábitats específicos, como las Cataratas del Jaguar, hasta la adecuación temática de habitaciones y zonas comunes del parque. Un trabajo de gran escala centrado en la coherencia visual y la calidad de los acabados en cada área.",
+            "date": "",
+            "category": "Tematización",
+            "client": "Pairi Daiza"
         }
     },
     "listado_general": {

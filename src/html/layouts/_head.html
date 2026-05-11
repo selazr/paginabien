@@ -1,256 +1,271 @@
 <!DOCTYPE html>
 {{ headerComment | safe }}
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title data-page-title="{{ page_title_i18n if page_title_i18n }}">LXH{% if page_title %}{{ ' | ' + page_title }}{% endif %}</title>
-
-    <meta name="description" content="Themebau">
-    <meta name="author" content=" ">
-
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title data-page-title="{{ page_title_i18n if page_title_i18n }}">LXH{% if page_title %}{{ ' | ' + page_title }}{%
+        endif %}</title>
+    <meta name="description"
+        content="LINE-X Hispania diseña y ejecuta proyectos temáticos personalizados para parques, hoteles, marcas y espacios comerciales. Más de 15 años de experiencia en tematización, escenografía y arquitectura decorativa.">
+    <meta name="author" content="LINE-X Hispania">
+    <meta name="copyright" content="LINE-X Hispania">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="site-api-base" content="{{ api_base | escape }}">
+
+    <link rel="canonical" href="https://lxh.es{{ canonical_url | default('/') }}">
+    <link rel="alternate" hreflang="es" href="https://lxh.es/">
+    <link rel="alternate" hreflang="ca" href="https://lxh.es/">
+    <link rel="alternate" hreflang="en" href="https://lxh.es/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#111827">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <meta property="og:title" content="LXH{% if page_title %}{{ ' | ' + page_title }}{% endif %}">
+    <meta property="og:description"
+        content="LINE-X Hispania diseña y ejecuta proyectos temáticos personalizados para parques, hoteles, marcas y espacios comerciales. Más de 15 años de experiencia en tematización, escenografía y arquitectura decorativa.">
+    <meta property="og:image" content="https://lxh.es/assets/images/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LINE-X Hispania - Especialistas en tematización y diseño escénico">
+    <meta property="og:url" content="https://lxh.es{{ canonical_url | default('/') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="ca_ES">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="LINE-X Hispania">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LXH{% if page_title %}{{ ' | ' + page_title }}{% endif %}">
+    <meta name="twitter:description"
+        content="LINE-X Hispania diseña y ejecuta proyectos temáticos personalizados para parques, hoteles, marcas y espacios comerciales. Más de 15 años de experiencia.">
+    <meta name="twitter:image" content="https://lxh.es/assets/images/og-default.png">
+    <meta name="twitter:image:alt" content="LINE-X Hispania - Especialistas en tematización y diseño escénico">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- START: Styles -->
-
     <!-- Swiper -->
     <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
-
     <!-- Fancybox -->
     <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
-
     <!-- Themebau -->
     <link rel="stylesheet" href="assets/css/{{ template_name }}.min.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    {% if custom_css %}<link rel="stylesheet" href="{{ custom_css }}">{% endif %}
+    {% if custom_css %}
+    <link rel="stylesheet" href="{{ custom_css }}">{% endif %}
     <!-- END: Styles -->
 
     <style>
-            #cookie-banner
-            {
-                position: fixed;
-                bottom: 2rem;
-                left: 50%;
-                transform: translateX(-50%) translateY(calc(100% + 2rem));
-                z-index: 9999;
-                width: calc(100% - 2rem);
-                max-width: 520px;
-                background: #ffffff;
-                border: 1px solid #e5e7eb;
-                border-radius: 14px;
-                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.06);
-                padding: 1.25rem 1.5rem;
-                display: flex;
+        #cookie-banner {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(calc(100% + 2rem));
+            z-index: 9999;
+            width: calc(100% - 2rem);
+            max-width: 520px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.06);
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            opacity: 0;
+            transition: transform 0.45s cubic-bezier(0.34, 1.26, 0.64, 1), opacity 0.35s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #cookie-banner.is-visible {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        #cookie-banner.is-hiding {
+            transform: translateX(-50%) translateY(calc(100% + 2rem));
+            opacity: 0;
+        }
+
+        .cookie-banner__header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .cookie-banner__icon {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .cookie-banner__text p {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.55;
+            color: #6b7280;
+        }
+
+        .cookie-banner__text p strong {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 2px;
+        }
+
+        .cookie-banner__text a {
+            color: #111827;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .cookie-banner__actions {
+            display: flex;
+            gap: 0.625rem;
+        }
+
+        .cookie-btn {
+            flex: 1;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            border: none;
+            transition: background 0.18s ease, transform 0.1s ease;
+            line-height: 1;
+        }
+
+        .cookie-btn:active {
+            transform: scale(0.97);
+        }
+
+        .cookie-btn--accept {
+            background: #111827;
+            color: #ffffff;
+        }
+
+        .cookie-btn--accept:hover {
+            background: #1f2937;
+        }
+
+        .cookie-btn--reject {
+            background: #f3f4f6;
+            color: #374151;
+        }
+
+        .cookie-btn--reject:hover {
+            background: #e5e7eb;
+        }
+
+        @media (max-width: 480px) {
+            #cookie-banner {
+                bottom: 1rem;
+                border-radius: 12px;
+                padding: 1rem 1.25rem;
+            }
+
+            .cookie-banner__actions {
                 flex-direction: column;
-                gap: 1rem;
-                opacity: 0;
-                transition: transform 0.45s cubic-bezier(0.34, 1.26, 0.64, 1), opacity 0.35s ease;
-                font-family: 'Inter', sans-serif;
             }
+        }
 
-            #cookie-banner.is-visible
-            {
-                transform: translateX(-50%) translateY(0);
-                opacity: 1;
-            }
+        .language-fab-btn {
 
-            #cookie-banner.is-hiding
-            {
-                transform: translateX(-50%) translateY(calc(100% + 2rem));
-                opacity: 0;
-            }
+            transition: all 0.3s ease;
 
-            .cookie-banner__header
-            {
-                display: flex;
-                align-items: flex-start;
-                gap: 0.75rem;
-            }
+        }
 
-            .cookie-banner__icon
-            {
-                flex-shrink: 0;
-                width: 36px;
-                height: 36px;
-                background: #f3f4f6;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 18px;
-                line-height: 1;
-            }
+        .language-fab-btn.light {
 
-            .cookie-banner__text p
-            {
-                margin: 0;
-                font-size: 13px;
-                line-height: 1.55;
-                color: #6b7280;
-            }
+            background: #ffffff;
+            color: #000000;
 
-            .cookie-banner__text p strong
-            {
-                display: block;
-                font-size: 14px;
-                font-weight: 600;
-                color: #111827;
-                margin-bottom: 2px;
-            }
+        }
 
-            .cookie-banner__text a
-            {
-                color: #111827;
-                text-decoration: underline;
-                text-underline-offset: 2px;
-            }
+        .language-fab-btn.dark {
 
-            .cookie-banner__actions
-            {
-                display: flex;
-                gap: 0.625rem;
-            }
+            background: #000000;
+            color: #ffffff;
 
-            .cookie-btn
-            {
-                flex: 1;
-                padding: 0.5rem 1rem;
-                border-radius: 8px;
-                font-size: 13px;
-                font-weight: 500;
-                font-family: 'Inter', sans-serif;
-                cursor: pointer;
-                border: none;
-                transition: background 0.18s ease, transform 0.1s ease;
-                line-height: 1;
-            }
+        }
+    </style>
 
-            .cookie-btn:active
-            {
-                transform: scale(0.97);
-            }
-
-            .cookie-btn--accept
-            {
-                background: #111827;
-                color: #ffffff;
-            }
-
-            .cookie-btn--accept:hover
-            {
-                background: #1f2937;
-            }
-
-            .cookie-btn--reject
-            {
-                background: #f3f4f6;
-                color: #374151;
-            }
-
-            .cookie-btn--reject:hover
-            {
-                background: #e5e7eb;
-            }
-
-            @media (max-width: 480px)
-            {
-                #cookie-banner
-                {
-                    bottom: 1rem;
-                    border-radius: 12px;
-                    padding: 1rem 1.25rem;
-                }
-
-                .cookie-banner__actions
-                {
-                    flex-direction: column;
-                }
-            }
-
-            .language-fab-btn{
-
-                transition: all 0.3s ease;
-
-            }
-
-            .language-fab-btn.light{
-
-                background: #ffffff;
-                color: #000000;
-
-            }
-
-            .language-fab-btn.dark{
-
-                background: #000000;
-                color: #ffffff;
-
-            }
-
-        </style>
-        
-        <div id="cookie-banner" role="dialog" aria-modal="true" aria-label="Aviso de cookies">
-            <div class="cookie-banner__header">
-                <div class="cookie-banner__icon">🍪</div>
-                <div class="cookie-banner__text">
-                    <p>
-                        <strong>Usamos cookies</strong> Utilizamos cookies propias y de terceros para mejorar tu experiencia y
-                        analizar el tráfico. Puedes consultar nuestra <a href="#">política de privacidad</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="cookie-banner__actions">
-                <button class="cookie-btn cookie-btn--reject" id="cookie-reject">Solo esenciales</button>
-                <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Aceptar todas</button>
+    <div id="cookie-banner" role="dialog" aria-modal="true" aria-label="Aviso de cookies">
+        <div class="cookie-banner__header">
+            <div class="cookie-banner__icon">🍪</div>
+            <div class="cookie-banner__text">
+                <p>
+                    <strong>Usamos cookies</strong> Utilizamos cookies propias y de terceros para mejorar tu experiencia
+                    y
+                    analizar el tráfico. Puedes consultar nuestra <a href="#">política de privacidad</a>.
+                </p>
             </div>
         </div>
-        <script>
-        (function()
-        {
+        <div class="cookie-banner__actions">
+            <button class="cookie-btn cookie-btn--reject" id="cookie-reject">Solo esenciales</button>
+            <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Aceptar todas</button>
+        </div>
+    </div>
+    <script>
+        (function () {
             var STORAGE_KEY = 'cookie_consent';
             var banner = document.getElementById('cookie-banner');
 
-            function hideBanner()
-            {
+            function hideBanner() {
                 banner.classList.remove('is-visible');
                 banner.classList.add('is-hiding');
-                setTimeout(function()
-                {
+                setTimeout(function () {
                     banner.style.display = 'none';
                 }, 450);
             }
 
-            function setConsent(value)
-            {
+            function setConsent(value) {
                 localStorage.setItem(STORAGE_KEY, value);
                 hideBanner();
             }
-            if (!localStorage.getItem(STORAGE_KEY))
-            {
-                setTimeout(function()
-                {
+            if (!localStorage.getItem(STORAGE_KEY)) {
+                setTimeout(function () {
                     banner.classList.add('is-visible');
                 }, 600);
             }
-            else
-            {
+            else {
                 banner.style.display = 'none';
             }
-            document.getElementById('cookie-accept').addEventListener('click', function()
-            {
+            document.getElementById('cookie-accept').addEventListener('click', function () {
                 setConsent('accepted');
             });
-            document.getElementById('cookie-reject').addEventListener('click', function()
-            {
+            document.getElementById('cookie-reject').addEventListener('click', function () {
                 setConsent('rejected');
             });
         })();
@@ -463,7 +478,7 @@
                 }
             }
 
-            function updateLanguageButtonTheme(){
+            function updateLanguageButtonTheme() {
 
                 const button = document.getElementById('languageFabBtn');
                 if (!button) return;
@@ -502,7 +517,7 @@
 
                 button.classList.remove('light', 'dark');
 
-                if (brightness > 128){
+                if (brightness > 128) {
                     button.classList.add('dark'); // fondo claro
                 } else {
                     button.classList.add('light'); // fondo oscuro
@@ -561,39 +576,39 @@
                 window.addEventListener('resize', updateLanguageButtonTheme);
             }
 
-            function initThemeObserver(){
+            function initThemeObserver() {
 
-            const button = document.getElementById('languageFabBtn');
-            if (!button) return;
+                const button = document.getElementById('languageFabBtn');
+                if (!button) return;
 
-            const sections = document.querySelectorAll('[data-theme]');
-            if (!sections.length) return; // importante
+                const sections = document.querySelectorAll('[data-theme]');
+                if (!sections.length) return; // importante
 
-            const observer = new IntersectionObserver((entries) => {
+                const observer = new IntersectionObserver((entries) => {
 
-                entries.forEach(entry => {
+                    entries.forEach(entry => {
 
-                    if (entry.isIntersecting) {
+                        if (entry.isIntersecting) {
 
-                        const theme = entry.target.dataset.theme;
+                            const theme = entry.target.dataset.theme;
 
-                        button.classList.remove('light', 'dark');
+                            button.classList.remove('light', 'dark');
 
-                        if (theme === 'dark') {
-                            button.classList.add('dark');
-                        } else {
-                            button.classList.add('light');
+                            if (theme === 'dark') {
+                                button.classList.add('dark');
+                            } else {
+                                button.classList.add('light');
+                            }
                         }
-                    }
 
+                    });
+
+                }, {
+                    threshold: 0.6
                 });
 
-            }, {
-                threshold: 0.6
-            });
-
-            sections.forEach(section => observer.observe(section));
-        }
+                sections.forEach(section => observer.observe(section));
+            }
 
             function initNewsletter() {
                 const ui = {
@@ -703,5 +718,14 @@
     </script>
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4WX3FRZPZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C4WX3FRZPZ');
+    </script>
     {% block head %}{% endblock %}
 </head>

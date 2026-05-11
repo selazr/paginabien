@@ -191,7 +191,7 @@
     },
     "servicios": {
         "slider": {
-            "cursor": "Click",
+            "cursor": "Clic",
             "slides": [
                 {
                     "title": "Tematització de Parcs",
@@ -382,7 +382,8 @@
             "client": "Katmandu"
         },
         "katmandu_park": {
-            "title": "Katmandú Park",
+            "title": "Katmandú Park\u2003\u2003\u2003Casa Katmandu a l'inrevés",
+            "title_page": "Katmandú Park",
             "description": "En aquest projecte es van realitzar totes les peces temàtiques de la 'Casa encantada' al Katmandú Park donant-li un enfocament tenebrós i divertit per a totes les edats.",
             "date": "Juny 10, 2008",
             "category": "Parc temàtic",
@@ -431,7 +432,9 @@
             "client": "Royal Caribean"
         },
         "spa_iberostar": {
-            "title": "Iberostar SPA",
+            "title": "Iberostar SPA\u2003\u2003\u2003Agrons Iberostar\u2003\u2003Balena Iberostar",
+            "title_page": "Iberostar",
+            "title_spa": "Iberostar SPA",
             "description": "Projecte de renovació integral de la piscina interior climatitzada, enfocat a elevar l'experiència del client i adequar l'espai a la categoria de l'hotel. El concepte transforma el SPA en una cova contemporània semisoterrrada, on l'aigua, la terra i la vegetació creen una atmosfera envoltant i relaxant. S'incorpora una paret de marès amb circuit de dols d'aigua, solucions acústiques per millorar el confort sonor i mobiliari sostenible en fusta de teca.",
             "date": "Juny 21, 2018",
             "category": "Arquitectura",
@@ -451,12 +454,19 @@
             "category": "Cinema",
             "client": "Amazon Prime"
         },
-        "muro_campingSantMiquel": {
-            "title": "Mur Càmping Sant Miquel",
-            "description": "Accés tematitzat per al Càmping Sant Miquel. Obra de paleta tècnica i fusteria, on destaca la rematada en arc i la textura de la pedra. Un disseny robust i professional pensat per donar una imatge cuidada i neta a l'entrada del recinte.",
+        "muro_camping": {
+            "title": "Mur Càmping",
+            "description": "Accés tematitzat per al Càmping. Obra de paleta tècnica i fusteria, on destaca la rematada en arc i la textura de la pedra. Un disseny robust i professional pensat per donar una imatge cuidada i neta a l'entrada del recinte.",
             "date": "",
             "category": "Arquitectura",
-            "client": "Càmping Sant Miquel"
+            "client": "Càmping"
+        },
+        "pairiDaiza": {
+            "title": "Pairi Daiza",
+            "description": "Execució de diversos projectes de tematització integral per al zoo Pairi Daiza a Bèlgica. La intervenció ha abastat des de la creació d'hàbitats específics, com les Cataractes del Jaguar, fins a l'adequació temàtica d'habitacions i zones comunes del parc. Un treball de gran escala centrat en la coherència visual i la qualitat dels acabats en cada àrea.",
+            "date": "",
+            "category": "Tematització",
+            "client": "Pairi Daiza"
         }
     },
     "listado_general": {

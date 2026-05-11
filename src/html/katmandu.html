@@ -1,5 +1,5 @@
 {% set page_title = 'Katmandú' %}
-{% set page_title_i18n = 'proyectos.katmandu_park.title' %}
+{% set page_title_i18n = 'proyectos.katmandu_park.title_page' %}
 {% set navbar_fixed = true %}
 {% set navbar_dark = true %}
 {% set navbar_expand = true %}
@@ -12,13 +12,14 @@
 
 
 {% macro image_portfolio(src="", classes="", gallery="") %}
-<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}" data-animation-effect="fade">
+<a href="{{ src[1] }}" class="gallery-item{{ ' ' + classes if classes }}" data-fancybox="{{ gallery }}"
+    data-animation-effect="fade">
     <img src="{{ src[0] }}" alt="">
 </a>
 {% endmacro %}
 
 {% macro image_portfolio_init(name="", classes="", gallery="gallery-1") %}
-    {{ image_portfolio(single_portfolio_images.style_5[name], classes=classes, gallery=gallery) }}
+{{ image_portfolio(single_portfolio_images.style_5[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
 
@@ -32,42 +33,52 @@
     </div>
 
     <div class="container text-center">
-        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10" data-i18n="proyectos.katmandu_park.title">Katmandú Park</h1>
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10"
+            data-i18n="proyectos.katmandu_park.title_page">Katmandú Park</h1>
     </div>
 </div>
 
 <div class="pt-160 shape-parent overflow-hidden">
     <div class="shape justify-content-end mt-n160">
-        <svg class="mt-n160" data-rellax-speed="-1" width="504" height="641" viewBox="0 0 504 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5"/>
+        <svg class="mt-n160" data-rellax-speed="-1" width="504" height="641" viewBox="0 0 504 641" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5" />
         </svg>
     </div>
 
     <div class="container">
         <div class="row gv-3 justify-content-center">
             <div class="col-12 col-lg-7 text-center">
-                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-i18n="generales.project_about">Sobre el proyecto</h2>
-                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150" data-i18n="proyectos.katmandu_park.description">En este proyecto se realizaron todas las piezas temáticas de la "Casa embrujada" en el Katmandú Park dándole un enfoque tenebroso, y divertido para todas las edades.</p>
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
+                    data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
+                    data-i18n="proyectos.katmandu_park.description">En este proyecto se realizaron todas las piezas
+                    temáticas de la "Casa embrujada" en el Katmandú Park dándole un enfoque tenebroso, y divertido para
+                    todas las edades.</p>
             </div>
-            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="300">
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
+                data-show-delay="300">
                 <hr class="mt-0 mb-30">
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span data-i18n="proyectos.katmandu_park.date">Junio 10, 2008</span>
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
+                            data-i18n="proyectos.katmandu_park.date">Junio 10, 2008</span>
                     </div>
                     <div class="col-auto mb-8">
-                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span data-i18n="proyectos.katmandu_park.category">Parque temático</span>
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
+                            data-i18n="proyectos.katmandu_park.category">Parque temático</span>
                     </div>
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandú
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30" data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+    <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
+        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 {% macro slide_project(name="") %}
@@ -85,11 +96,98 @@
     </div>
 </div>
 
+<hr class="mt-160 mb-0" style="border: 0; border-top: 2px solid #646464; width: 80%; margin-left: auto; margin-right: auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);">
+
+<div class="py-160 min-vh-100 mt-100 d-flex align-items-center position-relative">
+    <div class="background">
+        <div class="background-image jarallax" data-jarallax data-speed="0.8">
+            <img src="{{ single_portfolio_images.style_5.banner2 }}" class="jarallax-img" alt="">
+        </div>
+        <div class="background-color" style="background-color: rgb(14, 14, 14, .2);"></div>
+    </div>
+
+    <div class="container text-center">
+        <h1 class="text-white mb-0 show-on-scroll" data-show-duration="700" data-show-distance="10"
+            data-i18n="proyectos.katmandu_inverso.title">Katmandu Casa al reves</h1>
+    </div>
+</div>
+
+<div class="pt-160 shape-parent overflow-hidden">
+    <div class="shape justify-content-end mt-n160">
+        <svg class="mt-n160" data-rellax-speed="-1" width="504" height="641" viewBox="0 0 504 641" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#F5F5F5" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="row gv-3 justify-content-center">
+            <div class="col-12 col-lg-7 text-center">
+                <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
+                    data-i18n="generales.project_about">Sobre el proyecto</h2>
+                <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
+                    data-i18n="proyectos.katmandu_inverso.description">Hemos materializado el concepto del Katmandú
+                    inverso, una estructura que exige un equilibrio perfecto entre audacia técnica y precisión
+                    artesanal. Este proyecto es un claro exponente de nuestra capacidad para gestionar la complejidad
+                    técnica con rigor, manteniendo siempre el estándar de excelencia que aplicamos en cada uno de
+                    nuestros desarrollos.</p>
+            </div>
+            <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
+                data-show-delay="300">
+                <hr class="mt-0 mb-30">
+                <div class="row justify-content-around gh-1">
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
+                            data-i18n="proyectos.katmandu_inverso.date">Junio 10, 2008</span>
+                    </div>
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
+                            data-i18n="proyectos.katmandu_inverso.category">Parques temáticos</span>
+                    </div>
+                    <div class="col-auto mb-8">
+                        <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandu
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
+        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% macro slide_project(name="") %}
+                <div class="swiper-slide">
+                    {{ image_portfolio_init(name, 'gallery-item-md') }}
+                </div>
+                {% endmacro %}
+                {{ slide_project('05') }}
+                {{ slide_project('06') }}
+                {{ slide_project('07') }}
+                {{ slide_project('08') }}
+                {{ slide_project('09') }}
+                {{ slide_project('10') }}
+                {{ slide_project('11') }}
+                {{ slide_project('12') }}
+                {{ slide_project('13') }}
+                {{ slide_project('14') }}
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="garzas.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="ferrariland.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow
+            icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span
+                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
         <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
-        <a href="capitel.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+        <a href="capitel.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span
+                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right |
+            replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
     </div>
 </div>
 {% endblock %}

@@ -181,7 +181,7 @@
             }
         },
         "ballena": {
-            "href": "ballena.html",
+            "href": "SpaIberostar.html",
             "title": "Ballena Iberostar",
             "i18n": "proyectos.ballena.title",
             "i18n_category": "proyectos.ballena.category",
@@ -230,7 +230,7 @@
         },
         "spaiberostar": {
             "href": "SpaIberostar.html",
-            "title": "IberoStar SPA",
+            "title": "IberoStar",
             "i18n": "proyectos.spa_iberostar.title",
             "i18n_category": "proyectos.spa_iberostar.category",
             "category": ["Tematización", "#"],
@@ -250,18 +250,6 @@
             "image": {
                 "lg": "assets/images/portfolio/portadadesierto.jpg",
                 "md": "assets/images/portfolio/portadadesierto.jpg"
-            }
-        },
-        "katmanduInverso": {
-            "href": "katmanduInverso.html",
-            "title": "Katmandu Inverso",
-            "i18n": "proyectos.katmandu_inverso.title",
-            "i18n_category": "proyectos.katmandu_inverso.category",
-            "category": ["Tematización", "#"],
-            "logo": "",
-            "image": {
-                "lg": "assets/images/portfolio/Katmandu.jpg",
-                "md": "assets/images/portfolio/Katmandu.jpg"
             }
         },
         "piedraEquilibrio": {
@@ -291,13 +279,25 @@
         "campingSantMiquel": {
             "href": "muroCamping.html",
             "title": "Muro Camping Sant Miquel",
-            "i18n": "proyectos.muro_campingSantMiquel.title",
-            "i18n_category": "proyectos.muro_campingSantMiquel.category",
+            "i18n": "proyectos.muro_camping.title",
+            "i18n_category": "proyectos.muro_camping.category",
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
                 "lg": "assets/images/portfolio/puertaCamping.jpeg",
                 "md": "assets/images/portfolio/puertaCamping.jpeg"
+            }
+        },
+        "pairiDaiza": {
+            "href": "pairiDaiza.html",
+            "title": "Pairi Daiza",
+            "i18n": "proyectos.pairiDaiza.title",
+            "i18n_category": "proyectos.pairiDaiza.category",
+            "category": ["Tematización", "#"],
+            "logo": "",
+            "image": {
+                "lg": "assets/images/portfolio/pairi.png",
+                "md": "assets/images/portfolio/pairi.png"
             }
         },
         "funny_dog": {
@@ -318,7 +318,7 @@
         },
         "katmandu": {
             "href": "katmandu.html",
-            "title": "Katmandú park",
+            "title": "Katmandú",
             "i18n": "proyectos.katmandu_park.title",
             "i18n_category": "proyectos.katmandu_park.category",
             "category": ["Parque temático", "#"],
@@ -521,7 +521,7 @@
             }
         },
         "garzas": {
-            "href": "garzas.html",
+            "href": "SpaIberostar.html",
             "title": "Garzas Iberostar",
             "i18n": "proyectos.garzas.title",
             "i18n_category": "proyectos.garzas.category",
@@ -568,7 +568,19 @@
             "banner": "assets/images/portfolio/cambandu-1200-865.jpg",
             "02": ["assets/images/single-portfolio/K4.jpg", "assets/images/single-portfolio/K4.jpg"],
             "03": ["assets/images/single-portfolio/K6.jpg", "assets/images/single-portfolio/K6.jpg"],
-            "04": ["assets/images/single-portfolio/K8.jpg", "assets/images/single-portfolio/K8.jpg"]
+            "04": ["assets/images/single-portfolio/K8.jpg", "assets/images/single-portfolio/K8.jpg"],
+            "banner2": "assets/images/portfolio/Katmandu.jpg",
+            "05": ["assets/images/single-portfolio/Katmandu1.jpg", "assets/images/single-portfolio/Katmandu1.jpg"],
+            "06": ["assets/images/single-portfolio/Katmandu2.jpg", "assets/images/single-portfolio/Katmandu2.jpg"],
+            "07": ["assets/images/single-portfolio/Katmandu3.jpg", "assets/images/single-portfolio/Katmandu3.jpg"],
+            "08": ["assets/images/single-portfolio/Katmandu4.jpg", "assets/images/single-portfolio/Katmandu4.jpg"],
+            "09": ["assets/images/single-portfolio/Katmandu5.jpg", "assets/images/single-portfolio/Katmandu5.jpg"],
+            "10": ["assets/images/single-portfolio/Katmandu6.jpg", "assets/images/single-portfolio/Katmandu6.jpg"],
+            "11": ["assets/images/single-portfolio/Katmandu7.jpg", "assets/images/single-portfolio/Katmandu7.jpg"],
+            "12": ["assets/images/single-portfolio/Katmandu8.jpg", "assets/images/single-portfolio/Katmandu8.jpg"],
+            "13": ["assets/images/single-portfolio/Katmandu9.jpg", "assets/images/single-portfolio/Katmandu9.jpg"],
+            "14": ["assets/images/single-portfolio/Katmandu10.jpg", "assets/images/single-portfolio/Katmandu10.jpg"],
+            "15": ["assets/images/single-portfolio/Katmandu11.jpg", "assets/images/single-portfolio/Katmandu11.jpg"]
         },
         "style_5_1": {
             "banner": "assets/images/single-portfolio/E1.jpg",
@@ -577,10 +589,7 @@
             "04": ["assets/images/single-portfolio/E4.jpg", "assets/images/single-portfolio/E4.jpg"]
         },
         "style_5_2": {
-            "banner": "assets/images/single-portfolio/L1.jpeg",
-            "02": ["assets/images/single-portfolio/L1.jpeg", "assets/images/single-portfolio/L1.jpeg"],
-            "03": ["assets/images/single-portfolio/garzas2.jpg", "assets/images/single-portfolio/garzas2.jpg"],
-            "04": ["assets/images/single-portfolio/garzas3.jpg", "assets/images/single-portfolio/garzas3.jpg"]
+            
         },
         "style_5_3": {
             "banner": "assets/images/portfolio/EU1.jpg",
@@ -604,13 +613,6 @@
             "03": ["assets/images/single-portfolio/row2.jpeg", "assets/images/single-portfolio/row2.jpeg"],
             "04": ["assets/images/single-portfolio/row3.jpeg", "assets/images/single-portfolio/row3.jpeg"],
             "05": ["assets/images/single-portfolio/row4.jpeg", "assets/images/single-portfolio/row4.jpeg"]
-        },
-        "style_5_6": {
-            "banner": "assets/images/portfolio/ballena.jpeg",
-            "02": ["assets/images/single-portfolio/ballena.jpeg", "assets/images/single-portfolio/ballena.jpeg"],
-            "03": ["assets/images/single-portfolio/ballena2.jpeg", "assets/images/single-portfolio/ballena2.jpeg"],
-            "04": ["assets/images/single-portfolio/ballena3.jpeg", "assets/images/single-portfolio/ballena3.jpeg"],
-            "05": ["assets/images/single-portfolio/ballena4.jpeg", "assets/images/single-portfolio/ballena4.jpeg"]
         },
         "style_5_7": {
             "banner": "assets/images/portfolio/eurocamping.jpeg",
@@ -662,8 +664,16 @@
             "03": ["assets/images/single-portfolio/iberostarspa3.jpeg", "assets/images/single-portfolio/iberostarspa3.jpeg"],
             "04": ["assets/images/single-portfolio/iberostarspa4.jpeg", "assets/images/single-portfolio/iberostarspa4.jpeg"],
             "05": ["assets/images/single-portfolio/iberostarspa5.jpeg", "assets/images/single-portfolio/iberostarspa5.jpeg"],
-            "06": ["assets/images/single-portfolio/iberostarspa6.jpeg", "assets/images/single-portfolio/iberostarspa6.jpeg"]
-
+            "06": ["assets/images/single-portfolio/iberostarspa6.jpeg", "assets/images/single-portfolio/iberostarspa6.jpeg"],
+            "banner2": "assets/images/portfolio/ballena.jpeg",
+            "07": ["assets/images/single-portfolio/ballena.jpeg", "assets/images/single-portfolio/ballena.jpeg"],
+            "08": ["assets/images/single-portfolio/ballena2.jpeg", "assets/images/single-portfolio/ballena2.jpeg"],
+            "09": ["assets/images/single-portfolio/ballena3.jpeg", "assets/images/single-portfolio/ballena3.jpeg"],
+            "10": ["assets/images/single-portfolio/ballena4.jpeg", "assets/images/single-portfolio/ballena4.jpeg"],
+            "banner3": "assets/images/single-portfolio/L1.jpeg",
+            "11": ["assets/images/single-portfolio/L1.jpeg", "assets/images/single-portfolio/L1.jpeg"],
+            "12": ["assets/images/single-portfolio/garzas2.jpg", "assets/images/single-portfolio/garzas2.jpg"],
+            "13": ["assets/images/single-portfolio/garzas3.jpg", "assets/images/single-portfolio/garzas3.jpg"]
         },
         "style_5_13": {
             "banner": "assets/images/portfolio/portadadesierto.jpg",
@@ -681,20 +691,6 @@
             "14": ["assets/images/single-portfolio/DES13.jpg", "assets/images/single-portfolio/DES13.jpg"],
             "15": ["assets/images/single-portfolio/DES14.jpg", "assets/images/single-portfolio/DES14.jpg"],
             "16": ["assets/images/single-portfolio/DES15.jpg", "assets/images/single-portfolio/DES15.jpg"]
-        },
-        "style_5_15": {
-            "banner": "assets/images/portfolio/Katmandu.jpg",
-            "02": ["assets/images/single-portfolio/Katmandu1.jpg", "assets/images/single-portfolio/Katmandu1.jpg"],
-            "03": ["assets/images/single-portfolio/Katmandu2.jpg", "assets/images/single-portfolio/Katmandu2.jpg"],
-            "04": ["assets/images/single-portfolio/Katmandu3.jpg", "assets/images/single-portfolio/Katmandu3.jpg"],
-            "05": ["assets/images/single-portfolio/Katmandu4.jpg", "assets/images/single-portfolio/Katmandu4.jpg"],
-            "06": ["assets/images/single-portfolio/Katmandu5.jpg", "assets/images/single-portfolio/Katmandu5.jpg"],
-            "07": ["assets/images/single-portfolio/Katmandu6.jpg", "assets/images/single-portfolio/Katmandu6.jpg"],
-            "08": ["assets/images/single-portfolio/Katmandu7.jpg", "assets/images/single-portfolio/Katmandu7.jpg"],
-            "09": ["assets/images/single-portfolio/Katmandu8.jpg", "assets/images/single-portfolio/Katmandu8.jpg"],
-            "10": ["assets/images/single-portfolio/Katmandu9.jpg", "assets/images/single-portfolio/Katmandu9.jpg"],
-            "11": ["assets/images/single-portfolio/Katmandu10.jpg", "assets/images/single-portfolio/Katmandu10.jpg"],
-            "12": ["assets/images/single-portfolio/Katmandu11.jpg", "assets/images/single-portfolio/Katmandu11.jpg"]
         },
         "style_5_16": {
             "banner": "assets/images/portfolio/Minigolf.jpg",
@@ -723,8 +719,14 @@
             "02": ["assets/images/single-portfolio/puertaCamping1.jpeg", "assets/images/single-portfolio/puertaCamping1.jpeg"],
             "03": ["assets/images/single-portfolio/puertaCamping2.jpeg", "assets/images/single-portfolio/puertaCamping2.jpeg"],
             "04": ["assets/images/portfolio/puertaCamping.jpeg", "assets/images/portfolio/puertaCamping.jpeg"]
+        },
+        "style_5_19": {
+            "banner": "assets/images/portfolio/pairi.png",
+            "01": ["assets/images/single-portfolio/pairi1.jpg","assets/images/single-portfolio/pairi1.jpg"],
+            "02": ["assets/images/single-portfolio/pairi2.png","assets/images/single-portfolio/pairi2.png"],
+            "03": ["assets/images/single-portfolio/pairi3.png","assets/images/single-portfolio/pairi3.png"],
+            "04": ["assets/images/single-portfolio/pairi4.png","assets/images/single-portfolio/pairi4.png"]
         }
-        
     },
     "slider": {
         "fullscreen_showcase": {

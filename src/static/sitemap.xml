@@ -1,87 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ============================================================ -->
+  <!-- PRINCIPALES (Prioridad 1.0) -->
+  <!-- ============================================================ -->
   <url>
     <loc>https://lxh.es/</loc>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lxh.es/proyectos.html</loc>
+    <priority>1.0</priority>
   </url>
+  <!-- IMPORTANTES (Prioridad 0.8) -->
   <url>
     <loc>https://lxh.es/about-us.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lxh.es/contacto.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lxh.es/servicios.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lxh.es/ballena.html</loc>
+    <loc>https://lxh.es/terminos.html</loc>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://lxh.es/capitel.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/enigma.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/eurocamping.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/ferrariland.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/garzas.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/katmandu.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/moon.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/nessie.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/row.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/RoyalCaribean.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/coming-soon.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/BiciLabMostrador.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/desierto.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/gran_formato_3d.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/impresion_3d.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/interpratacion_arquitectonica.html</loc>
-  </url>
+  <!-- PROYECTOS INDIVIDUALES (Prioridad 0.6) -->
   <url>
     <loc>https://lxh.es/Katlantis.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/katmanduInverso.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/Minigolf.html</loc>
-  </url>
-  <url>
-    <loc>https://lxh.es/piedraEquilibrio.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lxh.es/SpaIberostar.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://lxh.es/Minigolf.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/capitel.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/enigma.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/eurocamping.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/ferrariland.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/katmandu.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/moon.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/nessie.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/row.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/RoyalCaribean.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/BiciLabMostrador.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/desierto.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/muroCamping.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/pairiDaiza.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/piedraEquilibrio.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <!-- SERVICIOS DETALLADOS (Prioridad 0.5) -->
+  <url>
     <loc>https://lxh.es/tematizacion_parques.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/interpratacion_arquitectonica.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/impresion_3d.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lxh.es/gran_formato_3d.html</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>

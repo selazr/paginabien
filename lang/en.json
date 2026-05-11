@@ -382,7 +382,8 @@
             "client": "Katmandu"
         },
         "katmandu_park": {
-            "title": "Katmandu Park",
+            "title": "Katmandu Park\u2003\u2003Reverse Katmandu House",
+            "title_page": "Katmandu Park",
             "description": "In this project all the themed pieces for the 'Haunted House' at Katmandu Park were created, giving it a spooky yet fun feel for all ages.",
             "date": "June 10, 2008",
             "category": "Theme park",
@@ -431,7 +432,9 @@
             "client": "Royal Caribbean"
         },
         "spa_iberostar": {
-            "title": "Iberostar SPA",
+            "title": "Iberostar SPA\u2003\u2003\u2003Iberostar Herons\u2003\u2003Iberostar Whale",
+            "title_page": "Iberostar",
+            "title_spa": "Iberostar SPA",
             "description": "A comprehensive renovation project for the heated indoor pool, focused on enhancing the guest experience and bringing the space in line with the hotel's category. The concept transforms the SPA into a contemporary semi-subterranean cave, where water, earth and vegetation create an enveloping and relaxing atmosphere. A marés stone wall with a jet circuit is incorporated, along with acoustic solutions to improve sound comfort and sustainable teak wood furniture.",
             "date": "June 21, 2018",
             "category": "Architecture",
@@ -451,12 +454,19 @@
             "category": "Cinema",
             "client": "Amazon Prime"
         },
-        "muro_campingSantMiquel": {
-            "title": "Camping Sant Miquel Entrance Wall",
-            "description": "We have created a thematized entrance for Camping Sant Miquel. A project featuring technical masonry and carpentry, highlighting the arched finish and stone texture. A robust and professional design created to provide a polished and clean image for the site's entrance.",
+        "muro_camping": {
+            "title": "Camping Entrance Wall",
+            "description": "We have created a thematized entrance for Camping. A project featuring technical masonry and carpentry, highlighting the arched finish and stone texture. A robust and professional design created to provide a polished and clean image for the site's entrance.",
             "date": "",
             "category": "Architecture",
-            "client": "Camping Sant Miquel"
+            "client": "Camping"
+        },
+        "pairiDaiza": {
+            "title": "Pairi Daiza",
+            "description": "Execution of various comprehensive theming projects for the Pairi Daiza zoo in Belgium. The scope of work ranged from creating specific habitats, such as the Jaguar Falls, to the thematic adaptation of guest rooms and common areas throughout the park. A large-scale project focused on visual consistency and high-quality finishes in every area.",
+            "date": "",
+            "category": "Theming",
+            "client": "Pairi Daiza"
         }
     },
     "listado_general": {
