@@ -296,8 +296,8 @@
             "category": ["Tematización", "#"],
             "logo": "",
             "image": {
-                "lg": "assets/images/portfolio/pairi.png",
-                "md": "assets/images/portfolio/pairi.png"
+                "lg": "assets/images/portfolio/pairi.jpeg",
+                "md": "assets/images/portfolio/pairi.jpeg"
             }
         },
         "funny_dog": {
@@ -721,11 +721,24 @@
             "04": ["assets/images/portfolio/puertaCamping.jpeg", "assets/images/portfolio/puertaCamping.jpeg"]
         },
         "style_5_19": {
-            "banner": "assets/images/portfolio/pairi.png",
+            "banner": "assets/images/portfolio/pairi.jpeg",
             "01": ["assets/images/single-portfolio/pairi1.jpg","assets/images/single-portfolio/pairi1.jpg"],
             "02": ["assets/images/single-portfolio/pairi2.png","assets/images/single-portfolio/pairi2.png"],
             "03": ["assets/images/single-portfolio/pairi3.png","assets/images/single-portfolio/pairi3.png"],
-            "04": ["assets/images/single-portfolio/pairi4.png","assets/images/single-portfolio/pairi4.png"]
+            "04": ["assets/images/single-portfolio/pairi4.png","assets/images/single-portfolio/pairi4.png"],
+            "05": ["assets/images/single-portfolio/pairi5.jpeg","assets/images/single-portfolio/pairi5.jpeg"],
+            "06": ["assets/images/single-portfolio/pairi6.jpeg","assets/images/single-portfolio/pairi6.jpeg"],
+            "07": ["assets/images/single-portfolio/pairi7.jpeg","assets/images/single-portfolio/pairi7.jpeg"],
+            "08": ["assets/images/single-portfolio/pairi8.jpeg","assets/images/single-portfolio/pairi8.jpeg"],
+            "09": ["assets/images/single-portfolio/pairi9.jpeg","assets/images/single-portfolio/pairi9.jpeg"],
+            "10": ["assets/images/single-portfolio/pairi10.jpeg","assets/images/single-portfolio/pairi10.jpeg"],
+            "11": ["assets/images/single-portfolio/pairi11.jpeg","assets/images/single-portfolio/pairi11.jpeg"],
+            "12": ["assets/images/single-portfolio/pairi12.jpeg","assets/images/single-portfolio/pairi12.jpeg"],
+            "13": ["assets/images/single-portfolio/pairi13.jpeg","assets/images/single-portfolio/pairi13.jpeg"],
+            "14": ["assets/images/single-portfolio/pairi14.jpeg","assets/images/single-portfolio/pairi14.jpeg"],
+            "15": ["assets/images/single-portfolio/pairi15.png","assets/images/single-portfolio/pairi15.png"],
+            "16": ["assets/images/single-portfolio/pairi16.jpeg","assets/images/single-portfolio/pairi16.jpeg"],
+            "17": ["assets/images/single-portfolio/pairi17.jpeg","assets/images/single-portfolio/pairi17.jpeg"]
         }
     },
     "slider": {
