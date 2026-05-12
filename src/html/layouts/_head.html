@@ -14,7 +14,6 @@
     <meta name="copyright" content="LINE-X Hispania">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="site-api-base" content="{{ api_base | escape }}">
 
     <link rel="canonical" href="https://lxh.es{{ canonical_url | default('/') }}">
     <link rel="alternate" hreflang="es" href="https://lxh.es/">
@@ -271,14 +270,7 @@
         })();
     </script>
     <script>
-        (function () {
-            const apiBaseMeta = document.querySelector('meta[name="site-api-base"]');
-            const apiBase = apiBaseMeta ? apiBaseMeta.content.replace(/\/$/, '') : '';
-
-            window.__siteConfig = Object.assign({}, window.__siteConfig, {
-                API_BASE: apiBase
-            });
-        })();
+        window.__siteConfig = { API_BASE: 'https://api.lxh.es' };
     </script>
     <script>
         (function () {
