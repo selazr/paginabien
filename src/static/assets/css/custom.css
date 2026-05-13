@@ -1,3 +1,4 @@
+/* ===== Carrusel de marcas para Desktop ===== */
 .brand-carousel-wrapper {
     overflow: hidden;
     width: 100%;
@@ -149,3 +150,38 @@
         height: 52px;
     }
 }
+
+/* ===== Desactivar Fancybox en móvil ===== */
+@media (max-width: 767px) {
+    .gallery-item[data-fancybox] {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+/* ===== Carrusel de logos - Vista estática en móvil ===== */
+@media (max-width: 768px) {
+    /* Desactivar animación del carrusel */
+    .brand-carousel {
+        animation: none;
+        transform: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        white-space: normal;
+    }
+
+    /* Cada logo ocupa 50% del ancho (2 por fila) */
+    .brand-slide {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 150px;
+        text-align: center;
+    }
+    
+    /* Permitir que las imágenes sean responsivas */
+    .brand-slide svg, .brand-slide img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
