@@ -1,12 +1,12 @@
 {
     "generales": {
-        "info": "info@lxh.es",
+        "info": "central@lxh.es",
         "tel": "+34 93 878 96 22",
         "email": "Correu",
         "phone": "Telèfon",
         "address": "Adreça",
         "address_1": "Ctra. C-55. 25,",
-        "address_2": "8297 - Castellgalí (Barcelona),",
+        "address_2": "08297 - Castellgalí (Barcelona),",
         "aboutus": "Sobre nosaltres",
         "services": "Serveis",
         "company": "Empresa",
@@ -174,7 +174,7 @@
             "espana": {
                 "title": "Espanya, Barcelona",
                 "address": "Ctra. C-55 km. 25, 08297 - Castellgalí",
-                "email": "info@lxh.es",
+                "email": "central@lxh.es",
                 "phone": "+34 93 878 96 22 / 609 02 63 65"
             },
             "usa": {
@@ -518,7 +518,7 @@
         "s1": {
             "titulo": "Titularitat del lloc web",
             "p1": "Aquest lloc web (www.lxh.es) és titularitat de LINE-X Hispania, S.L., empresa amb domicili social a Ctra. C-55 km. 25, 08297 — Castellgalí (Barcelona), inscrita al Registre Mercantil de Barcelona amb número d'identificació fiscal B-XXXXXXXX.",
-            "p2": "Per a qualsevol consulta podeu posar-vos en contacte amb nosaltres a través de info@lxh.es o per telèfon al número +34 93 878 96 22."
+            "p2": "Per a qualsevol consulta podeu posar-vos en contacte amb nosaltres a través de central@lxh.es o per telèfon al número +34 93 878 96 22."
         },
         "s2": {
             "titulo": "Objecte i àmbit d'aplicació",
@@ -548,7 +548,7 @@
             "li1": "Gestionar les sol·licituds d'informació i contacte.",
             "li2": "Enviar comunicacions comercials als usuaris que hagin donat el seu consentiment exprés.",
             "li3": "Complir amb les obligacions legals aplicables.",
-            "p3": "L'usuari podrà exercir en qualsevol moment els seus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació del tractament adreçant-se per escrit a info@lxh.es. Així mateix, té dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es).",
+            "p3": "L'usuari podrà exercir en qualsevol moment els seus drets d'accés, rectificació, supressió, oposició, portabilitat i limitació del tractament adreçant-se per escrit a central@lxh.es. Així mateix, té dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es).",
             "p4": "Les dades no seran cedides a tercers excepte per obligació legal o quan sigui necessari per a la prestació dels serveis contractats."
         },
         "s6": {

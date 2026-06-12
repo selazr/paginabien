@@ -1,12 +1,12 @@
 {
     "generales": {
-        "info": "info@lxh.es",
+        "info": "central@lxh.es",
         "tel": "+34 93 878 96 22",
         "email": "Email",
         "phone": "Phone",
         "address": "Address",
         "address_1": "Ctra. C-55. 25,",
-        "address_2": "8297 - Castellgalí (Barcelona),",
+        "address_2": "08297 - Castellgalí (Barcelona),",
         "aboutus": "About us",
         "services": "Services",
         "company": "Company",
@@ -174,7 +174,7 @@
             "espana": {
                 "title": "Spain, Barcelona",
                 "address": "Ctra. C-55 km. 25, 08297 - Castellgalí",
-                "email": "info@lxh.es",
+                "email": "central@lxh.es",
                 "phone": "+34 93 878 96 22 / 609 02 63 65"
             },
             "usa": {
@@ -518,7 +518,7 @@
         "s1": {
             "titulo": "Website ownership",
             "p1": "This website (www.lxh.es) is owned by LINE-X Hispania, S.L., a company with registered address at Ctra. C-55 km. 25, 08297 — Castellgalí (Barcelona), registered in the Barcelona Mercantile Registry with tax identification number B-XXXXXXXX.",
-            "p2": "For any enquiry, please contact us at info@lxh.es or by phone at +34 93 878 96 22."
+            "p2": "For any enquiry, please contact us at central@lxh.es or by phone at +34 93 878 96 22."
         },
         "s2": {
             "titulo": "Purpose and scope of application",
@@ -548,7 +548,7 @@
             "li1": "Managing information and contact requests.",
             "li2": "Sending commercial communications to users who have given their express consent.",
             "li3": "Complying with applicable legal obligations.",
-            "p3": "The user may at any time exercise their rights of access, rectification, erasure, objection, portability and restriction of processing by writing to info@lxh.es. They also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).",
+            "p3": "The user may at any time exercise their rights of access, rectification, erasure, objection, portability and restriction of processing by writing to central@lxh.es. They also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).",
             "p4": "Data will not be shared with third parties except where legally required or necessary for the provision of contracted services."
         },
         "s6": {
