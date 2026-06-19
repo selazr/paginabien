@@ -22,6 +22,12 @@
 {{ image_portfolio(single_portfolio_images.style_5[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
+{% macro slide_project(name="", gallery="gallery-1") %}
+<div class="swiper-slide">
+    {{ image_portfolio_init(name, 'gallery-item-md', gallery) }}
+</div>
+{% endmacro %}
+
 
 {% block content %}
 <div class="py-160 min-vh-100 d-flex align-items-center position-relative">
@@ -51,44 +57,43 @@
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                     data-i18n="generales.project_about">Sobre el proyecto</h2>
+
                 <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
                     data-i18n="proyectos.katmandu_park.description">En este proyecto se realizaron todas las piezas
                     temáticas de la "Casa embrujada" en el Katmandú Park dándole un enfoque tenebroso, y divertido para
                     todas las edades.</p>
             </div>
+
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                 data-show-delay="300">
                 <hr class="mt-0 mb-30">
+
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
                             data-i18n="proyectos.katmandu_park.date">Junio 10, 2008</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
                             data-i18n="proyectos.katmandu_park.category">Parque temático</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandú
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
-        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        data-swiper-speed="600" data-swiper-loop="false" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% macro slide_project(name="") %}
-                <div class="swiper-slide">
-                    {{ image_portfolio_init(name, 'gallery-item-md') }}
-                </div>
-                {% endmacro %}
-                {{ slide_project('02') }}
-                {{ slide_project('03') }}
-                {{ slide_project('04') }}
+                {{ slide_project('02', 'katmandu-park') }}
+                {{ slide_project('03', 'katmandu-park') }}
+                {{ slide_project('04', 'katmandu-park') }}
             </div>
         </div>
 
@@ -125,6 +130,7 @@
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                     data-i18n="generales.project_about">Sobre el proyecto</h2>
+
                 <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
                     data-i18n="proyectos.katmandu_inverso.description">Hemos materializado el concepto del Katmandú
                     inverso, una estructura que exige un equilibrio perfecto entre audacia técnica y precisión
@@ -132,46 +138,44 @@
                     técnica con rigor, manteniendo siempre el estándar de excelencia que aplicamos en cada uno de
                     nuestros desarrollos.</p>
             </div>
+
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                 data-show-delay="300">
                 <hr class="mt-0 mb-30">
+
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
                             data-i18n="proyectos.katmandu_inverso.date">Junio 10, 2008</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
                             data-i18n="proyectos.katmandu_inverso.category">Parques temáticos</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Katmandu
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
-        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        data-swiper-speed="600" data-swiper-loop="false" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% macro slide_project(name="") %}
-                <div class="swiper-slide">
-                    {{ image_portfolio_init(name, 'gallery-item-md') }}
-                </div>
-                {% endmacro %}
-                {{ slide_project('05') }}
-                {{ slide_project('06') }}
-                {{ slide_project('07') }}
-                {{ slide_project('08') }}
-                {{ slide_project('09') }}
-                {{ slide_project('10') }}
-                {{ slide_project('11') }}
-                {{ slide_project('12') }}
-                {{ slide_project('13') }}
-                {{ slide_project('14') }}
+                {{ slide_project('05', 'katmandu-inverso') }}
+                {{ slide_project('06', 'katmandu-inverso') }}
+                {{ slide_project('07', 'katmandu-inverso') }}
+                {{ slide_project('08', 'katmandu-inverso') }}
+                {{ slide_project('09', 'katmandu-inverso') }}
+                {{ slide_project('10', 'katmandu-inverso') }}
+                {{ slide_project('11', 'katmandu-inverso') }}
+                {{ slide_project('12', 'katmandu-inverso') }}
+                {{ slide_project('13', 'katmandu-inverso') }}
+                {{ slide_project('14', 'katmandu-inverso') }}
             </div>
         </div>
 
@@ -181,13 +185,19 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="ferrariland.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow
-            icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span
-                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="ferrariland.html" class="btn btn-clean">
+            {{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}
+            <span data-i18n="generales.project_prev">anterior</span>
+            <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>
+        </a>
+
         <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">todos</a>
-        <a href="capitel.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span
-                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right |
-            replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+
+        <a href="capitel.html" class="btn btn-clean">
+            <span data-i18n="generales.project_next">siguiente</span>
+            <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>
+            {{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}
+        </a>
     </div>
 </div>
 {% endblock %}

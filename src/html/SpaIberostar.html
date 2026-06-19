@@ -22,6 +22,12 @@
 {{ image_portfolio(single_portfolio_images.style_5_12[name], classes=classes, gallery=gallery) }}
 {% endmacro %}
 
+{% macro slide_project(name="", gallery="gallery-1") %}
+<div class="swiper-slide">
+    {{ image_portfolio_init(name, 'gallery-item-md', gallery) }}
+</div>
+{% endmacro %}
+
 
 {% block content %}
 <div class="py-160 min-vh-100 d-flex align-items-center position-relative">
@@ -51,6 +57,7 @@
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                     data-i18n="generales.project_about">Sobre el proyecto</h2>
+
                 <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
                     data-i18n="proyectos.spa_iberostar.description">Proyecto de renovación integral de la piscina
                     interior climatizada, enfocado en elevar la experiencia del cliente y adecuar el espacio a la
@@ -59,43 +66,40 @@
 
                     Se incorpora una pared de marés con circuito de chorros, soluciones acústicas para mejorar el
                     confort sonoro y mobiliario sostenible en madera de teca con textiles naturales, logrando un entorno
-                    sofisticado, sensorial y plenamente alineado con el bienesta</p>
+                    sofisticado, sensorial y plenamente alineado con el bienestar.</p>
             </div>
+
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                 data-show-delay="300">
                 <hr class="mt-0 mb-30">
+
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
                             data-i18n="proyectos.spa_iberostar.date">Junio 21, 2018</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
                             data-i18n="proyectos.spa_iberostar.category">Arquitectura</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span>Iberostar
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
-        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        data-swiper-speed="600" data-swiper-loop="false" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% macro slide_project(name="") %}
-                <div class="swiper-slide">
-                    {{ image_portfolio_init(name, 'gallery-item-md') }}
-                </div>
-                {% endmacro %}
-                {{ slide_project('02') }}
-                {{ slide_project('03') }}
-                {{ slide_project('04') }}
-                {{ slide_project('06') }}
-
+                {{ slide_project('02', 'iberostar-spa') }}
+                {{ slide_project('03', 'iberostar-spa') }}
+                {{ slide_project('04', 'iberostar-spa') }}
+                {{ slide_project('06', 'iberostar-spa') }}
             </div>
         </div>
 
@@ -133,6 +137,7 @@
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                     data-i18n="generales.project_about">Sobre el proyecto</h2>
+
                 <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
                     data-i18n="proyectos.garzas.description">En este proyecto, hemos creado piezas de gran envergadura,
                     como la imponente ballena ubicada en las escaleras y las majestuosas garzas que adornan el lobby.
@@ -141,40 +146,38 @@
                     aportando una experiencia visual impresionante que complementa la atmósfera de lujo y relajación del
                     lugar.</p>
             </div>
+
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                 data-show-delay="300">
                 <hr class="mt-0 mb-30">
+
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
                             data-i18n="proyectos.garzas.date">Junio 10, 2008</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
                             data-i18n="proyectos.garzas.category">Figuras</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span><span
                             data-i18n="proyectos.garzas.client">Iberostar Albufera</span>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
-        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        data-swiper-speed="600" data-swiper-loop="false" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% macro slide_project(name="") %}
-                <div class="swiper-slide">
-                    {{ image_portfolio_init(name, 'gallery-item-md') }}
-                </div>
-                {% endmacro %}
-                {{ slide_project('11') }}
-                {{ slide_project('12') }}
-                {{ slide_project('13') }}
+                {{ slide_project('11', 'iberostar-garzas') }}
+                {{ slide_project('12', 'iberostar-garzas') }}
+                {{ slide_project('13', 'iberostar-garzas') }}
             </div>
         </div>
 
@@ -212,6 +215,7 @@
             <div class="col-12 col-lg-7 text-center">
                 <h2 class="h3 mb-30 pb-10 mt-n10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                     data-i18n="generales.project_about">Sobre el proyecto</h2>
+
                 <p class="mb-0 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150"
                     data-i18n="proyectos.ballena.description">Un impresionante proyecto de diseño realizado por LINE-X
                     Hispania, finalizado en junio de 2020. La pieza central de la recepción es una majestuosa figura de
@@ -219,18 +223,22 @@
                     sistema de iluminación interna, la ballena aporta una atmósfera envolvente y sofisticada, combinando
                     arte y funcionalidad para ofrecer una experiencia visual memorable a los visitantes.</p>
             </div>
+
             <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10"
                 data-show-delay="300">
                 <hr class="mt-0 mb-30">
+
                 <div class="row justify-content-around gh-1">
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_date">Fecha:</span><span
                             data-i18n="proyectos.ballena.date">Junio, 2020</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_category">categoría:</span><span
                             data-i18n="proyectos.ballena.category">Figuras</span>
                     </div>
+
                     <div class="col-auto mb-8">
                         <span class="fw-medium me-8" data-i18n="generales.project_client">Cliente:</span><span
                             data-i18n="proyectos.ballena.client">Iberostar Albufera</span>
@@ -241,18 +249,13 @@
     </div>
 
     <div class="swiper swiper-full-horizontal mt-130 mb-n6" data-swiper-slides="auto" data-swiper-gap="30"
-        data-swiper-speed="600" data-swiper-loop="true" data-swiper-center="true" data-swiper-breakpoints="1200:1">
+        data-swiper-speed="600" data-swiper-loop="false" data-swiper-center="true" data-swiper-breakpoints="1200:1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% macro slide_project(name="") %}
-                <div class="swiper-slide">
-                    {{ image_portfolio_init(name, 'gallery-item-md') }}
-                </div>
-                {% endmacro %}
-                {{ slide_project('07') }}
-                {{ slide_project('08') }}
-                {{ slide_project('09') }}
-                {{ slide_project('10') }}
+                {{ slide_project('07', 'iberostar-ballena') }}
+                {{ slide_project('08', 'iberostar-ballena') }}
+                {{ slide_project('09', 'iberostar-ballena') }}
+                {{ slide_project('10', 'iberostar-ballena') }}
             </div>
         </div>
 
@@ -262,13 +265,19 @@
 
 <div class="container mt-160">
     <div class="page-navigation">
-        <a href="proyectos.html" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow
-            icon-arrow-left" width') | safe }} <span data-i18n="generales.project_prev">anterior</span> <span
-                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span></a>
+        <a href="proyectos.html" class="btn btn-clean">
+            {{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}
+            <span data-i18n="generales.project_prev">anterior</span>
+            <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>
+        </a>
+
         <a href="proyectos.html" class="btn btn-light btn-circle btn-m" data-i18n="generales.project_all">Todos</a>
-        <a href="Katlantis.html" class="btn btn-clean"> <span data-i18n="generales.project_next">siguiente</span> <span
-                class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>{{ icon.arrow_right |
-            replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+
+        <a href="Katlantis.html" class="btn btn-clean">
+            <span data-i18n="generales.project_next">siguiente</span>
+            <span class="d-none d-sm-inline" data-i18n="generales.project_label"> proyecto</span>
+            {{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}
+        </a>
     </div>
 </div>
 {% endblock %}
